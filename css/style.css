@@ -1,6 +1,5 @@
 @charset "UTF-8";
 html {
-  -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   word-break: break-all;
@@ -135,5 +134,32 @@ img {
   line-height: 1.75;
   letter-spacing: 12px;
   color: #ffffff;
+}
+
+/*about-section*/
+.about-section {
+  position: relative;
+}
+
+.about-title,
+.about-text {
+  position: absolute;
+  writing-mode: vertical-rl;
+}
+
+h2.about-title {
+  top: 22.5%;
+  left: 56.5%;
+  font-size: 3rem;
+  line-height: 1.18;
+  letter-spacing: 0.5rem;
+}
+
+p.about-text {
+  top: 22.5%;
+  left: 12.5%;
+  font-size: 18px;
+  line-height: 2.65;
+  letter-spacing: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */
