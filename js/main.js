@@ -20,3 +20,8 @@ $(function() {
         }
     });
 });
+// ハンバーガーメニュー開け閉じ
+$("#hamburger-block").click(function() {
+    $("#js-drawer").toggle(300);
+    $(".hamburger").toggleClass("active");
+});
