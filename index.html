@@ -16,36 +16,46 @@
     <!-- header -->
      <div id="header" class="header">
       <div class="inner">
+
         <div class="header_logo">
           <h1 class="site-title">
             <a href="#">株式会社北村建設興業</a>
           </h1>
+
+          <!-- PC用ナビ -->
           <div class="header_nav">
             <nav>
               <ul class="nav_list">
-                <li>
-                  <a href="">ABOUT</a>
-                </li>
-                <li>
-                  <a href="">SERVICE</a>
-                </li>
-                <li>
-                  <a href="">WORKS</a>
-                </li>
-                <li>
-                  <a href="">NEWS</a>
-                </li>
-                <li>
-                  <a href="">COMPANY</a>
-                </li>
-                <li>
-                  <a href="">CONTACT</a>
-                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">WORKS</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">COMPANY</a></li>
+                <li><a href="">CONTACT</a></li>
               </ul>
             </nav>
           </div>
         </div>
+
+        <!-- ハンバーガーボタンSP用 -->
+         <button id="hamburger-block" class="hamburger">
+          <span class="hamburger-line"></span>
+         </button>
       </div>
+
+      <!-- ハンバーガーナビゲーションSP用 -->
+       <div class="drawer-menu" id="js-drawer">
+        <nav>
+          <ul class="nav_list">
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">WORKS</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">COMPANY</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+       </div>
      </div>
 
      <!-- main -->
@@ -75,7 +85,7 @@
           </div>
           <div class="fv_contents">
             <div class="fv_catch">
-              <h2>永遠も。瞬間も。<br>あなたと共に。</h2>
+              <h2>永遠も。<br class=pc-none>瞬間も。<br>あなたと共に。</h2>
             </div>
           </div>
        </div>
@@ -116,18 +126,20 @@
                   <source media="(min-width: 768px)" srcset="images/pc_service01.jpg">
                   <img src="images/sp_service_01.jpg" alt="静岡県U.I様自宅">
                 </picture>
+                <p class="service-caption sp-only">静岡県U.I様自宅</p>
                 <!-- 緑ボックス -->
                  <div class="service-media__bg"></div>
                 
                 <div class="service-media__text">
-                  <h3>新築<br>（土地探し〜建築）</h3>
+                  <h3>新築<br class="pc-only">（土地探し〜建築）</h3>
                   <p>お客様にあった土地探しから<br>
                     建築、施工までサポートいたします。<br>
                     風水的観点からもご提案。</p>
                   </div>
+
               </figure>
             </div>  
-            <p class="service-caption">静岡県U.I様自宅</p>
+            <p class="service-caption pc-only">静岡県U.I様自宅</p>
           </article> 
 
           <!-- 二つ目のサービスコンテンツ -->
@@ -138,6 +150,7 @@
                 <picture >
                   <source media="(min-width: 768px)" srcset="images/pc_service02.jpg">
                   <img src="images/sp_service_02.jpg" alt="北海道富良野市ブックカフェ">
+                  <p class="service-caption sp-only">北海道富良野市ブックカフェ</p>
                 </picture>
                 <div class="service-media__bg"></div>
                 
@@ -149,7 +162,7 @@
                   </div>
               </figure>
               </div>  
-              <p class="service-caption">北海道富良野市ブックカフェ</p>
+              <p class="service-caption pc-only right">北海道富良野市ブックカフェ</p>
           </article> 
 
           <!-- 三つ目のサービスコンテンツ -->
@@ -160,6 +173,7 @@
                 <picture >
                   <source media="(min-width: 768px)" srcset="images/pc_service03.jpg">
                   <img src="images/sp_service_03.jpg" alt="広島県竹原市">
+                  <p class="service-caption sp-only">広島県竹原市</p>
                 </picture>
                 <div class="service-media__bg"></div>          
                 
@@ -171,7 +185,7 @@
                   </div>
                 </div>  
               </figure>
-              <p class="service-caption">広島県竹原市</p>
+              <p class="service-caption pc-only">広島県竹原市</p>
           </article> 
 
         </div>
