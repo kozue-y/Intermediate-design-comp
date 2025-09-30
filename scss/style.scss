@@ -22,6 +22,9 @@ html {
     font-family: $base-font;
     font-weight: 500;
   }
+  body.modal-open {
+    overflow: hidden;
+  }
   img {
     display: block;
     width: 100%;
@@ -33,7 +36,19 @@ html {
       display: block;
     }
   }
-
+  @media screen and (max-width: 768px) {
+    .sp-only {
+      display: block;
+    }
+    .pc-only {
+      display: none;
+    }  
+  }
+  
+  a, 
+  a img{
+    cursor: url("/images/yubi.png") 6 2,pointer;
+  }
 
   // ヘッダー 
   /*ヘッダー*/
@@ -85,7 +100,7 @@ html {
      display: flex;
      align-items: center;
      height: 100%;
-     cursor: url("/images/pointer.png") 6 2,pointer;
+     cursor: url("/images/yubi.png") 6 2,pointer;
    }
   }
 
@@ -126,7 +141,7 @@ html {
     line-height: calc(33 / 18);
     color: $color-white;
     position: relative;
-    cursor: url("/images/pointer.png") 6 2,pointer;
+    cursor: url("/images/yubi.png") 6 2,pointer;
 
   // 下線アニメ
     &::after {
@@ -342,16 +357,16 @@ p.about-text {
 
 
 // サービス
-/*サービス*/
+/*service-section*/
 .service-section {
   background: $bg-color;
   padding-bottom: 131px;
+}
   .inner {
     max-width: 980px;
     margin: 0 auto;
     padding-inline: 30px;
   }
-}
 .service-title {
   padding-top: 80px;
   text-align: center;
@@ -567,3 +582,380 @@ p.service-caption.pc-only.right {
     line-height: 1.5625;
   }
 }
+/*works-section*/
+#works {
+  position: relative;
+}
+.works-section {
+  padding-top: 80px;
+  padding-bottom: 97px;
+}
+.works-title {
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    line-height: calc(33 / 30);
+    letter-spacing: 0.3em;
+    color: $color-green;
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    letter-spacing: 0.3em;
+  }
+}
+.works-list {
+  margin-top: 68px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.works-caption p {
+  font-size: 1.6rem;
+  line-height: calc(25 / 16);
+  margin-top: 19px;
+}
+.works-image {
+  display: block;
+  width: 100%;
+}
+.works-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .works-section {
+    padding-top: 50px;
+    padding-bottom: 42px;
+  }
+  .works-list {
+    margin-top: 38px;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .works-caption p {
+    margin-top: 9px;
+  }
+}
+
+/*モーダル用*/
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.modal-bg {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  aspect-ratio: 450 / 275;
+  width: 100%;
+  max-width: 452px;
+  height: auto;
+  border: 1px solid #707070;
+  padding-inline: 15px;
+  padding-top: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.2%;
+  right: 1%;
+  width: 15px;
+  height: 15px;
+  cursor: url("/images/yubi.png") 6 2,pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 21.3px;
+  height: 1px;
+  background: #000000;
+  transform-origin: center;
+}
+.modal-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.modal-image {
+  width: 100%;
+  aspect-ratio: 420 / 220;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+.modal-text {
+  font-size: 1.6rem;
+  line-height: calc(25 / 16);
+  margin-top: 9px;
+}
+
+/*news-section*/
+.news-section {
+  background: $bg-color;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.news-title {
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    line-height: calc(33 / 30);
+    letter-spacing: 0.3em;
+    color: $color-green;
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    letter-spacing: 0.3em;
+  }
+}
+.news-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 68px;
+  gap: 60px;
+}
+.news-col {
+  flex: 1;
+  width: 100%;
+  max-width: 450px;
+}
+.news-subtitle {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background: $color-green;
+  width: 100%;
+  height: 50px;
+  h3 {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    color: $color-white;
+  }
+}
+ul.news-list {
+  background: $color-white;
+  padding: 30px 20px 20px;
+}
+ul.news-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  border-bottom: solid 1px $color-green;
+}
+li.news-item {
+  padding: 20px 0 13px;
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+
+
+time {
+  font-size: 1.6rem;
+  line-height: calc(33 / 16);
+  flex-shrink: 0;
+}
+a.news-link {
+  font-size: 1.8rem;
+  line-height: calc(25 / 18);
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+a.more-btn {
+  display: block;
+  text-align: right;
+  position: relative;
+  margin-top: 17px;
+  padding-right: 32px;
+  font-size: 2rem;
+  line-height: calc(33 / 20);
+  color: $color-green;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.6;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    width: 80px;
+    height: 1px;
+    background-color: $color-green;
+  }
+}
+.more-btn span {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  width: 80px;
+  height: 18px;
+
+  
+  &::before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 5px;
+    width: 1px;
+    height: 100%;
+    background-color: $color-green;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    width: 1px;
+    height: 100%;
+    background-color: $color-green;
+    transform: rotate(-48deg);
+    transform-origin: right bottom;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-box {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/*company-section*/
+
+.company-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.company-title {
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    line-height: calc(33 / 30);
+    letter-spacing: 0.3em;
+    color: $color-green;
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    letter-spacing: 0.3em;
+  }
+}
+.company-block {
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 62px;
+}
+.company-map {
+  width: 65.2%;
+  aspect-ratio: 3 / 2;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15.5%;
+    right: -1px;
+    width: 30%;
+    height: 15.5%;
+    background-color: $color-green;
+  }
+}
+.company-map iframe {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+}
+.company-access {
+  flex: 1;
+}
+.company-info {
+  box-sizing: border-box;
+  max-width: 320px;
+  width: 34.8%;
+  aspect-ratio: 320 / 262;
+  background: $color-green;
+  color: $color-white;
+  position: absolute;
+  top: 50%;
+  left: 65.2%;
+  padding: 49px 0 42px 40px;
+}
+p.name {
+  font-size: 2rem;
+  line-height: calc(33 /20);
+  span {
+    margin-left: 10px;
+  }
+}
+p.address {
+  font-size: 1.6rem;
+  line-height: calc(25 / 16);
+  margin-top: 7px;
+}p.tel {
+  font-size: 1.6rem;
+  line-height: calc(25 / 16);
+  margin-top: 12px;
+  span {
+    font-size: 2.5rem;
+    line-height: calc(25 / 25);
+  }
+}
+p.mail {
+  font-size: 1.6rem;
+  line-height: calc(25 / 16);
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
