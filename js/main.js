@@ -26,20 +26,22 @@ $("#hamburger-block").click(function() {
     $(".hamburger").toggleClass("active");
 });
 
-// // モーダル
+// モーダル以外のスクロール処理
 // $(function() {
-//     $(".modal-open").on("click", function(e) {
-//         e.preventDefault();
+//   $('a[href^="#"]:not(.modal-open)').on('click' ,function(e) {
+//     const speed = 500;
+//     const href = $(this).attr("href");
+//     const target = $(href === "#" || href === "" ? "html" : href);
 
-//         let target = $(this).data("modal");
-//         $("#" + target).fadeIn(200).css("display", "flex");
-//     });
-
-//     $(".modal-close, .modal-bg").on("click", function(e) {
-//         if ($(e.target).is (".modal-bg") || $(this).is (".modal-close")) {
-//             $(this).closest(".modal").fadeOut(200);        }
-//     });
+//     if (target.length) {
+//       e.preventDefault();
+//       const headerHeight = $("#header").outerHeight() || 0;
+//       const position = target.offset().top - headerHeight;
+//       $("html, body") .animate({scrollTop: position }, speed, "swing");
+//     }
+//   });
 // });
+
 
 // モーダル
 $(function() {
