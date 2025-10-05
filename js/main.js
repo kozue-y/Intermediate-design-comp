@@ -52,24 +52,15 @@ $(function() {
       // bodyスクロール禁止
       $("body").addClass("modal-open");
   
-      // スマホ（768px以下）
-      if ($(window).width() <= 768) {
-  
         $("#" + target)
           .css({
-            "top": 0, // サムネイルの下端
-            "left": 0,        // サムネイル左端
-            "position": "absolute",
+            "top": "50%", 
+            "left": "50%",
+            "transform": "translate(-50%, -50%)",        
+            "position": "fixed",
             "display": "flex"
           })
           .fadeIn(200);
-  
-      // PC（769px以上）
-      } else {
-        $("#" + target)
-          .fadeIn(200)
-          .css("display", "flex");
-      }
     });
   
     // 閉じる処理
@@ -80,4 +71,19 @@ $(function() {
         $(this).closest(".modal").fadeOut(200);
       }
     });
+  });
+
+// topへ戻るボタン動作
+  $(window).on("scroll", function () {
+    const fvHeight = $(".fv").outerHeight(); 
+  
+    if ($(this).scrollTop() > fvHeight) {
+      $("#page-top").addClass("is-show");
+    } else {
+      $("#page-top").removeClass("is-show");
+    }
+  });
+  
+  $("#page-top").on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
   });
