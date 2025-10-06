@@ -454,7 +454,7 @@ p.service-caption.pc-only.right {
 }
 
 .service-item.reverse .service-media__text {
-  padding-left: 20px !important;
+  padding-left: 40px !important;
 }
 
 .service-caption.sp-only {
@@ -1266,7 +1266,7 @@ button.submit-btn {
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 60px;
+  height: 50px;
   background: #4D9600;
   color: #ffffff;
   border: 1px solid #707070;
@@ -1331,7 +1331,7 @@ button.submit-btn:hover {
 }
 
 .footer {
-  padding-top: 80px;
+  padding-top: 77px;
   text-align: center;
 }
 
@@ -1339,7 +1339,7 @@ button.submit-btn:hover {
   font-size: 2rem;
   line-height: 1.65;
   border-bottom: 1px solid #000;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 }
 
 .footer-nav ul {
@@ -1392,6 +1392,10 @@ button.submit-btn:hover {
   padding-bottom: 29px;
 }
 
+span.pc-only {
+  margin-left: 2rem;
+}
+
 .footer-copy small {
   text-align: center;
   color: #ffffff;
@@ -1399,7 +1403,17 @@ button.submit-btn:hover {
   line-height: 1.65;
 }
 
-.copy-space {
-  margin-left: 2rem;
+@media (max-width: 768px) {
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 5px;
+  }
+  .footer-copy {
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
