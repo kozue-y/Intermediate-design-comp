@@ -471,7 +471,7 @@ p.service-caption.pc-only.right {
   right: 70%;
 }
 .service-item.reverse .service-media__text {
-  padding-left: 20px !important;
+  padding-left: 40px !important;
 }
 .service-caption.sp-only {
   display: none;
@@ -550,6 +550,7 @@ p.service-caption.pc-only.right {
   left: 0;
   right: auto;
 }
+
 
 
   .service-media__text h3 {
@@ -1226,7 +1227,7 @@ button.submit-btn {
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 60px;
+  height: 50px;
   background: $color-green;
   color: $color-white;
   border: 1px solid #707070;
@@ -1292,19 +1293,15 @@ button.submit-btn {
   }
 }
 .footer {
-  padding-top: 80px;
+  padding-top: 77px;
   text-align: center;
   
-}
-.footer-box {
-
-
 }
 .footer-logo {
   font-size: 2rem;
   line-height: calc(33 / 20);
   border-bottom: 1px solid #000;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 }
 .footer-nav ul {
   width: 100%;
@@ -1345,8 +1342,10 @@ button.submit-btn {
   background: $color-green;
   margin-top: 80px;
   padding-top: 39px;
-  padding-bottom: 29px;
-
+  padding-bottom: 29px;  
+}
+span.pc-only {
+  margin-left: 2rem;
 }
 .footer-copy small {
   text-align: center;
@@ -1354,10 +1353,23 @@ button.submit-btn {
   font-size: 2rem;
   line-height: calc(33 / 20);
 }
-.copy-space {
-  margin-left: 2rem;
-}
 
+
+@media (max-width: 768px) {
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 5px;
+  }
+
+  .footer-copy {
+    margin-top: 50px;
+    
+  }
+  
+}
 
 
 
