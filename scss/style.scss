@@ -1081,7 +1081,11 @@ p.mail {
   .company-info {
     padding: 49px 0 42px 165px;
   }
-
+}
+@media (max-width: 780px) {
+  .company-info {
+    padding: 49px 0 42px 150px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1506,6 +1510,12 @@ button.submit-btn {
   font-size: 1.8rem;
   line-height: calc(33 /18);
 }
+@media (max-width: 790px) {
+  .footer-nav li {
+    font-size: 1.6rem;
+  }
+}
+
 .footer-nav a {
   cursor: url("/images/yubi.png") 6 2,pointer;
   transition: opacity 0.3s ease;
