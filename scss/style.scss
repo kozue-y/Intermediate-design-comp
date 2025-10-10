@@ -47,7 +47,7 @@ html {
   
   a, 
   a img{
-    cursor: url("/images/yubi.png") 6 2,pointer;
+    cursor: url("../images/yubi.png") 6 2,pointer;
   }
 
   // ヘッダー 
@@ -101,7 +101,7 @@ html {
      display: flex;
      align-items: center;
      height: 100%;
-     cursor: url("/images/yubi.png") 6 2,pointer;
+     cursor: url("../images/yubi.png") 6 2,pointer;
    }
   }
 
@@ -142,7 +142,7 @@ html {
     line-height: calc(33 / 18);
     color: $color-white;
     position: relative;
-    cursor: url("/images/yubi.png") 6 2,pointer;
+    cursor: url("../images/yubi.png") 6 2,pointer;
 
   // 下線アニメ
     &::after {
@@ -778,7 +778,7 @@ p.service-caption.pc-only.right {
   right: 1%;
   width: 15px;
   height: 15px;
-  cursor: url("/images/yubi.png") 6 2,pointer;
+  cursor: url("../images/yubi.png") 6 2,pointer;
 }
 .modal-close::before,
 .modal-close::after {
@@ -1199,7 +1199,7 @@ label.choice-label {
   gap: 19px;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
-  cursor: url("/images/yubi.png") 6 2,pointer;
+  cursor: url("../images/yubi.png") 6 2,pointer;
   position: relative;
 }
 input[type="radio"] {
@@ -1252,7 +1252,7 @@ input[type="email"] {
     border: none;
     appearance: none;
     background: transparent;
-    cursor: url("/images/yubi.png") 6 2,pointer;
+    cursor: url("../images/yubi.png") 6 2,pointer;
   }
   &::after {
     content: "";
@@ -1300,7 +1300,7 @@ textarea {
   gap: 20px;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
-  cursor: url("/images/yubi.png") 6 2,pointer;;
+  cursor: url("../images/yubi.png") 6 2,pointer;;
 }
 input[type="checkbox"] {
   display: none;
@@ -1382,8 +1382,12 @@ button.submit-btn {
   border: 1px solid #707070;
   font-size: 2rem;
   line-height: calc(33 / 20);
+<<<<<<< HEAD
   cursor: url("/images/yubi.png") 6 2,pointer;
   transition: all 0.3s ease;
+=======
+  cursor: url("../images/yubi.png") 6 2,pointer;
+>>>>>>> develoop001
 
   &:hover {
     background: $color-white;
@@ -1469,7 +1473,7 @@ button.submit-btn {
   width: 68px;
   height: 68px;
   z-index: 999;
-  cursor: url("/images/yubi.png") 6 2,pointer;
+  cursor: url("../images/yubi.png") 6 2,pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
@@ -1517,8 +1521,12 @@ button.submit-btn {
 }
 
 .footer-nav a {
+<<<<<<< HEAD
   cursor: url("/images/yubi.png") 6 2,pointer;
   transition: opacity 0.3s ease;
+=======
+  cursor: url("../images/yubi.png") 6 2,pointer;
+>>>>>>> develoop001
 }
 .footer-nav a:hover {
   opacity: 0.6;
