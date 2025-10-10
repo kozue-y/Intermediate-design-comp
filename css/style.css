@@ -6,14 +6,14 @@ html {
   word-break: break-all;
   font-size: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   html {
     scroll-padding-top: 5rem;
   }
 }
 
 body {
-  font-family: "Yu Mincho", serif;
+  font-family: "YuMincho", "游明朝", "Hiragino Mincho ProN", serif;
   font-weight: 500;
 }
 
@@ -150,6 +150,28 @@ nav {
   width: 100%;
 }
 
+@media (max-width: 1079px) {
+  .header .inner {
+    padding-inline: 30px;
+  }
+  .header_logo {
+    gap: 3rem;
+  }
+  .nav_list a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 980px) {
+  .header .inner {
+    padding-inline: 20px;
+  }
+  .site-title {
+    font-size: 1.6rem;
+  }
+  .nav_list a {
+    font-size: 1.2rem;
+  }
+}
 /*SP用ナビ*/
 #hamburger-block {
   display: none;
