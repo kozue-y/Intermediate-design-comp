@@ -6,7 +6,7 @@ html {
   word-break: break-all;
   font-size: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   html {
     scroll-padding-top: 5rem;
   }
@@ -1416,6 +1416,10 @@ button.submit-btn {
   transition: all 0.3s ease;
 =======
   cursor: url("../images/yubi.png") 6 2, pointer;
+<<<<<<< HEAD
+>>>>>>> develoop001
+=======
+  transition: all 0.3s ease;
 >>>>>>> develoop001
 }
 button.submit-btn:hover {
@@ -1500,7 +1504,7 @@ button.submit-btn:hover {
   width: 68px;
   height: 68px;
   z-index: 999;
-  cursor: url("../images/yubi.png") 6 2, pointer;
+  cursor: url("/images/yubi.png") 6 2, pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
@@ -1552,7 +1556,11 @@ button.submit-btn:hover {
 .footer-nav a {
 
   cursor: url("../images/yubi.png") 6 2, pointer;
+<<<<<<< HEAD
 
+=======
+  transition: opacity 0.3s ease;
+>>>>>>> develoop001
 }
 
 .footer-nav a:hover {
@@ -1570,7 +1578,11 @@ button.submit-btn:hover {
 .footer-sns li a {
   width: 28px;
   height: 28px;
+<<<<<<< HEAD
   cursor: url("/images/yubi.png") 6 2, pointer;
+=======
+  cursor: url("../images/yubi.png") 6 2, pointer;
+>>>>>>> develoop001
   transition: opacity 0.3s ease;
 }
 
