@@ -166,7 +166,7 @@ nav {
   .header .inner {
     padding-inline: 20px;
   }
-  .site-title {
+  h1.site-title {
     font-size: 1.6rem;
   }
   .nav_list a {
