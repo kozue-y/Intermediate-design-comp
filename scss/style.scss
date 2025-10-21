@@ -47,7 +47,25 @@ html {
   
   a, 
   a img{
-    cursor: url("../images/yubi.png") 6 2,pointer;
+    cursor: pointer;
+  }
+
+  /*共通スタイル・タイトル*/
+  .common-title {
+    text-align: center;
+    h2 {
+      font-size: 3rem;
+      line-height: calc(33 / 30);
+      letter-spacing: 0.3em;
+      color: $color-green;
+    }
+    p {
+      font-size: 2rem;
+      line-height: calc(33 / 20);
+      letter-spacing: 0.3em;
+      margin-top: 0.6rem;
+    }
+  
   }
 
   // ヘッダー 
@@ -101,7 +119,7 @@ html {
      display: flex;
      align-items: center;
      height: 100%;
-     cursor: url("../images/yubi.png") 6 2,pointer;
+     cursor: pointer;
    }
   }
 
@@ -142,7 +160,7 @@ html {
     line-height: calc(33 / 18);
     color: $color-white;
     position: relative;
-    cursor: url("../images/yubi.png") 6 2,pointer;
+    cursor: pointer;
 
   // 下線アニメ
     &::after {
@@ -426,22 +444,22 @@ p.about-text {
     margin: 0 auto;
     padding-inline: 3rem;
   }
-.service-title {
-  text-align: center;
+// .service-title {
+//   text-align: center;
 
-  h2 {
-    font-size: 3rem;
-    line-height: calc(33 / 30);
-    letter-spacing: 0.3em;
-    color: $color-green;
-  }
-  p {
-    font-size: 2rem;
-    line-height: calc(33 / 20);
-    letter-spacing: 0.3em;
-    margin-top: 0.6rem;
-  }
-}
+//   h2 {
+//     font-size: 3rem;
+//     line-height: calc(33 / 30);
+//     letter-spacing: 0.3em;
+//     color: $color-green;
+//   }
+//   p {
+//     font-size: 2rem;
+//     line-height: calc(33 / 20);
+//     letter-spacing: 0.3em;
+//     margin-top: 0.6rem;
+//   }
+// }
 /*1つ目68px,2,3つ目80px*/
 .service-item,
 .service-item.reverse{
@@ -693,21 +711,21 @@ p.service-caption.pc-only.right {
   padding-top: 8rem;
   padding-bottom: 9.7rem;
 }
-.works-title {
-  text-align: center;
-  h2 {
-    font-size: 3rem;
-    line-height: calc(33 / 30);
-    letter-spacing: 0.3em;
-    color: $color-green;
-    margin-bottom: 0.6rem;
-  }
-  p {
-    font-size: 2rem;
-    line-height: calc(33 / 20);
-    letter-spacing: 0.3em;
-  }
-}
+// .works-title {
+//   text-align: center;
+//   h2 {
+//     font-size: 3rem;
+//     line-height: calc(33 / 30);
+//     letter-spacing: 0.3em;
+//     color: $color-green;
+//     margin-bottom: 0.6rem;
+//   }
+//   p {
+//     font-size: 2rem;
+//     line-height: calc(33 / 20);
+//     letter-spacing: 0.3em;
+//   }
+// }
 .works-list {
   margin-top: 6.8rem;
   display: flex;
@@ -783,7 +801,7 @@ p.service-caption.pc-only.right {
   right: 1%;
   width: 1.5rem;
   height: 1.5rem;
-  cursor: url("../images/yubi.png") 6 2,pointer;
+  cursor: pointer;
 }
 .modal-close::before,
 .modal-close::after {
@@ -835,21 +853,21 @@ p.service-caption.pc-only.right {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-.news-title {
-  text-align: center;
-  h2 {
-    font-size: 3rem;
-    line-height: calc(33 / 30);
-    letter-spacing: 0.3em;
-    color: $color-green;
-    margin-bottom: 0.6rem;
-  }
-  p {
-    font-size: 2rem;
-    line-height: calc(33 / 20);
-    letter-spacing: 0.3em;
-  }
-}
+// .news-title {
+//   text-align: center;
+//   h2 {
+//     font-size: 3rem;
+//     line-height: calc(33 / 30);
+//     letter-spacing: 0.3em;
+//     color: $color-green;
+//     margin-bottom: 0.6rem;
+//   }
+//   p {
+//     font-size: 2rem;
+//     line-height: calc(33 / 20);
+//     letter-spacing: 0.3em;
+//   }
+// }
 .news-box {
   display: flex;
   justify-content: space-between;
@@ -1012,21 +1030,21 @@ ul.news-list li.news-more {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-.company-title {
-  text-align: center;
-  h2 {
-    font-size: 3rem;
-    line-height: calc(33 / 30);
-    letter-spacing: 0.3em;
-    color: $color-green;
-    margin-bottom: 0.6rem;
-  }
-  p {
-    font-size: 2rem;
-    line-height: calc(33 / 20);
-    letter-spacing: 0.3em;
-  }
-}
+// .company-title {
+//   text-align: center;
+//   h2 {
+//     font-size: 3rem;
+//     line-height: calc(33 / 30);
+//     letter-spacing: 0.3em;
+//     color: $color-green;
+//     margin-bottom: 0.6rem;
+//   }
+//   p {
+//     font-size: 2rem;
+//     line-height: calc(33 / 20);
+//     letter-spacing: 0.3em;
+//   }
+// }
 .company-block {
   margin-top: 6.8rem;
   display: block;
@@ -1140,21 +1158,21 @@ p.mail {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-.form-title {
-  text-align: center;
-  h2 {
-    font-size: 3rem;
-    line-height: calc(33 / 30);
-    letter-spacing: 0.3em;
-    color: $color-green;
-    margin-bottom: 0.6rem;
-  }
-  p {
-    font-size: 2rem;
-    line-height: calc(33 / 20);
-    letter-spacing: 0.3em;
-  }
-}
+// .form-title {
+//   text-align: center;
+//   h2 {
+//     font-size: 3rem;
+//     line-height: calc(33 / 30);
+//     letter-spacing: 0.3em;
+//     color: $color-green;
+//     margin-bottom: 0.6rem;
+//   }
+//   p {
+//     font-size: 2rem;
+//     line-height: calc(33 / 20);
+//     letter-spacing: 0.3em;
+//   }
+// }
 .form-contents {
   margin-top: 3.5rem;
   padding-left: 6rem;
@@ -1209,7 +1227,7 @@ label.choice-label {
   gap: 1.9rem;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
-  cursor: url("../images/yubi.png") 6 2,pointer;
+  cursor: pointer;
   position: relative;
 }
 input[type="radio"] {
@@ -1262,7 +1280,7 @@ input[type="email"] {
     border: none;
     appearance: none;
     background: transparent;
-    cursor: url("../images/yubi.png") 6 2,pointer;
+    cursor: pointer;
   }
   &::after {
     content: "";
@@ -1392,7 +1410,7 @@ button.submit-btn {
   border: 1px solid #707070;
   font-size: 2rem;
   line-height: calc(33 / 20);
-  cursor: url("../images/yubi.png") 6 2,pointer;
+  cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
@@ -1479,7 +1497,7 @@ button.submit-btn {
   width: 6.8rem;
   height: 6.8rem;
   z-index: 999;
-  cursor: url("../images/yubi.png") 6 2,pointer;
+  cursor: pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
@@ -1495,6 +1513,14 @@ button.submit-btn {
     width: 100%;
     height: auto;
     display: block;
+  }
+}
+@media (max-width: 767px) {
+  .page-top {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    right: 2rem;
   }
 }
 .footer {
@@ -1527,7 +1553,7 @@ button.submit-btn {
 }
 
 .footer-nav a {
-  cursor: url("../images/yubi.png") 6 2,pointer;
+  cursor: pointer;
   transition: opacity 0.3s ease;
 }
 .footer-nav a:hover {
@@ -1543,7 +1569,7 @@ button.submit-btn {
 .footer-sns li a {
   width: 2.8rem;
   height: 2.8rem;
-  cursor: url("../images/yubi.png") 6 2,pointer;
+  cursor: pointer;
   transition: opacity 0.3s ease;
 }
 .footer-sns a:hover {

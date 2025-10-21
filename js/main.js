@@ -74,20 +74,22 @@ $(function() {
   });
 
 // topへ戻るボタン動作
-  $(window).on("scroll", function () {
-    const fvHeight = $(".fv").outerHeight(); 
-  
-    if ($(this).scrollTop() > fvHeight) {
-      $("#page-top").addClass("is-show");
-    } else {
-      $("#page-top").removeClass("is-show");
-    }
-  });
-  $('#page-top').on('click', function() {
-    $('html, body').animate({ scrollTop: 0 } ,500);
-    return false;
-  });
-  
-  $("#page-top").on("click", function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 100) {
+    $("#page-top").addClass("is-show");
+  } else {
+    $("#page-top").removeClass("is-show");
+  }
+});
+
+$('#page-top a').on('click', function() {
+  $('html, body').animate({ scrollTop: 0 }, 500);
+  return false;
+});
+  // AOSふわっと
+  AOS.init({
+    duration: 1000,
+    delay: 100,
+    easing: 'ease-out',
+    once: true,
   });
