@@ -317,10 +317,11 @@ html {
 
   h2 {
    font-size: 4rem;
+   font-weight: 600;
    line-height: calc(70 / 40);
    letter-spacing: 0.3em;
    color: #ffffff;
-   filter: drop-shadow(5px 5px 5px #000000);
+   filter: drop-shadow(0.5rem 0.5rem 0.5rem #000000);
    }
   }
  }
@@ -334,7 +335,7 @@ html {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%)
-      translate(7px, 10px);
+      translate(0.7rem, 1rem);
       .fv_catch {
         text-align: center;
         h2 {
@@ -370,7 +371,7 @@ h2.about-title {
 p.about-text {
   top: 22.5%;
   left: 12.5%;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 2.65;
   letter-spacing: 0.7rem;
 }
@@ -417,13 +418,13 @@ p.about-text {
 /*service-section*/
 .service-section {
   background: $bg-color;
-  padding-top: 80px;
-  padding-bottom: 131px;
+  padding-top: 8rem;
+  padding-bottom: 13.1rem;
 }
   .inner {
-    max-width: 980px;
+    max-width: 98rem;
     margin: 0 auto;
-    padding-inline: 30px;
+    padding-inline: 3rem;
   }
 .service-title {
   text-align: center;
@@ -438,16 +439,16 @@ p.about-text {
     font-size: 2rem;
     line-height: calc(33 / 20);
     letter-spacing: 0.3em;
-    margin-top: 6px;
+    margin-top: 0.6rem;
   }
 }
 /*1つ目68px,2,3つ目80px*/
 .service-item,
 .service-item.reverse{
-  margin-top: 131px;
+  margin-top: 13.1rem;
 }
 .service-item:first-of-type {
-  margin-top: 68px;
+  margin-top: 6.8rem;
 }
 .service-media {
   position: relative;
@@ -459,7 +460,7 @@ p.about-text {
   position: relative;
   width: 65.3%;
   height: auto;
-  max-width: 600px;
+  max-width: 60rem;
   // aspect-ratio: 2 / 1;
   z-index: 2;
 }
@@ -488,12 +489,12 @@ p.about-text {
   left: 70%;
   top: 48.33%;
   width: 83.3%;
-  max-width: 500px;
+  max-width: 50rem;
   height: auto;
   aspect-ratio: 2 / 1;
   z-index: 3;
-  padding-top: 50px;
-  padding-left: 220px;
+  padding-top: 50rem;
+  padding-left: 22rem;
 
   h3 {
     font-size: 2.5rem;
@@ -504,14 +505,14 @@ p.about-text {
     font-size: 1.6rem;
     line-height: calc(25 / 16);
     color: $color-white;
-    margin-top: 17px;
+    margin-top: 1.7rem;
   }
 }
 
 p.service-caption.pc-only {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
-  margin-top: 19px;
+  margin-top: 1.9rem;
 }
 p.service-caption.pc-only.right {
   text-align: right;
@@ -528,7 +529,7 @@ p.service-caption.pc-only.right {
   right: 70%;
 }
 .service-item.reverse .service-media__text {
-  padding-left: 40px !important;
+  padding-left: 4rem !important;
 }
 .service-caption.sp-only {
   display: none;
@@ -538,13 +539,13 @@ p.service-caption.pc-only.right {
 }
 @media (max-width: 980px) {
   .service-media__text {
-    padding-top: 20px;
-    padding-left: 220px;
+    padding-top: 2rem;
+    padding-left: 22rem;
   }  
 }
 @media (max-width: 880px) {
   .service-media__text {
-    padding-left: 180px;
+    padding-left: 18rem;
     h3 {
       font-size: 2rem;
     }
@@ -556,18 +557,18 @@ p.service-caption.pc-only.right {
 
 @media screen and (max-width: 767px) {
   .service-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .service-item {
-    margin-top: 50px;
+    margin-top: 5rem;
     &:first-of-type {
-      margin-top: 40px;
+      margin-top: 4rem;
     }
     width: 100%;
   }
   .service-item.reverse {
-    margin-top: 57px;
+    margin-top: 5.7rem;
   }
   .service-media {
     width: 100%;
@@ -607,7 +608,7 @@ p.service-caption.pc-only.right {
     height: auto;
     aspect-ratio: 315/146;
     max-width: none;
-    margin-top: 6px;
+    margin-top: 0.6rem;
     z-index: 1;
   }
   .service-item:nth-of-type(2) .service-media__bg,
@@ -623,13 +624,13 @@ p.service-caption.pc-only.right {
     height: auto;
     max-width: none;
     z-index: 900;
-    padding-inline: 20px;
+    padding-inline: 2rem;
     padding-top: 0;
     text-align: left;
-    margin-top: 6px;
+    margin-top: 0.6rem;
   }
   .service-item.reverse .service-media__text {
-    padding-left: 20px !important; 
+    padding-left: 2rem !important; 
   }  
 
   .service-item.reverse .service-media__bg,
@@ -644,9 +645,9 @@ p.service-caption.pc-only.right {
     display: none;
   }
   .service-media__text h3 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: calc(25 / 20);
-    margin-top: 20px;
+    margin-top: 2rem;
   }
   .service-media__text p {
     font-size: 1.6rem;
@@ -658,7 +659,7 @@ p.service-caption.pc-only.right {
   }
   .service-caption.sp-only {
     display: block;
-    margin-top: 3px;
+    margin-top: 0.3rem;
   }
   p.service-caption.sp-only {
     grid-area: caption;
@@ -668,18 +669,18 @@ p.service-caption.pc-only.right {
 }
 @media (max-width: 370px) {
   .service-media__text {
-    padding-inline: 5px;
+    padding-inline: 0.5rem;
   }
   .service-item.reverse .service-media__text {
-    padding-left: 5px !important;
+    padding-left: 0.5rem !important;
   }
   .service-media__text h3 {
-    margin-top: 10px;
+    margin-top: 1rem;
     font-size: 1.6rem;
   }
   .service-media__text p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 }
 
@@ -689,8 +690,8 @@ p.service-caption.pc-only.right {
   position: relative;
 }
 .works-section {
-  padding-top: 80px;
-  padding-bottom: 97px;
+  padding-top: 8rem;
+  padding-bottom: 9.7rem;
 }
 .works-title {
   text-align: center;
@@ -699,7 +700,7 @@ p.service-caption.pc-only.right {
     line-height: calc(33 / 30);
     letter-spacing: 0.3em;
     color: $color-green;
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
   }
   p {
     font-size: 2rem;
@@ -708,15 +709,15 @@ p.service-caption.pc-only.right {
   }
 }
 .works-list {
-  margin-top: 68px;
+  margin-top: 6.8rem;
   display: flex;
   justify-content: flex-start;
-  gap: 40px;
+  gap: 4rem;
 }
 .works-caption p {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
-  margin-top: 19px;
+  margin-top: 1.9rem;
 }
 .works-image {
   display: block;
@@ -729,16 +730,16 @@ p.service-caption.pc-only.right {
 
 @media screen and (max-width: 767px) {
   .works-section {
-    padding-top: 53px;
-    padding-bottom: 42px;
+    padding-top: 5.3rem;
+    padding-bottom: 4.2rem;
   }
   .works-list {
-    margin-top: 38px;
+    margin-top: 3.8rem;
     flex-direction: column;
-    gap: 22px;
+    gap: 2.2rem;
   }
   .works-caption p {
-    margin-top: 9px;
+    margin-top: 0.9rem;
   }
 }
 
@@ -769,19 +770,19 @@ p.service-caption.pc-only.right {
   background-color: #ffffff;
   aspect-ratio: 450 / 275;
   width: 100%;
-  max-width: 452px;
+  max-width: 45.2rem;
   height: auto;
   border: 1px solid #707070;
-  padding-inline: 15px;
-  padding-top: 15px;
+  padding-inline: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .modal-close {
   position: absolute;
   top: 1.2%;
   right: 1%;
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: url("../images/yubi.png") 6 2,pointer;
 }
 .modal-close::before,
@@ -790,8 +791,8 @@ p.service-caption.pc-only.right {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 21.3px;
-  height: 1px;
+  width: 2.13rem;
+  height: 0.1rem;
   background: #000000;
   transform-origin: center;
 }
@@ -814,14 +815,14 @@ p.service-caption.pc-only.right {
 .modal-text {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
-  margin-top: 9px;
+  margin-top: 0.9rem;
 }
 @media (max-width: 767px) {
   .modal-content {
     aspect-ratio: 315 / 210;
-    max-width: 315px;
-    padding-inline: 20px;
-    padding-top: 20px;
+    max-width: 31.5rem;
+    padding-inline: 2rem;
+    padding-top: 2rem;
   }
   .modal-image {
     aspect-ratio: 274 / 144;
@@ -831,8 +832,8 @@ p.service-caption.pc-only.right {
 /*news-section*/
 .news-section {
   background: $bg-color;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .news-title {
   text-align: center;
@@ -841,7 +842,7 @@ p.service-caption.pc-only.right {
     line-height: calc(33 / 30);
     letter-spacing: 0.3em;
     color: $color-green;
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
   }
   p {
     font-size: 2rem;
@@ -853,21 +854,21 @@ p.service-caption.pc-only.right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 68px;
-  gap: 60px;
+  margin-top: 6.8rem;
+  gap: 6rem;
 }
 .news-col {
   flex: 1;
   width: 100%;
-  max-width: 450px;
+  max-width: 45rem;
 }
 .news-subtitle {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 2rem;
   background: $color-green;
   width: 100%;
-  height: 50px;
+  height: 5rem;
   h3 {
     font-size: 2rem;
     line-height: calc(33 / 20);
@@ -876,17 +877,17 @@ p.service-caption.pc-only.right {
 }
 ul.news-list {
   background: $color-white;
-  padding: 30px 20px 20px;
+  padding: 3rem 2rem 2rem;
 }
 ul.news-list li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 70px;
+  gap: 7rem;
   border-bottom: solid 1px $color-green;
 }
 li.news-item {
-  padding: 20px 0 13px;
+  padding: 2rem 0 1.3rem;
   &:first-child {
     padding-top: 0;
   }
@@ -896,7 +897,7 @@ li.news-item time {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  top: -15px;
+  top: -1.5rem;
 }
 
 time {
@@ -922,8 +923,8 @@ ul.news-list li.news-more {
   display: block;
   text-align: right;
   position: relative;
-  margin-top: 17px;
-  padding-right: 32px;
+  margin-top: 1.7rem;
+  padding-right: 3.2rem;
   font-size: 2rem;
   line-height: calc(33 / 20);
   color: $color-green;
@@ -935,9 +936,9 @@ ul.news-list li.news-more {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 7px;
-    width: 80px;
-    height: 1px;
+    bottom: 0.7rem;
+    width: 8rem;
+    height: 0.1rem;
     background-color: $color-green;
   }
 }
@@ -945,17 +946,17 @@ ul.news-list li.news-more {
   display: inline-block;
   position: absolute;
   right: 0;
-  bottom: 7px;
-  width: 80px;
-  height: 18px;
+  bottom: 0.7rem;
+  width: 8rem;
+  height: 1.8rem;
 
   
   &::before {
     content: "";
     position: absolute;
-    right: 13px;
-    top: 5px;
-    width: 1px;
+    right: 1.3rem;
+    top: 0.5rem;
+    width: 0.1rem;
     height: 100%;
     background-color: $color-green;
   }
@@ -963,8 +964,8 @@ ul.news-list li.news-more {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 1px;
-    width: 1px;
+    bottom: 0.1rem;
+    width: 0.1rem;
     height: 100%;
     background-color: $color-green;
     transform: rotate(-48deg);
@@ -975,18 +976,18 @@ ul.news-list li.news-more {
 
 @media (max-width: 767px) {
   .news-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .news-box {
-    margin-top: 38px;
+    margin-top: 3.8rem;
     flex-direction: column;
-    gap: 50px;
+    gap: 5rem;
   }
   ul.news-list li {
     display: flex;
     align-items: flex-start;
-    gap: 19px;
+    gap: 1.9rem;
   }
   li.news-item time {
     display: flex;
@@ -994,7 +995,7 @@ ul.news-list li.news-more {
     font-feature-settings: "pnum" 1, "lnum" 1;
     vertical-align: top;
     position: relative;
-    top: -7px;
+    top: -0.7rem;
   }
   .news-link {
     display: -webkit-box;
@@ -1008,8 +1009,8 @@ ul.news-list li.news-more {
 /*company-section*/
 
 .company-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .company-title {
   text-align: center;
@@ -1018,7 +1019,7 @@ ul.news-list li.news-more {
     line-height: calc(33 / 30);
     letter-spacing: 0.3em;
     color: $color-green;
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
   }
   p {
     font-size: 2rem;
@@ -1027,15 +1028,15 @@ ul.news-list li.news-more {
   }
 }
 .company-block {
-  margin-top: 68px;
+  margin-top: 6.8rem;
   display: block;
   width: 100%;
   position: relative;
-  margin-bottom: 62px;
+  margin-bottom: 6.2rem;
 }
 .company-map {
   width: 65.2%;
-  max-width: 600px;
+  max-width: 60rem;
   position: relative;
   z-index: 1;
   }
@@ -1052,30 +1053,30 @@ ul.news-list li.news-more {
   top: 50%;
   left: 45.5%;
   box-sizing: border-box;
-  max-width: 500px;
+  max-width: 50rem;
   width: 54.3%;
   height: auto;
   aspect-ratio: 500 / 262;
   background: $color-green;
   color: $color-white;
-  padding: 49px 0 42px 220px;
+  padding: 4.9rem 0 4.2rem 22rem;
   z-index: 0;
 }
 p.name {
   font-size: 2rem;
   line-height: calc(33 /20);
   span {
-    margin-left: 8px;
+    margin-left: 0.8rem;
   }
 }
 p.address {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
-  margin-top: 7px;
+  margin-top: 0.7rem;
 }p.tel {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
-  margin-top: 12px;
+  margin-top: 1.2rem;
   span {
     font-size: 2.5rem;
     line-height: calc(25 / 25);
@@ -1084,29 +1085,29 @@ p.address {
 p.mail {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 @media (max-width: 880px) {
   .company-info {
-    padding: 49px 0 42px 165px;
+    padding: 4.9rem 0 4.2rem 16.5rem;
   }
 }
 @media (max-width: 780px) {
   .company-info {
-    padding: 49px 0 42px 150px;
+    padding: 4.9rem 0 4.2rem 15rem;
   }
 }
 
 @media (max-width: 767px) {
   .company-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .company-block {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 38px;
+    gap: 2rem;
+    margin-top: 3.8rem;
     margin-bottom: 0;
   }
   .company-map {
@@ -1124,20 +1125,20 @@ p.mail {
     max-width: none;
     width: 100%;
     aspect-ratio: 315 / 202;
-    padding: 19px 20px 12px;
+    padding: 1.9rem 2rem 1.2rem;
   }
 }
 @media (max-width: 320px) {
   .company-info {
-  padding: 19px 5px 12px;
+  padding: 1.9rem 0.5rem 1.2rem;
   }
 }
 
 /*CONTACT-section*/
 .contact-section {
   background: $bg-color;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .form-title {
   text-align: center;
@@ -1146,7 +1147,7 @@ p.mail {
     line-height: calc(33 / 30);
     letter-spacing: 0.3em;
     color: $color-green;
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
   }
   p {
     font-size: 2rem;
@@ -1155,22 +1156,22 @@ p.mail {
   }
 }
 .form-contents {
-  margin-top: 35px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-top: 3.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 p.attention {
   font-size: 2rem;
   line-height: calc(33 / 20);
 }
 form.form-box {
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 .form-group {
   display: flex;
   align-items: center;
-  margin-top: 51px;
-  gap: 12px;
+  margin-top: 5.1rem;
+  gap: 1.2rem;
 }
 .form-group:first-of-type {
   margin-top: 0;
@@ -1179,15 +1180,15 @@ form.form-box {
   font-size: 2rem;
   line-height: calc(33 / 20);
   white-space: nowrap;
-  width: 160px;
+  width: 16rem;
 }
 input[type="text"] {
   width: 100%;
-  max-width: 630px;
-  height: 50px;
+  max-width: 63rem;
+  height: 5rem;
   border: 1px solid #808000;
   background: $color-white;
-  padding: 13px 20px 12px;
+  padding: 1.3rem 2rem 1.2rem;
   font-size: 1.6rem;
   line-height: calc(25 / 16);
 }
@@ -1200,12 +1201,12 @@ textarea::placeholder {
 }
 .radio-wrap {
   display: flex;
-  gap: 74px;
+  gap: 7.4rem;
 }
 label.choice-label {
   display: flex;
   align-items: center;
-  gap: 19px;
+  gap: 1.9rem;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
   cursor: url("../images/yubi.png") 6 2,pointer;
@@ -1217,8 +1218,8 @@ display: none;
 /*カスタムラジオボタン*/
 .custom-radio {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid #808000;
   border-radius: 50%;
   background: $color-white;
@@ -1226,8 +1227,8 @@ display: none;
 }
 input[type="radio"]:checked + .custom-radio::after {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 0.6rem;
+  height: 0.6rem;
   background: #000000;
   border-radius: 50%;
   position: absolute;
@@ -1237,22 +1238,22 @@ input[type="radio"]:checked + .custom-radio::after {
 }
 input[type="email"] {
   width: 100%;
-  max-width: 630px;
-  height: 50px;
+  max-width: 63rem;
+  height: 5rem;
   border: 1px solid #808000;
   background: $color-white;
-  padding: 13px 20px 12px;
+  padding: 1.3rem 20rem 1.2rem;
   font-size: 1.6rem;
   line-height: calc(25 / 16);
 }
 .select-wrapper {
   position: relative;
   width: 100%;
-  max-width: 630px;
-  height: 50px;
+  max-width: 63rem;
+  height: 5rem;
   border: 1px solid #808000;
   background: $color-white;
-  padding: 13px 20px 12px;
+  padding: 1.3rem 2rem 1.2rem;
   select {
     width: 100%;
     height: 100%;
@@ -1267,12 +1268,12 @@ input[type="email"] {
     content: "";
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 2rem;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 16px solid $color-green;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1.6rem solid $color-green;
     transform: translateY(-50%) rotate(180deg);
     pointer-events: none;
   }
@@ -1281,15 +1282,15 @@ input[type="email"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 1rem;
 }
 textarea {
   width: 100%;
-  max-width: 800px;
-  height: 200px;
+  max-width: 80rem;
+  height: 20rem;
   border: 1px solid #808000;
   background: $color-white;
-  padding: 13px 20px 12px;
+  padding: 1.3rem 2rem 1.2rem;
   font-size: 1.6rem;
   line-height: calc(25 / 16);
 }
@@ -1300,13 +1301,13 @@ textarea {
 .checkbox-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px 37px;
+  gap: 1rem 3.7rem;
   // margin-top: 10px;
 }
 .checkbox-label {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
   cursor: url("../images/yubi.png") 6 2,pointer;;
@@ -1315,8 +1316,8 @@ input[type="checkbox"] {
   display: none;
 }
 .custom-checkbox {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid #707070;
   background: $color-white;
   display: inline-block;
@@ -1327,12 +1328,12 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .custom-checkbox::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 6px;
-  width: 6px;
-  height: 12px;
+  top: 0.2rem;
+  left: 0.6rem;
+  width: 0.6rem;
+  height: 1.2rem;
   border: solid #000;
-  border-width: 0 2px 2px 0;
+  border-width: 0 0.2rem 0.2rem 0;
   transform: rotate(45deg);
 }
 p.privacy-policy {
@@ -1341,10 +1342,10 @@ p.privacy-policy {
 }
 .privacy-box {
   // margin-top: 10px;
-  padding: 40px 60px 40px 40px;
+  padding: 4rem 6rem 4rem 4rem;
   width: 100%;
-  max-width: 800px;
-  height: 300px;
+  max-width: 80rem;
+  height: 30rem;
   overflow-y: scroll;
   background: $color-white;
   border: solid 1px #808000;
@@ -1356,17 +1357,17 @@ p.privacy-policy {
   scrollbar-color: #9b9b9b #e3e3e3;
 }
 .privacy-box::-webkit-scrollbar {
-  width: 10px;
+  width: 1rem;
 }
 .privacy-box::-webkit-scrollbar-track {
   background: #e3e3e3;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .privacy-box::-webkit-scrollbar-thumb {
   background: #9B9B9B;
   border: 1px solid #707070;
-  height: 30px;
+  height: 3rem;
 }
 .privacy-title {
   margin-top: 3.2rem;
@@ -1378,14 +1379,14 @@ p.privacy-policy {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 88px;
+  margin-top: 8.8rem;
 }
 button.submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 50px;
+  width: 30rem;
+  height: 5rem;
   background: $color-green;
   color: $color-white;
   border: 1px solid #707070;
@@ -1401,55 +1402,55 @@ button.submit-btn {
 }
 @media (max-width: 767px) {
   .contact-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .form-contents {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 40px;
+    margin-top: 4rem;
   }
   form.form-box {
-    margin-top: 40px;
+    margin-top: 4rem;
     width: 100%;
   }
   .form-group {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 3rem;
     gap: 0;
   }
   .gender-group {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 5rem;
   }
   .radio-wrap {
     display: flex;
-    gap: 30px;
+    gap: 3rem;
     align-items: center;
   }
   .choice-label {
     display: flex;
     align-items: center;
-    gap: 19px;
+    gap: 1.9rem;
   }
   .gender-group .form-label {
     width: auto;
   }
   .checkbox-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px 16px;
+    gap: 5rem 1.6rem;
   }
   .checkbox-label {
     font-size: 1.6rem;
     line-height: calc(25 / 16);
-    gap: 10px;
+    gap: 1rem;
   }
   .privacy-box {
-    padding: 30px 50px 30px 30px;
-    height: 323px;
+    padding: 3rem 5rem 3rem 3rem;
+    height: 32.3rem;
   }
   .form-group.vertical {
     gap: 0;
@@ -1462,7 +1463,7 @@ button.submit-btn {
     line-height: calc(33 / 16);
   }
   .form-submit {
-    margin-top: 50px;
+    margin-top: 5rem;
   }
   .form-submit .submit-btn {
     width: 100%;
@@ -1473,10 +1474,10 @@ button.submit-btn {
 /*topへ戻るボタン*/
 .page-top {
   position: fixed;
-  bottom: 60px;
-  right: 60px;
-  width: 68px;
-  height: 68px;
+  bottom: 6rem;
+  right: 6rem;
+  width: 6.8rem;
+  height: 6.8rem;
   z-index: 999;
   cursor: url("../images/yubi.png") 6 2,pointer;
   opacity: 0;
@@ -1497,7 +1498,7 @@ button.submit-btn {
   }
 }
 .footer {
-  padding-top: 77px;
+  padding-top: 7.7rem;
   text-align: center;
   
 }
@@ -1505,15 +1506,15 @@ button.submit-btn {
   font-size: 2rem;
   line-height: calc(33 / 20);
   border-bottom: 1px solid #000;
-  padding-bottom: 25px;
+  padding-bottom: 2.5rem;
 }
 .footer-nav ul {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 28px;
-  gap: 50px;
+  margin-top: 2.8rem;
+  gap: 5rem;
 }
 .footer-nav li {
   font-size: 1.8rem;
@@ -1536,12 +1537,12 @@ button.submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin-top: 28px;  
+  gap: 3rem;
+  margin-top: 2.8rem;  
 }
 .footer-sns li a {
-  width: 28px;
-  height: 28px;
+  width: 2.8rem;
+  height: 2.8rem;
   cursor: url("../images/yubi.png") 6 2,pointer;
   transition: opacity 0.3s ease;
 }
@@ -1556,9 +1557,9 @@ button.submit-btn {
 .footer-copy {
   width: 100%;
   background: $color-green;
-  margin-top: 80px;
-  padding-top: 30px;
-  padding-bottom: 29px;  
+  margin-top: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 2.9rem;  
 }
 span.pc-only {
   margin-left: 2rem;
@@ -1573,28 +1574,28 @@ span.pc-only {
 
 @media (max-width: 767px) {
   .footer {
-    padding-top: 50px;
+    padding-top: 5rem;
   }
   .footer-logo {
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
   }
   .footer-nav ul {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
   .footer-nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5px 30px;
+    gap: 5rem 3rem;
   }
 
   .footer-copy {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 21px 30px;
-    margin-top: 50px;
+    padding: 2.1rem 3rem;
+    margin-top: 5rem;
   }
   .footer-copy small {
     line-height: calc(25 /20);
