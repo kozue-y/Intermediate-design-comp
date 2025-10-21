@@ -477,6 +477,7 @@ p.about-text {
 .service-media__text h3 {
   font-size: 2.5rem;
   line-height: 1.32;
+  font-weight: 600;
   color: #ffffff;
 }
 .service-media__text p {
@@ -484,6 +485,7 @@ p.about-text {
   line-height: 1.5625;
   color: #ffffff;
   margin-top: 1.7rem;
+  font-weight: 600;
 }
 
 p.service-caption.pc-only {
@@ -829,6 +831,7 @@ p.service-caption.pc-only.right {
 .news-subtitle h3 {
   font-size: 2rem;
   line-height: 1.65;
+  font-weight: 600;
   color: #ffffff;
 }
 
@@ -889,6 +892,7 @@ ul.news-list li.news-more {
   padding-right: 3.2rem;
   font-size: 2rem;
   line-height: 1.65;
+  font-weight: 600;
   color: #4D9600;
   transition: opacity 0.3s ease;
 }
@@ -1006,6 +1010,7 @@ ul.news-list li.news-more {
   color: #ffffff;
   padding: 4.9rem 0 4.2rem 22rem;
   z-index: 0;
+  font-weight: 600;
 }
 
 p.name {
@@ -1359,6 +1364,7 @@ button.submit-btn {
   border: 1px solid #707070;
   font-size: 2rem;
   line-height: 1.65;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
