@@ -11,6 +11,7 @@
   <meta name="keywords" content="新築, リノベーション, 都市開発">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/slick.css" type="text/css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -96,7 +97,7 @@
 
        <!-- About-section -->
 
-       <div id="about" class="about-section">
+       <div id="about" class="about-section" data-aos="fade-up">
         <picture class="about-image">
           <source media="(min-width: 768px)" srcset="images/about.jpg">
           <img src="images/sp_about.jpg" alt="伝統とイマを繋ぐ">
@@ -117,13 +118,13 @@
       <!-- Service-section -->
        <section class="service-section" id="service">
         <div class="inner">
-          <div class="service-title">
+          <div class="service-title common-title" data-aos="fade-up">
             <h2>SERVICE</h2>
             <p>サービス</p>
           </div>
 
           <!-- 一つ目のサービスコンテンツ -->
-          <article class="service-item">
+          <article class="service-item" data-aos="fade-up">
             <div class="service-media">
               <figure class="service-media__img">
                 <picture >
@@ -147,7 +148,7 @@
           </article> 
 
           <!-- 二つ目のサービスコンテンツ -->
-          <article class="service-item reverse">
+          <article class="service-item reverse" data-aos="fade-up">
             <div class="service-media">
 
               <figure class="service-media__img">
@@ -170,7 +171,7 @@
           </article> 
 
           <!-- 三つ目のサービスコンテンツ -->
-          <article class="service-item">
+          <article class="service-item" data-aos="fade-up">
             <div class="service-media">
 
               <figure class="service-media__img">
@@ -196,13 +197,13 @@
        </section>
 
        <!-- Works-section -->
-        <section class="works-section" id="works">
+        <section class="works-section" id="works" data-aos="fade-up">
           <div class="inner">
-            <div class="works-title">
+            <div class="works-title common-title">
               <h2>WORKS</h2>
               <p>施工事例</p>
             </div>
-            <div class="works-list">
+            <div class="works-list" data-aos="fade-up">
               <article class="works-item">
                 <a href="#" class="modal-open" data-modal="modal01">
                   <figure>
@@ -330,13 +331,13 @@
         <!-- news-section -->
          <section class="news-section" id="news">
           <div class="inner">
-            <div class="news-title">
+            <div class="news-title common-title" data-aos="fade-up">
               <h2>NEWS</h2>
               <p>お知らせ</p>
             </div>
 
             <div class="news-box">
-              <div class="news-col news-info">
+              <div class="news-col news-info" data-aos="fade-up">
                 <div class="news-subtitle">
                   <h3>お知らせ</h3>
                 </div>
@@ -357,7 +358,7 @@
                 </ul>
               </div>
 
-              <div class="news-col news-blog">
+              <div class="news-col news-blog" data-aos="fade-up">
                 <div class="news-subtitle">
                   <h3>ブログ</h3>
                 </div>
@@ -384,16 +385,16 @@
          <!-- COMPANY-section -->
           <section class="company-section" id="company">
             <div class="inner">
-              <div class="company-title">
+              <div class="company-title common-title" data-aos="fade-up">
                 <h2>COMPANY</h2>
                 <p>会社概要</p>
               </div>
               <div class="company-block">
-                <div class="company-map">
+                <div class="company-map" data-aos="fade-up">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.2367600565376!2d129.8392701!3d32.8124912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356aad0aefe2a6b9%3A0x13f32e3d4c83018!2z44CSODUyLTgwNjUg6ZW35bSO55yM6ZW35bSO5biC5qiq5bC-77yR5LiB55uu77yV4oiS77yT77yW!5e0!3m2!1sja!2sjp!4v1759210472861!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                   </iframe>
                 </div>
-                <div class="company-access">
+                <div class="company-access" data-aos="fade-up">
                   <div class="company-info">
                     <p class="name">株式会社<span>北村建設興業</span></p>
                     <p class="address">
@@ -419,7 +420,7 @@
           <!-- form-section -->
            <section class="contact-section" id="contact">
             <div class="inner">
-              <div class="form-title">
+              <div class="form-title common-title">
                 <h2>CONTACT</h2>
                 <p>お問い合わせ</p>
               </div>
@@ -594,14 +595,17 @@
 
 
 <!-- トップへ戻るボタン -->
- <div class="page-top" id="page-top">
-  <img src="images/top-icon.png" alt="トップへ戻る">
- </div>
+ <a href="#" class="page-top-link">
+   <div class="page-top" id="page-top">
+    <img src="images/top-icon.png" alt="トップへ戻る">
+   </div>
+ </a>
 
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <!-- slick↓ -->
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>  
 </body>
 </html>
