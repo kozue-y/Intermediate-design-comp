@@ -84,9 +84,9 @@ a img {
 .header .inner {
   width: 100%;
   height: 100%;
-  max-width: 1080px;
-  padding-inline: 70px;
-  margin-inline: auto;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding-inline: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,7 +98,6 @@ a img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 11.1rem;
 }
 
 h1.site-title {
@@ -158,7 +157,7 @@ nav {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 3rem;
   width: 0;
   height: 1px;
   background: #ffffff;
@@ -168,28 +167,6 @@ nav {
   width: 100%;
 }
 
-@media (max-width: 1079px) {
-  .header .inner {
-    padding-inline: 30px;
-  }
-  .header_logo {
-    gap: 3rem;
-  }
-  .nav_list a {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 980px) {
-  .header .inner {
-    padding-inline: 20px;
-  }
-  h1.site-title {
-    font-size: 1.6rem;
-  }
-  .nav_list a {
-    font-size: 1.2rem;
-  }
-}
 /*SP用ナビ*/
 #hamburger-block {
   display: none;
@@ -212,8 +189,8 @@ nav {
   .hamburger {
     position: fixed;
     right: 0;
-    width: 72px;
-    height: 50px;
+    width: 7.2rem;
+    height: 5rem;
     background: #ffffff;
   }
   /*三本線*/
@@ -227,6 +204,7 @@ nav {
     background: #4D9600;
     border-radius: 2px;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
   .hamburger-line::before,
 .hamburger-line::after {
@@ -317,6 +295,8 @@ nav {
   text-align: center;
 }
 .fv .fv_contents .fv_catch h2 {
+  position: relative;
+  z-index: 2000;
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.75;
@@ -417,7 +397,6 @@ p.about-text {
   padding-inline: 3rem;
 }
 
-/*1つ目68px,2,3つ目80px*/
 .service-item,
 .service-item.reverse {
   margin-top: 13.1rem;
@@ -670,9 +649,14 @@ p.service-caption.pc-only.right {
 
 .works-list {
   margin-top: 6.8rem;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
+  justify-content: start;
+}
+
+.work-item {
+  width: 100%;
 }
 
 .works-caption p {
@@ -684,11 +668,14 @@ p.service-caption.pc-only.right {
 .works-image {
   display: block;
   width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .works-image img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -844,7 +831,6 @@ ul.news-list li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 7rem;
   border-bottom: solid 1px #4D9600;
 }
 
@@ -870,6 +856,10 @@ time {
 }
 
 .news-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7rem;
   font-size: 1.8rem;
   line-height: 1.3888888889;
   transition: opacity 0.3s ease;
@@ -897,7 +887,8 @@ ul.news-list li.news-more {
   transition: opacity 0.3s ease;
 }
 .more-btn:hover {
-  opacity: 0.6;
+  -webkit-animation: shake-right 0.5s ease;
+          animation: shake-right 0.5s ease;
 }
 .more-btn::before {
   content: "";
@@ -909,6 +900,35 @@ ul.news-list li.news-more {
   background-color: #4D9600;
 }
 
+@-webkit-keyframes shake-right {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake-right {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .more-btn span {
   display: inline-block;
   position: absolute;
