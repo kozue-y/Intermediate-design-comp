@@ -517,6 +517,7 @@ p.about-text {
   h3 {
     font-size: 2.5rem;
     line-height: calc(33 / 25);
+    font-weight: 600;
     color: $color-white;
   }
   p {
@@ -524,6 +525,7 @@ p.about-text {
     line-height: calc(25 / 16);
     color: $color-white;
     margin-top: 1.7rem;
+    font-weight: 600;
   }
 }
 
@@ -711,21 +713,6 @@ p.service-caption.pc-only.right {
   padding-top: 8rem;
   padding-bottom: 9.7rem;
 }
-// .works-title {
-//   text-align: center;
-//   h2 {
-//     font-size: 3rem;
-//     line-height: calc(33 / 30);
-//     letter-spacing: 0.3em;
-//     color: $color-green;
-//     margin-bottom: 0.6rem;
-//   }
-//   p {
-//     font-size: 2rem;
-//     line-height: calc(33 / 20);
-//     letter-spacing: 0.3em;
-//   }
-// }
 .works-list {
   margin-top: 6.8rem;
   display: flex;
@@ -853,21 +840,6 @@ p.service-caption.pc-only.right {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-// .news-title {
-//   text-align: center;
-//   h2 {
-//     font-size: 3rem;
-//     line-height: calc(33 / 30);
-//     letter-spacing: 0.3em;
-//     color: $color-green;
-//     margin-bottom: 0.6rem;
-//   }
-//   p {
-//     font-size: 2rem;
-//     line-height: calc(33 / 20);
-//     letter-spacing: 0.3em;
-//   }
-// }
 .news-box {
   display: flex;
   justify-content: space-between;
@@ -890,6 +862,7 @@ p.service-caption.pc-only.right {
   h3 {
     font-size: 2rem;
     line-height: calc(33 / 20);
+    font-weight: 600;
     color: $color-white;
   }
 }
@@ -945,6 +918,7 @@ ul.news-list li.news-more {
   padding-right: 3.2rem;
   font-size: 2rem;
   line-height: calc(33 / 20);
+  font-weight: 600;
   color: $color-green;
   transition: opacity 0.3s ease;
   &:hover {
@@ -1030,21 +1004,6 @@ ul.news-list li.news-more {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-// .company-title {
-//   text-align: center;
-//   h2 {
-//     font-size: 3rem;
-//     line-height: calc(33 / 30);
-//     letter-spacing: 0.3em;
-//     color: $color-green;
-//     margin-bottom: 0.6rem;
-//   }
-//   p {
-//     font-size: 2rem;
-//     line-height: calc(33 / 20);
-//     letter-spacing: 0.3em;
-//   }
-// }
 .company-block {
   margin-top: 6.8rem;
   display: block;
@@ -1079,6 +1038,7 @@ ul.news-list li.news-more {
   color: $color-white;
   padding: 4.9rem 0 4.2rem 22rem;
   z-index: 0;
+  font-weight: 600;
 }
 p.name {
   font-size: 2rem;
@@ -1410,6 +1370,7 @@ button.submit-btn {
   border: 1px solid #707070;
   font-size: 2rem;
   line-height: calc(33 / 20);
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 
