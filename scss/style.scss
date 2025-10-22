@@ -359,48 +359,56 @@ html {
 /*about-section*/
 .about-section {
   position: relative; 
+  aspect-ratio: 1080 / 500;
+  display: flex;
+  align-items: center;
+  padding-top: 0.3rem;
 }
-.about-title,
-.about-text {
-  position: absolute;
+.about-contents {
   writing-mode: vertical-rl;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4.5rem;
+  position: absolute;
+  padding-left: 13.5rem;
 }
-
 h2.about-title {
-  top: 22.5%;
-  left: 56.5%;
   font-size: 3rem;
   line-height: 1.18;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.18em;
 }
 p.about-text {
-  top: 22.5%;
-  left: 12.5%;
   font-size: 1.8rem;
-  line-height: 2.65;
-  letter-spacing: 0.7rem;
-}
-@media (max-width: 980px) {
-  h2.about-title {
-    left: 60%;
-    font-size: 2.8rem;
-  }
-  p.about-text {
-    left: 10%;
-    font-size: 1.6rem;
-  }
+  line-height: calc(48 / 18);
+  letter-spacing: 0.37em;
 }
 
 
 @media screen and (max-width: 767px) {
+  .about-section {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .about-contents {
+    writing-mode: vertical-rl;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding-left: 0;
+    gap: 2.4rem;
+  }
   h2.about-title {
-    top: 9%;
-    left: 46%;
     font-size: 2.5rem;
   }
   p.about-text {
-    top: 54%;
-    right: 19%;
     font-size: 1.6rem;
     line-height: 1.6;
     letter-spacing: 0.29em;
@@ -716,8 +724,12 @@ p.service-caption.pc-only.right {
   }
   .works-list {
     margin-top: 3.8rem;
+    display: flex;
     flex-direction: column;
     gap: 2.2rem;
+  }
+  .works-image {
+    aspect-ratio: 315 / 250;
   }
   .works-caption p {
     margin-top: 0.9rem;
@@ -972,9 +984,14 @@ ul.news-list li.news-more {
     font-feature-settings: "pnum" 1, "lnum" 1;
     vertical-align: top;
     position: relative;
-    top: -0.7rem;
+    top: -1.7rem;
   }
   .news-link {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+  }
+  .news-text {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -1409,7 +1426,7 @@ button.submit-btn {
   }
   .checkbox-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem 1.6rem;
+    gap: 1rem 1.6rem;
   }
   .checkbox-label {
     font-size: 1.6rem;
@@ -1569,7 +1586,7 @@ span.pc-only {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5rem 3rem;
+    gap: 0.5rem 3rem;
   }
 
   .footer-copy {
