@@ -1040,10 +1040,20 @@ p.address {
     line-height: calc(25 / 25);
   }
 }
+.tel-link {
+  pointer-events: none;
+  cursor: default;
+}
 p.mail {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 1.5rem;
+}
+.mail a {
+  transition: opacity 0.3s ease;
+}
+.mail a:hover {
+  opacity: 0.7;
 }
 @media (max-width: 880px) {
   .company-info {
@@ -1084,6 +1094,14 @@ p.mail {
     width: 100%;
     aspect-ratio: 315 / 202;
     padding: 1.9rem 2rem 1.2rem;
+  }
+  .tel-link {
+    pointer-events: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 @media (max-width: 320px) {
@@ -1357,6 +1375,7 @@ button.submit-btn {
   &:hover {
     background: $color-white;
     color: $color-green;
+    border: 1px solid $color-green;
   }
 }
 @media (max-width: 767px) {
