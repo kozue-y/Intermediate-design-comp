@@ -98,6 +98,12 @@ html {
       align-items: center;
     }
   } 
+  @media (max-width: 767px) {
+    .header .inner {
+      padding-inline: 2rem;
+    }
+    
+  }
 
 
    .header_logo {
@@ -470,11 +476,11 @@ p.about-text {
 }
 .service-media__bg {
   position: absolute;
-  left: 70%;
+  left: 45%;
   top: 47%;
   width: 83.3%;
   height: auto;
-  max-width: 500px;
+  max-width: 50rem;
   aspect-ratio: 2 / 1;
   background: $color-green;
   z-index: 1;
@@ -483,7 +489,6 @@ p.about-text {
   padding-left: 44%;
   padding-top: 5rem;
   padding-bottom: 4.2rem;
-
 }
 
 .service-media__text {
@@ -525,7 +530,7 @@ p.service-caption.pc-only.right {
 }
 .service-item.reverse .service-media__bg {
   left: auto;
-  right: 70%;
+  right: 45%;
 }
 .service-item.reverse .service-text-inner {
   padding-left: 4rem;
@@ -561,15 +566,15 @@ p.service-caption.pc-only.right {
 
 @media screen and (max-width: 767px) {
   .service-section {
-    padding-top: 5rem;
+    padding-top: 4.5rem;
     padding-bottom: 5rem;
   }
   .service-item {
     margin-top: 5rem;
+    width: 100%;
     &:first-of-type {
       margin-top: 4rem;
     }
-    width: 100%;
   }
   .service-item.reverse {
     margin-top: 5.7rem;
@@ -598,7 +603,6 @@ p.service-caption.pc-only.right {
     grid-area: img;
     width: 100%;
     position: relative;
-    // max-width: none;
     height: auto;
     aspect-ratio: 315/220;
   }
@@ -612,7 +616,7 @@ p.service-caption.pc-only.right {
     height: auto;
     aspect-ratio: 315/146;
     max-width: none;
-    margin-top: 0.6rem;
+    // margin-top: 0.6rem;
     z-index: 1;
   }
   .service-item:nth-of-type(2) .service-media__bg,
@@ -621,14 +625,14 @@ p.service-caption.pc-only.right {
   }
   .service-media__text {
     grid-area: stack;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    // position: relative;
+    // top: 100%;
+    // left: 0;
     width: 100%;
     height: auto;
     max-width: none;
     z-index: 900;
-    padding-inline: 2rem;
+    aspect-ratio: 315/146;
     padding-top: 0;
     text-align: left;
     margin-top: 0.6rem;
@@ -648,14 +652,26 @@ p.service-caption.pc-only.right {
   .service-media__text h3 .pc-only {
     display: none;
   }
+  .service-text-inner {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2rem;
+
+  }
   .service-media__text h3 {
     font-size: 2rem;
     line-height: calc(25 / 20);
-    margin-top: 2rem;
+    // margin-top: 2rem;
   }
   .service-media__text p {
     font-size: 1.6rem;
     line-height: calc(25 / 16);
+    margin-top: 1.4rem;
+  }
+  .service-item.reverse .service-text-inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .service-caption.pc-only {
@@ -725,7 +741,7 @@ p.service-caption.pc-only.right {
 
 @media screen and (max-width: 767px) {
   .works-section {
-    padding-top: 5.3rem;
+    padding-top: 4.5rem;
     padding-bottom: 4.2rem;
   }
   .works-list {
@@ -1146,7 +1162,7 @@ form.form-box {
 .form-group {
   display: flex;
   align-items: center;
-  margin-top: 5.1rem;
+  margin-top: 5rem;
   gap: 1.2rem;
 }
 .form-group:first-of-type {
@@ -1281,7 +1297,7 @@ textarea {
 .checkbox-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1rem 3.7rem;
+  gap: 1rem 0.7rem;
   width: 100%;
   // margin-top: 10px;
 }
@@ -1329,7 +1345,7 @@ p.privacy-policy {
   padding: 1rem;
 }
 .privacy-box {
-  padding: 4rem 6rem 4rem 4rem;
+  padding: 3rem 6rem 4rem 3rem;
   height: 28rem;
   overflow-y: scroll;
   background: $color-white;
