@@ -531,11 +531,6 @@ p.service-caption.pc-only.right {
   padding-left: 4rem;
   padding-right: 44%;
 }
-// .service-item.reverse .service-media__text {
-//   padding-left: 0 !important;
-//   padding-right: 44%;
-//   align-items: flex-start;
-// }
 .service-caption.sp-only {
   display: none;
 }
@@ -544,13 +539,6 @@ p.service-caption.pc-only.right {
 }
 @media (max-width: 980px) {
   .service-media__text {
-    padding-top: 2rem;
-    padding-left: 22rem;
-  }  
-}
-@media (max-width: 880px) {
-  .service-media__text {
-    padding-left: 18rem;
     h3 {
       font-size: 2rem;
     }
@@ -558,6 +546,17 @@ p.service-caption.pc-only.right {
       font-size: 1.4rem;
     }
   }
+}
+@media (max-width: 860px) {
+  .service-text-inner {
+    padding-left: 40%;
+    padding-top: 2rem;
+    padding-bottom: 4.2rem;
+  }
+  .service-item.reverse .service-text-inner {
+    padding-right: 40%;
+  }
+  
 }
 
 @media screen and (max-width: 767px) {
