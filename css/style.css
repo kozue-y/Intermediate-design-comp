@@ -441,7 +441,7 @@ p.about-text {
 .service-media__bg {
   position: absolute;
   left: 70%;
-  top: 48.33%;
+  top: 47%;
   width: 83.3%;
   height: auto;
   max-width: 500px;
@@ -450,17 +450,20 @@ p.about-text {
   z-index: 1;
 }
 
+.service-text-inner {
+  padding-left: 44%;
+  padding-top: 5rem;
+  padding-bottom: 4.2rem;
+}
+
 .service-media__text {
-  position: absolute;
-  left: 70%;
-  top: 48.33%;
-  width: 83.3%;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
   max-width: 50rem;
-  height: auto;
+  height: 100%;
   aspect-ratio: 2/1;
   z-index: 3;
-  padding-top: 50rem;
-  padding-left: 22rem;
 }
 .service-media__text h3 {
   font-size: 2.5rem;
@@ -491,14 +494,14 @@ p.service-caption.pc-only.right {
   margin-left: auto;
 }
 
-.service-item.reverse .service-media__bg,
-.service-item.reverse .service-media__text {
+.service-item.reverse .service-media__bg {
   left: auto;
   right: 70%;
 }
 
-.service-item.reverse .service-media__text {
-  padding-left: 4rem !important;
+.service-item.reverse .service-text-inner {
+  padding-left: 4rem;
+  padding-right: 44%;
 }
 
 .service-caption.sp-only {
@@ -795,6 +798,10 @@ p.service-caption.pc-only.right {
     padding-inline: 2rem;
     padding-top: 2rem;
   }
+  #modal02 .modal-content {
+    aspect-ratio: unset;
+    height: 23.5rem;
+  }
   .modal-image {
     aspect-ratio: 274/144;
   }
@@ -1039,6 +1046,7 @@ ul.news-list li.news-more {
   position: absolute;
   top: 50%;
   left: 45.5%;
+  transform: translateY(-77%);
   box-sizing: border-box;
   max-width: 50rem;
   width: 54.3%;
@@ -1185,13 +1193,21 @@ form.form-box {
   line-height: 1.65;
   white-space: nowrap;
   width: 16rem;
+  flex-shrink: 0;
+}
+
+input[type=text],
+input[type=email],
+.select-wrapper,
+textarea {
+  flex-grow: 1;
+  min-width: 0;
 }
 
 input[type=text] {
   width: 100%;
   max-width: 63rem;
   height: 5rem;
-  border: 1px solid #808000;
   background: #ffffff;
   padding: 1.3rem 2rem 1.2rem;
   font-size: 1.6rem;
@@ -1235,7 +1251,6 @@ input[type=radio] {
   position: relative;
   width: 2rem;
   height: 2rem;
-  border: 1px solid #808000;
   border-radius: 50%;
   background: #ffffff;
   display: inline-block;
@@ -1257,7 +1272,6 @@ input[type=email] {
   width: 100%;
   max-width: 63rem;
   height: 5rem;
-  border: 1px solid #808000;
   background: #ffffff;
   padding: 1.3rem 2rem 1.2rem;
   font-size: 1.6rem;
@@ -1269,7 +1283,6 @@ input[type=email] {
   width: 100%;
   max-width: 63rem;
   height: 5rem;
-  border: 1px solid #808000;
   background: #ffffff;
   padding: 1.3rem 2rem 1.2rem;
 }
@@ -1310,7 +1323,6 @@ textarea {
   width: 100%;
   max-width: 80rem;
   height: 20rem;
-  border: 1px solid #808000;
   background: #ffffff;
   padding: 1.3rem 2rem 1.2rem;
   font-size: 1.6rem;
@@ -1324,8 +1336,9 @@ textarea {
 
 .checkbox-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1rem 3.7rem;
+  width: 100%;
 }
 
 .checkbox-label {
@@ -1334,7 +1347,7 @@ textarea {
   gap: 2rem;
   font-size: 1.8rem;
   line-height: 1.3888888889;
-  cursor: url("../images/yubi.png") 6 2, pointer;
+  cursor: pointer;
 }
 
 input[type=checkbox] {
@@ -1344,7 +1357,6 @@ input[type=checkbox] {
 .custom-checkbox {
   width: 2rem;
   height: 2rem;
-  border: 1px solid #707070;
   background: #ffffff;
   display: inline-block;
   position: relative;
@@ -1368,34 +1380,33 @@ p.privacy-policy {
   line-height: calc 1.65;
 }
 
-.privacy-box {
-  padding: 4rem 6rem 4rem 4rem;
-  width: 100%;
-  max-width: 80rem;
+.privacy-scroll-area {
   height: 30rem;
   overflow-y: scroll;
-  background: #ffffff;
-  border: solid 1px #808000;
-  font-size: 1.8rem;
-  line-height: 1.7222222222;
-  scrollbar-width: thin;
-  scrollbar-color: #9b9b9b #e3e3e3;
+  background: #fff;
+  width: 100%;
+  max-width: 80rem;
+  padding: 1rem;
 }
 
+.privacy-box {
+  padding: 4rem 6rem 4rem 4rem;
+  height: 28rem;
+  overflow-y: scroll;
+  background: #ffffff;
+  font-size: 1.8rem;
+  line-height: 1.7222222222;
+  overflow-y: scroll;
+}
 .privacy-box::-webkit-scrollbar {
   width: 1rem;
 }
-
-.privacy-box::-webkit-scrollbar-track {
-  background: #e3e3e3;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .privacy-box::-webkit-scrollbar-thumb {
-  background: #9B9B9B;
-  border: 1px solid #707070;
+  background: #9b9b9b;
   height: 3rem;
+}
+.privacy-box::-webkit-scrollbar-track {
+  background: #E3E3E3;
 }
 
 .privacy-title {
