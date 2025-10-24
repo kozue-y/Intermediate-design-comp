@@ -1141,13 +1141,65 @@ p.mail {
     max-width: none;
   }
   .company-info {
-    position: static;
+    display: flex;
+    position: static !important;
     max-width: none;
     width: 100%;
     aspect-ratio: 315 / 202;
-    padding: 1.9rem 2rem 1.2rem;
+    transform: none;
   }
 }
+.company-text {
+  width: 100%;
+  aspect-ratio: 315 /202;
+}
+.company-inner {
+  padding-left: 6%;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+p.name {
+  font-size: 4rem;
+}
+p.address {
+  font-size: 3rem;
+  margin-top: 0.7rem;
+}p.tel {
+  font-size: 3rem;
+  margin-top: 1.2rem;
+  span {
+    font-size: 3rem;
+  }
+}
+p.mail {
+  font-size: 3rem;
+}
+@media (max-width: 580px) {
+  p.name {
+    font-size: 2rem;
+  }
+  p.address {
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+  }p.tel {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    span {
+      font-size: 2rem;
+    }
+  }
+  p.mail {
+    font-size: 1.6rem;
+  }
+  .company-inner {
+    padding-left: 6%;
+    padding-top: 1.9rem;
+    padding-bottom: 1.2rem;
+  }
+  
+}
+
+
 @media (max-width: 320px) {
   .company-info {
   padding: 1.9rem 0.5rem 1.2rem;
