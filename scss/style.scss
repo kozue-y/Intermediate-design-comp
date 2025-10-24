@@ -1117,7 +1117,8 @@ p.address {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 0.7rem;
-}p.tel {
+}
+p.tel {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 1.2rem;
@@ -1127,13 +1128,23 @@ p.address {
   }
 }
 .tel-link {
-  pointer-events: none;
-  cursor: default;
-}
+
+  display: inline-block;
+  pointer-events: none; 
+  cursor: default; 
+}  
+
 p.mail {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 1.5rem;
+  a {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
 }
 
 .mail a {
@@ -1202,6 +1213,14 @@ p.mail {
     margin-top: 1.5rem;
     span {
       font-size: 3rem;
+    }
+  }
+  .tel-link {
+    pointer-events: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.7;
     }
   }
   p.mail {

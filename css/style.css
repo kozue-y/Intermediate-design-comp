@@ -1136,6 +1136,7 @@ p.tel span {
 }
 
 .tel-link {
+  display: inline-block;
   pointer-events: none;
   cursor: default;
 }
@@ -1144,6 +1145,13 @@ p.mail {
   font-size: 1.6rem;
   line-height: 1.5625;
   margin-top: 1.5rem;
+}
+p.mail a {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+p.mail a:hover {
+  opacity: 0.7;
 }
 
 .mail a {
@@ -1213,6 +1221,14 @@ p.mail {
   }
   p.tel span {
     font-size: 3rem;
+  }
+  .tel-link {
+    pointer-events: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  .tel-link:hover {
+    opacity: 0.7;
   }
   p.mail {
     font-size: 3rem;
