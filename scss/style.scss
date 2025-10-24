@@ -218,9 +218,9 @@ html {
       background: #ffffff;
 
       .hamburger-inner {
+        display: block;
         width: 3.2rem;
         height: 2.8rem;
-        // background: #808000;
         margin: 0 auto;
         position: relative;
         transition: all 0.3s ease;

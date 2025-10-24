@@ -207,6 +207,7 @@ nav {
     background: #ffffff;
   }
   .hamburger .hamburger-inner {
+    display: block;
     width: 3.2rem;
     height: 2.8rem;
     margin: 0 auto;
