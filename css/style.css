@@ -449,7 +449,7 @@ p.about-text {
   top: 47%;
   width: 83.3%;
   height: auto;
-  max-width: 50rem;
+  max-width: 54.3%;
   aspect-ratio: 2/1;
   background: #4D9600;
   z-index: 1;
@@ -1054,10 +1054,14 @@ ul.news-list li.news-more {
   aspect-ratio: 3/2;
 }
 
+.company-access {
+  flex: 1;
+}
+
 .company-info {
   position: absolute;
   top: 50%;
-  left: 45.5%;
+  right: 0;
   transform: translateY(-77%);
   box-sizing: border-box;
   max-width: 50rem;
@@ -1066,9 +1070,23 @@ ul.news-list li.news-more {
   aspect-ratio: 500/262;
   background: #4D9600;
   color: #ffffff;
-  padding: 4.9rem 0 4.2rem 22rem;
   z-index: 0;
   font-weight: 600;
+}
+
+.company-text {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 50rem;
+  height: 100%;
+  aspect-ratio: 500/262;
+}
+
+.company-inner {
+  padding-left: 44%;
+  padding-top: 4.9rem;
+  padding-bottom: 4.2rem;
 }
 
 p.name {
@@ -1101,14 +1119,11 @@ p.mail {
   margin-top: 1.5rem;
 }
 
-@media (max-width: 880px) {
-  .company-info {
-    padding: 4.9rem 0 4.2rem 16.5rem;
-  }
-}
-@media (max-width: 780px) {
-  .company-info {
-    padding: 4.9rem 0 4.2rem 15rem;
+@media (max-width: 930px) {
+  .company-inner {
+    padding-left: 41%;
+    padding-top: 1.9rem;
+    padding-bottom: 3.2rem;
   }
 }
 @media (max-width: 767px) {
