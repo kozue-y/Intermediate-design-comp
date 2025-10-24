@@ -468,7 +468,6 @@ p.about-text {
   aspect-ratio: 2/1;
   background: #4D9600;
   z-index: 1;
-  border: 3px solid red;
 }
 
 .service-text-inner {
