@@ -181,9 +181,17 @@ html {
    }
   }
   
-
-  // headerレスポンシブ１箇所にする
-
+  @media (max-width: 900px) {
+    .nav_list {
+      column-gap: 2rem;
+    }
+    .nav_list a {
+      font-size: 1.6rem;
+    }
+    h1.site-title {
+      font-size: 1.8rem;
+    }
+  }
 
   /*SP用ナビ*/
   #hamburger-block {
@@ -1228,11 +1236,22 @@ p.mail {
 }
 
 
-@media (max-width: 320px) {
-  .company-info {
-  padding: 1.9rem 0.5rem 1.2rem;
+@media (max-width: 370px) {
+  .company-inner {
+    padding-left: 6%;
+    padding-top: 0.5rem;
+    padding-bottom: 1.2rem;
+  }
+   p.address {
+    margin-top: 0.5rem;
+  }p.tel {
+    margin-top: 0.5rem;
+  }
+  p.mail {
+    margin-top: 0.5rem;
   }
 }
+
 
 
 /*CONTACT-section*/
