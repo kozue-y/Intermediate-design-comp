@@ -1,6 +1,7 @@
 $(".fv_slider").slick({
     autoplay: true,
     autoplaySpeed: 5000,
+    speed: 2500,
     arrows: false,
     pauseOnHover: false
 });
