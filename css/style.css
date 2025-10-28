@@ -64,6 +64,13 @@ a img {
   margin-top: 0.6rem;
 }
 
+@media (min-width: 768px) {
+  a[href="tel:"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+}
 /*ヘッダー*/
 .header {
   width: 100%;
@@ -1125,12 +1132,6 @@ p.tel span {
   line-height: 1;
 }
 
-.tel-link {
-  display: inline-block;
-  pointer-events: none;
-  cursor: default;
-}
-
 p.mail {
   font-size: 1.6rem;
   line-height: 1.5625;
@@ -1212,12 +1213,11 @@ p.mail a:hover {
   p.tel span {
     font-size: 3rem;
   }
-  .tel-link {
-    pointer-events: auto;
+  p.tel a {
     cursor: pointer;
     transition: opacity 0.3s ease;
   }
-  .tel-link:hover {
+  p.tel a:hover {
     opacity: 0.7;
   }
   p.mail {
