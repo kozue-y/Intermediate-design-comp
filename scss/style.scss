@@ -1611,6 +1611,12 @@ button.submit-btn {
   visibility: hidden;
   transition: opacity 0.3s ease;
 
+  background-color: $color-green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &.is-show {
     opacity: 1;
     visibility: visible;
@@ -1619,7 +1625,7 @@ button.submit-btn {
     opacity: 0.6;
   }
   img {
-    width: 100%;
+    width: 2.315rem;
     height: auto;
     display: block;
   }
