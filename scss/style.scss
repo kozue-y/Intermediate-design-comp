@@ -67,6 +67,13 @@ html {
     }
   
   }
+  @media (min-width: 768px) {
+    a[href*="tel:"] {
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+    }
+  }
 
   // ヘッダー 
   /*ヘッダー*/
@@ -941,8 +948,6 @@ li.news-item time {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  // position: relative;
-  // top: -1.5rem;
 }
 
 time {
@@ -1141,13 +1146,6 @@ p.tel {
     line-height: calc(25 / 25);
   }
 }
-.tel-link {
-
-  display: inline-block;
-  pointer-events: none; 
-  cursor: default; 
-}  
-
 p.mail {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
@@ -1228,13 +1226,12 @@ p.mail {
     span {
       font-size: 3rem;
     }
-  }
-  .tel-link {
-    pointer-events: auto;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    &:hover {
+    a {
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      &:hover {
       opacity: 0.7;
+     }
     }
   }
   p.mail {
