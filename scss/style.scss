@@ -168,7 +168,7 @@ html {
      content: "";
      position: absolute;
      left: 0;
-     bottom: 3rem;
+     bottom: 3.2rem;
      width: 0;
      height: 1px;
      background: $color-white;
@@ -181,7 +181,10 @@ html {
    }
   }
   
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
+    .header .inner {
+      padding-inline: 2rem;
+    }
     .nav_list {
       column-gap: 2rem;
     }
@@ -191,6 +194,11 @@ html {
     h1.site-title {
       font-size: 1.8rem;
     }
+  }
+  @media (max-width: 767px) {
+    h1.site-title {
+      font-size: 2rem;
+    }  
   }
 
   /*SP用ナビ*/
@@ -216,6 +224,12 @@ html {
       width: 7.2rem;
       height: 5rem;
       background: #ffffff;
+      cursor: pointer;
+
+      &:hover .hamburger-line {
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
 
       .hamburger-inner {
         display: block;
@@ -224,7 +238,6 @@ html {
         margin: 0 auto;
         position: relative;
         transition: all 0.3s ease;
-        cursor: pointer;
       }
       span.hamburger-line {
         width: 100%;
