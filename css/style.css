@@ -361,7 +361,10 @@ nav {
   aspect-ratio: 1080/500;
   display: flex;
   align-items: center;
-  padding-top: 0.3rem;
+}
+
+.about-image {
+  width: 100%;
 }
 
 .about-contents {
@@ -387,6 +390,11 @@ p.about-text {
   letter-spacing: 0.37em;
 }
 
+@media (max-width: 860px) {
+  .about-contents {
+    padding-left: 8rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .about-section {
     aspect-ratio: auto;
