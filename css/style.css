@@ -1534,9 +1534,12 @@ button.submit-btn:hover {
     line-height: 1.5625;
     gap: 0.7rem;
   }
-  .privacy-box {
-    padding: 2rem 4rem 3rem 2rem;
+  .privacy-scroll-area {
     height: 32.3rem;
+  }
+  .privacy-box {
+    padding: 2rem 3rem 2rem 3rem;
+    height: 29.2rem;
   }
   .form-group.vertical {
     gap: 0;
@@ -1602,8 +1605,7 @@ button.submit-btn:hover {
 .footer-logo {
   font-size: 2rem;
   line-height: 1.65;
-  border-bottom: 1px solid #000;
-  padding-bottom: 2.5rem;
+  margin-bottom: 2.8rem;
 }
 
 a.footer-logo-link {
@@ -1619,7 +1621,8 @@ a.footer-logo-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.8rem;
+  border-top: 1px solid #000;
+  padding-top: 2.8rem;
   gap: 5rem;
 }
 
@@ -1692,10 +1695,10 @@ span.pc-only {
     padding-top: 5rem;
   }
   .footer-logo {
-    padding-bottom: 2rem;
+    padding-bottom: 0;
   }
   .footer-nav ul {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   .footer-nav ul {
     display: flex;
