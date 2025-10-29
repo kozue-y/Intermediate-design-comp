@@ -595,16 +595,23 @@ figcaption.service-caption.reverse {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  .service-item {
-    margin-top: 5rem;
-    width: 100%;
-    &:first-of-type {
-      margin-top: 4rem;
-    }
-  }
-  .service-item.reverse {
-    margin-top: 5.7rem;
-  }
+  // .service-item {
+  //   margin-top: 4.5rem;
+  //   width: 100%;
+  //   &:first-of-type {
+  //     margin-top: 4rem;
+  //   }
+  // }
+  // .service-item.reverse {
+  //   margin-top: 4.5rem;
+  // }
+  .service-item,
+.service-item.reverse{
+  margin-top: 4.8rem;
+}
+.service-item:first-of-type {
+  margin-top: 4rem;
+}
   .service-media {
     width: 100%;
     position: relative;
@@ -665,10 +672,14 @@ figcaption.service-caption.reverse {
   .service-text-inner {
     align-items: center;
     padding-left: 6.35%;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
   }
   .service-item.reverse .service-text-inner {
     padding-left: 6.35%;
     padding-right: 0;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
   }
   .service-media__text h3 {
     font-size: 2rem;
@@ -1516,7 +1527,7 @@ button.submit-btn {
     height: 32.3rem;
   }  
   .privacy-box {
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 2rem 3rem 2rem 2rem;
     height: 29.2rem;
     font-size: 1.6rem;
     line-height: calc(33 / 16);
@@ -1528,7 +1539,7 @@ button.submit-btn {
     line-height: calc(27 / 20);
   }
   .form-submit {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .form-submit .submit-btn {
     width: 100%;
