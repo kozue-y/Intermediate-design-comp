@@ -45,34 +45,26 @@ $("#hamburger-block").click(function() {
 
 
 // モーダル
-$(function() {
-    $(".modal-open").on("click", function(e) {
-      e.preventDefault();
-  
-      let target = $(this).data("modal");
-      // bodyスクロール禁止
-      $("body").addClass("modal-open");
-  
-        $("#" + target)
-          .css({
-            "top": "50%", 
-            "left": "50%",
-            "transform": "translate(-50%, -50%)",        
-            "position": "fixed",
-            "display": "flex"
-          })
-          .fadeIn(200);
-    });
-  
-    // 閉じる処理
-    $(".modal-close, .modal-bg").on("click", function(e) {
-      if ($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
-        // bodyスクロール許可
-        $("body").removeClass("modal-open");
-        $(this).closest(".modal").fadeOut(200);
-      }
-    });
+$(function () {
+  $(".modal-open").on("click", function (e) {
+    e.preventDefault();
+
+// bodyスクロール禁止
+    const target = $(this).data("modal");
+    $("body").addClass("modal-open");
+
+    const $modal = $("#" + target);
+    $modal.css("display", "flex").hide().fadeIn(200);
   });
+
+// 閉じる処理
+  $(".modal-close, .modal-bg").on("click", function (e) {
+    if ($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
+      $("body").removeClass("modal-open");
+      $(this).closest(".modal").fadeOut(200);
+    }
+  });
+});
 
 
 // topへ戻るボタン動作
