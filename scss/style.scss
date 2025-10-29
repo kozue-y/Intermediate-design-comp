@@ -513,7 +513,7 @@ p.about-text {
 .service-media__bg {
   position: absolute;
   right: 0;
-  top: 47%;
+  top: 43%;
   width: 83.3%;
   height: auto;
   max-width: 54.3%;
@@ -918,7 +918,7 @@ time {
 .news-link {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 7rem;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
@@ -1230,7 +1230,7 @@ form.form-box {
 .form-group {
   display: flex;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 5.1rem;
   gap: 1.2rem;
 }
 .form-group:first-of-type {
@@ -1365,7 +1365,7 @@ textarea {
 .checkbox-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1rem 0.7rem;
+  gap: 1.3rem 0.7rem;
   width: 100%;
 }
 .checkbox-label {
@@ -1442,7 +1442,7 @@ p.privacy-policy {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8.8rem;
+  margin-top: 7.8rem;
 }
 button.submit-btn {
   display: flex;
@@ -1576,15 +1576,13 @@ button.submit-btn {
   }
 }
 .footer {
-  padding-top: 7.7rem;
+  padding-top: 8.5rem;
   text-align: center;
-  
 }
 .footer-logo {
   font-size: 2rem;
   line-height: calc(33 / 20);
-  border-bottom: 1px solid #000;
-  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 a.footer-logo-link {
   display: inline-block;
@@ -1598,7 +1596,8 @@ a.footer-logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.8rem;
+  border-top: 1px solid #000;
+  padding-top: 2.8rem;
   gap: 5rem;
 }
 .footer-nav li {
