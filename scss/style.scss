@@ -1071,18 +1071,14 @@ ul.news-list li.news-more {
   z-index: 0;
   font-weight: 600;
 }
-.company-text {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 50rem;
-  height: 100%;
-  aspect-ratio: 500 / 262;
-}
 .company-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 50rem;
   padding-left: 44%;
-  padding-top: 4.9rem;
-  padding-bottom: 4.2rem;
+  padding-top: 0.7rem;
 }
 p.name {
   font-size: 2rem;
@@ -1128,8 +1124,6 @@ p.mail {
 @media (max-width: 930px) {
   .company-inner {
     padding-left: 41%;
-    padding-top: 1.9rem;
-    padding-bottom: 3.2rem;
   }
 }  
 
@@ -1165,25 +1159,23 @@ p.mail {
   }
   .company-text {
     width: 100%;
-    aspect-ratio: 315 /202;
   }
   .company-inner {
-    padding-left: 6%;
+    padding-left: 6.35%;
     padding-top: 3rem;
-    padding-bottom: 2rem;
   }
   p.name {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   p.address {
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin-top: 0.7rem;
   }
   p.tel {
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin-top: 1.5rem;
     span {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     a {
       cursor: pointer;
@@ -1194,42 +1186,16 @@ p.mail {
     }
   }
   p.mail {
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin-top: 2rem;
   }
-}
-
-@media (max-width: 580px) {
-  p.name {
-    font-size: 2rem;
-  }
-  p.address {
-    font-size: 1.6rem;
-    margin-top: 0.7rem;
-  }p.tel {
-    font-size: 1.6rem;
-    margin-top: 1.2rem;
-    span {
-      font-size: 2rem;
-    }
-  }
-  p.mail {
-    font-size: 1.6rem;
-  }
-  .company-inner {
-    padding-left: 6%;
-    padding-top: 1.9rem;
-    padding-bottom: 1.2rem;
-  }
-  
 }
 
 
 @media (max-width: 370px) {
   .company-inner {
-    padding-left: 6%;
+    // padding-left: 6%;
     padding-top: 0.5rem;
-    padding-bottom: 1.2rem;
   }
    p.address {
     margin-top: 0.5rem;
