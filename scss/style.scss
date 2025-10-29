@@ -546,12 +546,12 @@ p.about-text {
   font-weight: 600;
 }
 
-p.service-caption.pc-only {
+figcaption.service-caption {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 1.9rem;
 }
-p.service-caption.pc-only.right {
+figcaption.service-caption.reverse {
   text-align: right;
 }
 
