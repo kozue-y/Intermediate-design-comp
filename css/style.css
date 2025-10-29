@@ -65,7 +65,7 @@ a img {
 }
 
 @media (min-width: 768px) {
-  a[href="tel:"] {
+  a[href*="tel:"] {
     pointer-events: none;
     cursor: default;
     text-decoration: none;
@@ -498,27 +498,23 @@ p.about-text {
 }
 
 .service-text-inner {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+  aspect-ratio: 2/1;
   padding-left: 44%;
-  padding-top: 5rem;
-  padding-bottom: 4.2rem;
+  padding-top: 0.8rem;
 }
 
-.service-media__text {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  aspect-ratio: 2/1;
-  z-index: 3;
-}
 .service-media__text h3 {
   font-size: 2.5rem;
   line-height: 1.32;
   font-weight: 600;
   color: #ffffff;
 }
+
 .service-media__text p {
   font-size: 1.6rem;
   line-height: 1.5625;
@@ -561,21 +557,17 @@ p.service-caption.pc-only.right {
 }
 
 @media (max-width: 980px) {
+  .service-text-inner {
+    padding-left: 40%;
+  }
+  .service-item.reverse .service-text-inner {
+    padding-right: 40%;
+  }
   .service-media__text h3 {
     font-size: 2rem;
   }
   .service-media__text p {
     font-size: 1.4rem;
-  }
-}
-@media (max-width: 860px) {
-  .service-text-inner {
-    padding-left: 40%;
-    padding-top: 2rem;
-    padding-bottom: 4.2rem;
-  }
-  .service-item.reverse .service-text-inner {
-    padding-right: 40%;
   }
 }
 @media screen and (max-width: 767px) {
