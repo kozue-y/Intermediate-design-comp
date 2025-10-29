@@ -1540,6 +1540,11 @@ button.submit-btn:hover {
   .privacy-box {
     padding: 2rem 3rem 2rem 3rem;
     height: 29.2rem;
+<<<<<<< HEAD
+=======
+    font-size: 1.6rem;
+    line-height: 2.0625;
+>>>>>>> develoop006
   }
   .form-group.vertical {
     gap: 0;
@@ -1547,10 +1552,13 @@ button.submit-btn:hover {
   .form-question {
     line-height: 1.35;
   }
+<<<<<<< HEAD
   .privacy-box {
     font-size: 1.6rem;
     line-height: 2.0625;
   }
+=======
+>>>>>>> develoop006
   .form-submit {
     margin-top: 7rem;
   }
