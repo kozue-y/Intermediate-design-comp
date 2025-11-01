@@ -7,7 +7,6 @@ $bg-color: rgba(77, 150, 0, 0.102 );
 
 
 html {
-    // -webkit-appearance: none;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 9rem;
@@ -50,7 +49,7 @@ html {
     cursor: pointer;
   }
 
-  /*共通スタイル・タイトル*/
+  //共通スタイル・タイトル
   .common-title {
     text-align: center;
     h2 {
@@ -76,8 +75,6 @@ html {
   }
 
   // ヘッダー 
-  /*ヘッダー*/
-
   .header {
     width: 100%;
     height: 9rem;
@@ -208,7 +205,7 @@ html {
     }  
   }
 
-  /*SP用ナビ*/
+  //SP用ナビ
   #hamburger-block {
     display: none;
 
@@ -220,7 +217,7 @@ html {
     display: none;
   }
 
-  /*ハンバーガーメニュー*/
+  //ハンバーガーメニュー
   @media screen and (max-width: 767px) {
     .header {
       height: 5rem;
@@ -265,7 +262,7 @@ html {
       }
      }
 
-    /*アクティブ時（×印）*/
+    //アクティブ時（×印）
     .hamburger.active .hamburger-line:nth-of-type(2) {
       background-color: transparent;
     }
@@ -278,7 +275,7 @@ html {
       top: 1.2rem;
     }
     
-    /*ナビゲーションSP用*/
+    //ナビゲーションSP用
     .drawer-menu {
       position: fixed;
       top: 0;
@@ -325,8 +322,6 @@ html {
 
 
   // FV
-  /*FV*/
-
   .fv {
     position: relative;
     z-index: 10;
@@ -390,7 +385,6 @@ html {
 
 
 // about-section
-/*about-section*/
 .about-section {
   position: relative; 
   aspect-ratio: 1080 / 500;
@@ -463,12 +457,7 @@ p.about-text {
   }
 }
 
-
-
-
-
 // サービス
-/*service-section*/
 .service-section {
   background: $bg-color;
   padding-top: 8rem;
@@ -499,14 +488,12 @@ p.about-text {
   width: 65.3%;
   height: auto;
   max-width: 60rem;
-  // aspect-ratio: 2 / 1;
   z-index: 2;
 }
 .service-media__img img {
   position: relative;
   width: 100%;
   height: auto;
-  // max-width: 600px;
   aspect-ratio: 2 / 1;
   z-index: 2;
 }
@@ -554,8 +541,7 @@ figcaption.service-caption.reverse {
   text-align: right;
 }
 
-
-/*左右反転・空きスペース作る*/
+//左右反転
 .service-item.reverse .service-media__img {
   margin-left: auto;
 }
@@ -653,9 +639,6 @@ figcaption.service-caption.reverse {
   left: 0;
   right: auto;
 }
-
-
-
   .service-media__text h3 .pc-only {
     display: none;
   }
@@ -695,7 +678,6 @@ figcaption.service-caption.reverse {
   }
 }
   
-
 @media (max-width: 370px) {
   .service-item.reverse .service-media__text {
     padding-left: 0.5rem !important;
@@ -711,7 +693,7 @@ figcaption.service-caption.reverse {
 }
 
 
-/*works-section*/
+//works-section
 #works {
   position: relative;
 }
@@ -764,7 +746,7 @@ figcaption.service-caption.reverse {
   }
 }
 
-/*モーダル用*/
+//モーダル用
 .modal {
   display: none;
   position: fixed;
@@ -855,7 +837,7 @@ figcaption.service-caption.reverse {
   }
 }
 
-/*news-section*/
+//news-section
 .news-section {
   background: $bg-color;
   padding-top: 8rem;
@@ -1027,7 +1009,7 @@ ul.news-list li.news-more {
   }
 }
 
-/*company-section*/
+//company-section
 
 .company-section {
   padding-top: 8rem;
@@ -1059,7 +1041,6 @@ ul.news-list li.news-more {
 .company-info {
   position: absolute;
   top: 50%;
-  // left: 45.5%;
   right: 0;
   transform: translateY(-77%);
   box-sizing: border-box;
@@ -1195,7 +1176,6 @@ p.mail {
 
 @media (max-width: 370px) {
   .company-inner {
-    // padding-left: 6%;
     padding-top: 0.5rem;
   }
    p.address {
@@ -1208,9 +1188,7 @@ p.mail {
   }
 }
 
-
-
-/*CONTACT-section*/
+//CONTACT-section
 .contact-section {
   background: $bg-color;
   padding-top: 8rem;
@@ -1244,7 +1222,6 @@ form.form-box {
   width: 16rem;
   flex-shrink: 0;
 }
-// 長さ崩れないように
 input[type="text"],
 input[type="email"],
 .select-wrapper,
@@ -1284,7 +1261,7 @@ label.choice-label {
 input[type="radio"] {
 display: none;
 }
-/*カスタムラジオボタン*/
+//カスタムラジオボタン
 .custom-radio {
   position: relative;
   width: 2rem;
@@ -1536,7 +1513,7 @@ button.submit-btn {
   }
 }
 
-/*topへ戻るボタン*/
+//topへ戻るボタン
 .page-top {
   position: fixed;
   bottom: 6rem;
@@ -1687,41 +1664,3 @@ span.pc-only {
   }
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

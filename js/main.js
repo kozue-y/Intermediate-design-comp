@@ -27,22 +27,6 @@ $("#hamburger-block").click(function() {
     $(".hamburger").toggleClass("active");
 });
 
-// モーダル以外のスクロール処理
-// $(function() {
-//   $('a[href^="#"]:not(.modal-open)').on('click' ,function(e) {
-//     const speed = 500;
-//     const href = $(this).attr("href");
-//     const target = $(href === "#" || href === "" ? "html" : href);
-
-//     if (target.length) {
-//       e.preventDefault();
-//       const headerHeight = $("#header").outerHeight() || 0;
-//       const position = target.offset().top - headerHeight;
-//       $("html, body") .animate({scrollTop: position }, speed, "swing");
-//     }
-//   });
-// });
-
 
 // モーダル
 $(function () {
