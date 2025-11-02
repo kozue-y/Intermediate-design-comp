@@ -125,6 +125,10 @@ html {
      align-items: center;
      height: 100%;
      cursor: pointer;
+     transition: opacity .3s ease;
+     &:hover {
+       opacity: 0.6;
+     }
    }
   }
 
@@ -1560,10 +1564,10 @@ button.submit-btn {
 .footer-logo {
   font-size: 2rem;
   line-height: calc(33 / 20);
-  margin-bottom: 2.5rem;
 }
 a.footer-logo-link {
   display: inline-block;
+  margin-bottom: 2.5rem;
   transition: opacity 0.3s ease;
   &:hover {
     opacity: 0.6;

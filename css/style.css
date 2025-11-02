@@ -117,6 +117,10 @@ h1.site-title a {
   align-items: center;
   height: 100%;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+h1.site-title a:hover {
+  opacity: 0.6;
 }
 
 .header_nav {
@@ -1587,11 +1591,11 @@ button.submit-btn:hover {
 .footer-logo {
   font-size: 2rem;
   line-height: 1.65;
-  margin-bottom: 2.5rem;
 }
 
 a.footer-logo-link {
   display: inline-block;
+  margin-bottom: 2.5rem;
   transition: opacity 0.3s ease;
 }
 a.footer-logo-link:hover {
