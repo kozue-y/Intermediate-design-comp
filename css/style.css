@@ -910,13 +910,13 @@ time {
 
 ul.news-list li.news-more {
   display: block;
+  text-align: right;
   border-bottom: none;
   padding: 0;
 }
 
 .more-btn {
-  display: block;
-  text-align: right;
+  display: inline-block;
   position: relative;
   margin-top: 1.7rem;
   padding-right: 3.2rem;
