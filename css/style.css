@@ -878,6 +878,7 @@ ul.news-list li {
 
 li.news-item {
   padding: 2rem 0 1.3rem;
+  transition: opacity 0.3s ease;
 }
 li.news-item:first-child {
   padding-top: 0;
@@ -902,7 +903,6 @@ time {
   gap: 7rem;
   font-size: 1.8rem;
   line-height: 1.3888888889;
-  transition: opacity 0.3s ease;
 }
 .news-link:hover {
   opacity: 0.6;
@@ -1315,13 +1315,14 @@ input[type=email] {
   max-width: 63rem;
   height: 5rem;
   background: #ffffff;
-  padding: 1.3rem 2rem 1.2rem;
+  cursor: pointer;
 }
 .select-wrapper select {
   width: 100%;
   height: 100%;
   font-size: 1.8rem;
   line-height: 1.3888888889;
+  padding: 1.3rem 2rem 1.2rem;
   border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
