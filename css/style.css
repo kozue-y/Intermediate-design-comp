@@ -424,6 +424,7 @@ p.about-text {
   }
   h2.about-title {
     font-size: 2.5rem;
+    line-height: 1.19;
   }
   p.about-text {
     font-size: 1.6rem;
@@ -611,6 +612,7 @@ figcaption.service-caption.reverse {
     height: auto;
     aspect-ratio: auto;
     max-width: none;
+    margin-top: 0.6rem;
     z-index: 1;
   }
   .service-media__text {
@@ -902,7 +904,7 @@ time {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 2rem 0 1.3rem;
-  gap: 16.3%;
+  gap: 19%;
   font-size: 1.8rem;
   line-height: 1.3888888889;
 }
@@ -982,7 +984,7 @@ ul.news-list li.news-more {
   .news-box {
     margin-top: 3.8rem;
     flex-direction: column;
-    gap: 5rem;
+    gap: 6rem;
   }
   .news-col {
     max-width: none;
@@ -990,7 +992,7 @@ ul.news-list li.news-more {
   ul.news-list li {
     display: flex;
     align-items: flex-start;
-    gap: 1.9rem;
+    gap: 6%;
   }
   li.news-item time {
     display: flex;
@@ -1001,9 +1003,11 @@ ul.news-list li.news-more {
   .news-link {
     display: flex;
     align-items: flex-start;
-    gap: 1.9rem;
+    padding: 1.3rem 0 1.3rem;
+    gap: 6.9%;
   }
-  .news-text {
+  .news-link .news-text {
+    padding-top: 0.6rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -1152,7 +1156,8 @@ p.mail a:hover {
   }
   .company-inner {
     padding-left: 6.35%;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
   p.name {
     font-size: 2rem;
@@ -1166,7 +1171,7 @@ p.mail a:hover {
     margin-top: 1.5rem;
   }
   p.tel span {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   p.tel a {
     cursor: pointer;
@@ -1177,7 +1182,10 @@ p.mail a:hover {
   }
   p.mail {
     font-size: 1.6rem;
-    margin-top: 2rem;
+    margin-top: 1.3rem;
+  }
+  p.mail a {
+    padding-left: 1rem;
   }
 }
 @media (max-width: 370px) {
@@ -1218,7 +1226,7 @@ form.form-box {
 .form-group {
   display: flex;
   align-items: center;
-  margin-top: 5.1rem;
+  margin-top: 5rem;
   gap: 1.2rem;
 }
 
@@ -1458,7 +1466,7 @@ h2.privacy-policy {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7.8rem;
+  margin-top: 7.9rem;
 }
 
 button.submit-btn {
@@ -1489,7 +1497,7 @@ button.submit-btn:hover {
   .form-contents {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 4rem;
+    margin-top: 3.5rem;
   }
   form.form-box {
     margin-top: 4rem;
@@ -1545,7 +1553,7 @@ button.submit-btn:hover {
     line-height: 1.35;
   }
   .form-submit {
-    margin-top: 5rem;
+    margin-top: 5.5rem;
   }
   .form-submit .submit-btn {
     width: 100%;
@@ -1685,6 +1693,9 @@ span.pc-only {
 @media (max-width: 767px) {
   .footer {
     padding-top: 5rem;
+  }
+  a.footer-logo-link {
+    margin-bottom: 2rem;
   }
   .footer-nav ul {
     padding-top: 2rem;
