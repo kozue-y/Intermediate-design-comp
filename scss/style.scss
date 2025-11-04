@@ -880,7 +880,7 @@ figcaption.service-caption.reverse {
 }
 ul.news-list {
   background: $color-white;
-  padding: 3rem 2rem 2rem;
+  padding: 1rem 2rem 2rem;
 }
 ul.news-list li {
   display: flex;
@@ -889,10 +889,6 @@ ul.news-list li {
   border-bottom: solid 1px $color-green;
 }
 li.news-item {
-  padding: 2rem 0 1.3rem;
-  &:first-child {
-    padding-top: 0;
-  }
   transition: opacity 0.3s ease;
 }
 li.news-item time {
@@ -911,14 +907,18 @@ time {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 7rem;
+  padding: 2rem 0 1.3rem;
+  gap: 16.3%;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
   &:hover {
     opacity: 0.6;
   }
+  .news-text {
+    display: inline-block;
+    padding-top: 0.1rem;
+  }
 }
-
 ul.news-list li.news-more {
   display: block;
   text-align: right;
@@ -996,7 +996,7 @@ ul.news-list li.news-more {
   ul.news-list li {
     display: flex;
     align-items: flex-start;
-    gap: 1.9rem;
+    gap: 6%;
   }
   li.news-item time {
     display: flex;

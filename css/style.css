@@ -871,7 +871,7 @@ figcaption.service-caption.reverse {
 
 ul.news-list {
   background: #ffffff;
-  padding: 3rem 2rem 2rem;
+  padding: 1rem 2rem 2rem;
 }
 
 ul.news-list li {
@@ -882,11 +882,7 @@ ul.news-list li {
 }
 
 li.news-item {
-  padding: 2rem 0 1.3rem;
   transition: opacity 0.3s ease;
-}
-li.news-item:first-child {
-  padding-top: 0;
 }
 
 li.news-item time {
@@ -905,12 +901,17 @@ time {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 7rem;
+  padding: 2rem 0 1.3rem;
+  gap: 16.3%;
   font-size: 1.8rem;
   line-height: 1.3888888889;
 }
 .news-link:hover {
   opacity: 0.6;
+}
+.news-link .news-text {
+  display: inline-block;
+  padding-top: 0.1rem;
 }
 
 ul.news-list li.news-more {
