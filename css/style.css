@@ -339,7 +339,7 @@ nav {
   filter: drop-shadow(0.5rem 0.5rem 0.5rem #000000);
 }
 
-.fv.slick-slider {
+.fv .slick-slider {
   position: relative;
   z-index: 10;
 }
@@ -635,6 +635,7 @@ figcaption.service-caption.reverse {
     padding-left: 6.35%;
     padding-top: 2rem;
     padding-bottom: 1.2rem;
+    aspect-ratio: auto;
   }
   .service-item.reverse .service-text-inner {
     padding-left: 6.35%;
@@ -669,7 +670,6 @@ figcaption.service-caption.reverse {
     padding-left: 0.5rem !important;
   }
   .service-media__text h3 {
-    margin-top: 1rem;
     font-size: 1.6rem;
   }
   .service-media__text p {
@@ -1412,7 +1412,7 @@ input[type=checkbox]:checked + .custom-checkbox::after {
   transform: rotate(45deg);
 }
 
-p.privacy-policy {
+.privacy-policy {
   font-size: 2rem;
   line-height: calc 1.65;
 }
@@ -1468,6 +1468,7 @@ button.submit-btn {
   height: 5rem;
   background: #4D9600;
   color: #ffffff;
+  border: 1px solid #4D9600;
   font-size: 2rem;
   line-height: 1.65;
   font-weight: 600;
@@ -1477,7 +1478,6 @@ button.submit-btn {
 button.submit-btn:hover {
   background: #ffffff;
   color: #4D9600;
-  border: 1px solid #4D9600;
 }
 
 @media (max-width: 767px) {

@@ -655,6 +655,7 @@ figcaption.service-caption.reverse {
     padding-left: 6.35%;
     padding-top: 2rem;
     padding-bottom: 1.2rem;
+    aspect-ratio: auto;
   }
   .service-item.reverse .service-text-inner {
     padding-left: 6.35%;
@@ -691,7 +692,6 @@ figcaption.service-caption.reverse {
     padding-left: 0.5rem !important;
   }
   .service-media__text h3 {
-    margin-top: 1rem;
     font-size: 1.6rem;
   }
   .service-media__text p {
@@ -1387,7 +1387,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   border-width: 0 0.2rem 0.2rem 0;
   transform: rotate(45deg);
 }
-p.privacy-policy {
+h2.privacy-policy {
   font-size: 2rem;
   line-height: calc (33 / 20);
 }
@@ -1440,6 +1440,7 @@ button.submit-btn {
   height: 5rem;
   background: $color-green;
   color: $color-white;
+  border: 1px solid $color-green;
   font-size: 2rem;
   line-height: calc(33 / 20);
   font-weight: 600;
@@ -1449,7 +1450,6 @@ button.submit-btn {
   &:hover {
     background: $color-white;
     color: $color-green;
-    border: 1px solid $color-green;
   }
 }
 @media (max-width: 767px) {
