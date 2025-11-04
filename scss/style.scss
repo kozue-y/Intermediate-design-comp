@@ -1011,6 +1011,7 @@ ul.news-list li.news-more {
     align-items: flex-start;
     padding: 1.3rem 0 1.3rem;
     gap: 6.9%;
+    flex: 1;
 
     .news-text {
       padding-top: 0.6rem;
@@ -1019,7 +1020,7 @@ ul.news-list li.news-more {
       -webkit-line-clamp: 2;
       overflow: hidden;
       text-overflow: ellipsis;
-  
+      width: 100%;
     }
   }
 }
