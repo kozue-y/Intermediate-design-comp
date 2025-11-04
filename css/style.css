@@ -1143,7 +1143,7 @@ p.mail a:hover {
     position: static !important;
     max-width: none;
     width: 100%;
-    aspect-ratio: 315/202;
+    aspect-ratio: auto;
     transform: none;
   }
   .company-text {
@@ -1412,7 +1412,7 @@ input[type=checkbox]:checked + .custom-checkbox::after {
   transform: rotate(45deg);
 }
 
-.privacy-policy {
+h2.privacy-policy {
   font-size: 2rem;
   line-height: calc 1.65;
 }
