@@ -1051,7 +1051,6 @@ ul.news-list li.news-more {
   position: absolute;
   top: 50%;
   right: 0;
-  // transform: translateY(-77%);
   box-sizing: border-box;
   max-width: 50rem;
   width: 54.3%;
@@ -1145,7 +1144,7 @@ p.mail {
     position: static !important;
     max-width: none;
     width: 100%;
-    aspect-ratio: 315 / 202;
+    aspect-ratio: auto;
     transform: none;
   }
   .company-text {
