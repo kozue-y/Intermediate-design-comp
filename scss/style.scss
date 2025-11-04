@@ -339,7 +339,7 @@ html {
      height: 100%;
      background-color: rgba(0,0,0,0.15);
      pointer-events: none;
-     z-index: 1500;
+     z-index: 20;
    } 
 
   .fv_contents {
@@ -347,13 +347,13 @@ html {
     top: 42.5%;
     left: 31.4%;
     display: flex;
+    z-index: 30;
   
   .fv_catch {
    text-align: center;
 
   h2 {
    position: relative;
-   z-index: 2000;
    font-size: 4rem;
    font-weight: 600;
    line-height: calc(70 / 40);
@@ -364,6 +364,10 @@ html {
   }
  }
 } 
+.fv .slick-slider {
+  position: relative;
+  z-index: 10;
+}
  
 @media screen and (max-width: 767px) {
   .fv {
