@@ -1423,7 +1423,7 @@ input[type=checkbox]:checked + .custom-checkbox::after {
 
 h2.privacy-policy {
   font-size: 2rem;
-  line-height: calc 1.65;
+  line-height: 1.65;
 }
 
 .privacy-scroll-area {
