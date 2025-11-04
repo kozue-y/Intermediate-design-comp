@@ -317,26 +317,31 @@ nav {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.15);
   pointer-events: none;
-  z-index: 1500;
+  z-index: 20;
 }
 .fv .fv_contents {
   position: absolute;
   top: 42.5%;
   left: 31.4%;
   display: flex;
+  z-index: 30;
 }
 .fv .fv_contents .fv_catch {
   text-align: center;
 }
 .fv .fv_contents .fv_catch h2 {
   position: relative;
-  z-index: 2000;
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.75;
   letter-spacing: 0.3em;
   color: #ffffff;
   filter: drop-shadow(0.5rem 0.5rem 0.5rem #000000);
+}
+
+.fv.slick-slider {
+  position: relative;
+  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
