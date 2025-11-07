@@ -222,8 +222,8 @@ nav {
     background: #ffffff;
     cursor: pointer;
   }
-  .hamburger:hover .hamburger-line {
-    opacity: 0.6;
+  .hamburger:hover {
+    opacity: 0.8;
     transition: opacity 0.3s ease;
   }
   .hamburger .hamburger-inner {
@@ -232,7 +232,6 @@ nav {
     height: 2.8rem;
     margin: 0 auto;
     position: relative;
-    transition: all 0.3s ease;
   }
   .hamburger span.hamburger-line {
     width: 100%;
@@ -241,6 +240,7 @@ nav {
     background-color: #4D9600;
     position: absolute;
     left: 0;
+    transition: transform 0.3s ease;
   }
   .hamburger span.hamburger-line:nth-of-type(1) {
     top: 0;
