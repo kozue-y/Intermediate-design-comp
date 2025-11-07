@@ -826,10 +826,10 @@ figcaption.service-caption.reverse {
     max-width: 31.5rem;
     padding-inline: 2rem;
     padding-top: 2rem;
+    padding-bottom: 1.4rem;
   }
-  #modal02 .modal-content {
-    aspect-ratio: unset;
-    height: 23.5rem;
+  .modal-text {
+    margin-top: 0.7rem;
   }
   .modal-image {
     aspect-ratio: 274/144;
