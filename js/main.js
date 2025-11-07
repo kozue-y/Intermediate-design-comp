@@ -26,6 +26,11 @@ $("#hamburger-block").click(function() {
     $("#js-drawer").toggle(300);
     $(".hamburger").toggleClass("active");
 });
+// ドロワークリックした時の処理
+$("#js-drawer a").click(function(){
+  $("#js-drawer").hide(300);
+  $(".hamburger").removeClass("active");
+});
 
 
 // モーダル

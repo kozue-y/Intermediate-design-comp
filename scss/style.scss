@@ -234,8 +234,8 @@ html {
       background: #ffffff;
       cursor: pointer;
 
-      &:hover .hamburger-line {
-        opacity: 0.6;
+      &:hover {
+        opacity: 0.8;
         transition: opacity 0.3s ease;
       }
 
@@ -245,7 +245,6 @@ html {
         height: 2.8rem;
         margin: 0 auto;
         position: relative;
-        transition: all 0.3s ease;
       }
       span.hamburger-line {
         width: 100%;
@@ -254,6 +253,7 @@ html {
         background-color: $color-green;
         position: absolute;
         left: 0;
+        transition: transform 0.3s ease;
         &:nth-of-type(1) {
           top: 0;
         }
