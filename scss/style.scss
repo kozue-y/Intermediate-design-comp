@@ -445,6 +445,7 @@ p.about-text {
     justify-content: center;
     position: absolute;
     padding-left: 0;
+    padding-top: 1rem;
     gap: 2.4rem;
   }
   h2.about-title {
@@ -1117,6 +1118,7 @@ p.mail {
 
 .mail a {
   transition: opacity 0.3s ease;
+  padding-left: 1.6rem;
 }
 .mail a:hover {
   opacity: 0.7;
@@ -1401,7 +1403,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   border-width: 0 0.2rem 0.2rem 0;
   transform: rotate(45deg);
 }
-h2.privacy-policy {
+.privacy-policy {
   font-size: 2rem;
   line-height: calc(33 / 20);
 }
@@ -1504,6 +1506,11 @@ button.submit-btn {
   }
   .gender-group .form-label {
     width: auto;
+  }
+  .select-wrapper {
+    select {
+      font-size: 1.6rem;
+    }
   }
   .checkbox-grid {
     grid-template-columns: repeat(2, 1fr);
