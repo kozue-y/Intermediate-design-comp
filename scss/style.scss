@@ -917,8 +917,9 @@ time {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2rem 0 1.3rem;
-  gap: 19%;
+  width: 100%;
+  padding: 1.3rem 0 1.3rem;
+  gap: 18%;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
   &:hover {
@@ -926,7 +927,7 @@ time {
   }
   .news-text {
     display: inline-block;
-    padding-top: 0.1rem;
+    padding-top: 0.7rem;
   }
 }
 ul.news-list li.news-more {
@@ -938,7 +939,7 @@ ul.news-list li.news-more {
 .more-btn {
   display: inline-block;
   position: relative;
-  margin-top: 1.7rem;
+  margin-top: 1.6rem;
   padding-right: 3.2rem;
   font-size: 2rem;
   line-height: calc(33 / 20);
@@ -952,7 +953,7 @@ ul.news-list li.news-more {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 0.7rem;
+    bottom: 0.4rem;
     width: 8rem;
     height: 0.1rem;
     background-color: $color-green;
@@ -962,16 +963,15 @@ ul.news-list li.news-more {
   display: inline-block;
   position: absolute;
   right: 0;
-  bottom: 0.7rem;
+  bottom: -0.2rem;
   width: 8rem;
   height: 1.8rem;
-
   
   &::before {
     content: "";
     position: absolute;
     right: 1.3rem;
-    top: 0.5rem;
+    top: 0rem;
     width: 0.1rem;
     height: 100%;
     background-color: $color-green;
@@ -980,7 +980,7 @@ ul.news-list li.news-more {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 0.1rem;
+    bottom: 0.7rem;
     width: 0.1rem;
     height: 100%;
     background-color: $color-green;
@@ -988,7 +988,6 @@ ul.news-list li.news-more {
     transform-origin: right bottom;
   }
 }
-
 
 @media (max-width: 767px) {
   .news-section {
