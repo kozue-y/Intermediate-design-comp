@@ -935,7 +935,7 @@ ul.news-list li.news-more {
 .more-btn {
   display: inline-block;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding-right: 3.2rem;
   font-size: 2rem;
   line-height: 1.65;
@@ -993,7 +993,7 @@ ul.news-list li.news-more {
   .news-box {
     margin-top: 3.5rem;
     flex-direction: column;
-    gap: 5rem;
+    gap: 5.5rem;
   }
   .news-col {
     max-width: none;
@@ -1135,7 +1135,7 @@ p.mail a:hover {
 }
 @media (max-width: 767px) {
   .company-section {
-    padding-top: 5rem;
+    padding-top: 5.5rem;
     padding-bottom: 5rem;
   }
   .company-block {
@@ -1348,7 +1348,7 @@ input[type=email] {
   height: 100%;
   font-size: 1.8rem;
   line-height: 1.3888888889;
-  padding: 1.6rem 2rem 1.2rem;
+  padding: 1.5rem 2rem 1.2rem;
   border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1359,14 +1359,13 @@ input[type=email] {
 .select-wrapper::after {
   content: "";
   position: absolute;
-  top: 56%;
+  top: 50%;
   right: 2rem;
-  width: 0;
-  height: 0;
-  border-left: 0.9rem solid transparent;
-  border-right: 0.9rem solid transparent;
-  border-bottom: 1.2rem solid #4D9600;
-  transform: translateY(-50%) rotate(180deg);
+  width: 1.8rem;
+  height: 1.2rem;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  background-color: #4D9600;
   pointer-events: none;
 }
 
