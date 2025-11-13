@@ -888,7 +888,7 @@ figcaption.service-caption.reverse {
     color: $color-white;
   }
 }
-ul.news-list {
+.news-list-wrapper {
   background: $color-white;
   padding: 1rem 2rem 2rem;
 }
@@ -929,7 +929,7 @@ time {
     padding-top: 0.7rem;
   }
 }
-ul.news-list li.news-more {
+.news-more {
   display: block;
   text-align: right;
   border-bottom: none;
@@ -944,7 +944,7 @@ ul.news-list li.news-more {
   line-height: calc(33 / 20);
   font-weight: 600;
   color: $color-green;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
   &:hover {
     transform: translateX(0.7rem);
   }
@@ -1119,7 +1119,7 @@ p.mail {
 
 .mail a {
   transition: opacity 0.3s ease;
-  padding-left: 1.1rem;
+  margin-left: 1.1rem;
 }
 .mail a:hover {
   opacity: 0.7;
@@ -1194,7 +1194,7 @@ p.mail {
     font-size: 1.6rem;
     margin-top: 1.3rem;
     a {
-      padding-left: 1rem;
+      margin-left: 1rem;
     }
   }
 }
@@ -1451,7 +1451,8 @@ button.submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
+  width: 100%;
+  max-width: 31.5rem;
   height: 5rem;
   background: $color-green;
   color: $color-white;
@@ -1460,7 +1461,7 @@ button.submit-btn {
   line-height: calc(33 / 20);
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 
   &:hover {
     background: $color-white;
