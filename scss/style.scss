@@ -735,6 +735,7 @@ p.about-text {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 .works-image img {
   width: 100%;
@@ -742,7 +743,7 @@ p.about-text {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-.works-image:hover img {
+.works-item a:hover img {
   transform: scale(1.1);
 }
 
@@ -1339,7 +1340,8 @@ input[type="email"] {
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 45%;
+    transform: translateY(-50%);
     right: 2rem;
     width: 1.8rem;
     height: 1.2rem;
@@ -1543,6 +1545,14 @@ button.submit-btn {
   }
   .form-submit .submit-btn {
     width: 100%;
+  }
+}
+@media (max-width: 330px) {
+  .gender-group {
+    gap: 2rem;
+  }
+  .radio-wrap {
+    gap: 2rem;
   }
 }
 
