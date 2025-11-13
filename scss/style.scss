@@ -922,6 +922,7 @@ time {
   gap: 18%;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
+  transition: opacity 0.3s ease;
   &:hover {
     opacity: 0.6;
   }
@@ -1367,7 +1368,7 @@ textarea {
 }
 .checkbox-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16.6rem, 1fr));
   gap: 1.5rem 0.7rem;
   width: 100%;
 }
@@ -1513,7 +1514,7 @@ button.submit-btn {
     }
   }
   .checkbox-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(14.2rem, 1fr));
     gap: 0.6rem 0.9rem;
   }
   .checkbox-label {
