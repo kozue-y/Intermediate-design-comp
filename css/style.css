@@ -393,6 +393,7 @@ h2.about-title {
   font-size: 3rem;
   line-height: 1.18;
   letter-spacing: 0.18em;
+  padding-top: 1rem;
 }
 
 p.about-text {
@@ -548,7 +549,7 @@ figcaption.service-caption {
 }
 
 .service-item:nth-of-type(even) .service-text-inner {
-  padding-left: 3.5rem;
+  padding-left: 4rem;
   padding-right: 44%;
 }
 
@@ -704,6 +705,7 @@ figcaption.service-caption {
 
 .work-item {
   width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .works-caption p {
@@ -727,7 +729,7 @@ figcaption.service-caption {
   transition: transform 0.3s ease;
 }
 
-.works-item :hover img {
+.works-item a:hover img {
   transform: scale(1.1);
 }
 
@@ -1271,7 +1273,7 @@ input[type=text] {
   max-width: 63rem;
   height: 5rem;
   background: #ffffff;
-  padding: 1.3rem 2rem 1.2rem;
+  padding: 1.4rem 2rem 1.2rem;
   font-size: 1.6rem;
   line-height: 1.5625;
 }
@@ -1334,7 +1336,7 @@ input[type=email] {
   max-width: 63rem;
   height: 5rem;
   background: #ffffff;
-  padding: 1.3rem 2rem 1.2rem;
+  padding: 1.4rem 2rem 1.2rem;
   font-size: 1.6rem;
   line-height: 1.5625;
 }
@@ -1363,7 +1365,7 @@ input[type=email] {
 .select-wrapper::after {
   content: "";
   position: absolute;
-  top: 45%;
+  top: 57%;
   transform: translateY(-50%);
   right: 2rem;
   width: 1.8rem;
@@ -1482,7 +1484,7 @@ input[type=checkbox]:checked + .custom-checkbox::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7.9rem;
+  margin-top: 8.5rem;
 }
 
 button.submit-btn {
@@ -1490,7 +1492,7 @@ button.submit-btn {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 31.5rem;
+  max-width: 30rem;
   height: 5rem;
   background: #4D9600;
   color: #ffffff;
@@ -1575,8 +1577,9 @@ button.submit-btn:hover {
   .form-submit {
     margin-top: 5rem;
   }
-  .form-submit .submit-btn {
+  button.submit-btn {
     width: 100%;
+    max-width: 31.5rem;
   }
 }
 @media (max-width: 330px) {
@@ -1626,7 +1629,7 @@ button.submit-btn:hover {
   }
 }
 .footer {
-  padding-top: 8.5rem;
+  padding-top: 8rem;
   text-align: center;
 }
 
