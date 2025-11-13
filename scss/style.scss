@@ -480,8 +480,7 @@ p.about-text {
     margin: 0 auto;
     padding-inline: 3rem;
   }
-.service-item,
-.service-item.reverse{
+.service-item{
   margin-top: 13.1rem;
 }
 .service-item:first-of-type {
@@ -544,24 +543,25 @@ p.about-text {
   font-weight: 600;
 }
 
-figcaption.service-caption {
+ figcaption.service-caption {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 1.9rem;
+  text-align: left;
 }
-figcaption.service-caption.reverse {
+.service-item:nth-of-type(even) figcaption.service-caption {
   text-align: right;
 }
 
 //左右反転
-.service-item.reverse .service-media__img {
+.service-item:nth-of-type(even) .service-media__img {
   margin-left: auto;
 }
-.service-item.reverse .service-media__bg {
-  left: auto;
-  right: 45%;
+.service-item:nth-of-type(even) .service-media__bg {
+  left: 0;
+  right: auto;
 }
-.service-item.reverse .service-text-inner {
+.service-item:nth-of-type(even) .service-text-inner {
   padding-left: 3.5rem;
   padding-right: 44%;
 }
@@ -578,7 +578,7 @@ figcaption.service-caption.reverse {
   .service-text-inner {
     padding-left: 33%;
   }
-  .service-item.reverse .service-text-inner {
+  .service-item:nth-of-type(even) .service-text-inner {
     padding-right: 33%;
   }
   .service-media__text {
@@ -596,8 +596,7 @@ figcaption.service-caption.reverse {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  .service-item,
-.service-item.reverse{
+  .service-item{
   margin-top: 4.8rem;
 }
 .service-item:first-of-type {
@@ -646,12 +645,12 @@ figcaption.service-caption.reverse {
     margin-top: 0.5rem;
   }
   
-  figcaption.service-caption.reverse {
+  figcaption.service-caption:nth-of-type(even) {
     text-align: left;
   }
   
-  .service-item.reverse .service-media__bg,
-.service-item.reverse .service-media__text {
+  .service-item:nth-of-type(even) .service-media__bg,
+.service-item:nth-of-type(even) .service-media__text {
   left: 0;
   right: auto;
 }
@@ -665,7 +664,7 @@ figcaption.service-caption.reverse {
     padding-bottom: 1.2rem;
     aspect-ratio: auto;
   }
-  .service-item.reverse .service-text-inner {
+  .service-item:nth-of-type(even) .service-text-inner {
     padding-left: 6.35%;
     padding-right: 0;
     padding-top: 2rem;
@@ -696,7 +695,7 @@ figcaption.service-caption.reverse {
 }
   
 @media (max-width: 370px) {
-  .service-item.reverse .service-media__text {
+  .service-item:nth-child(even) .service-media__text {
     padding-left: 0.5rem !important;
   }
   .service-media__text h3 {
