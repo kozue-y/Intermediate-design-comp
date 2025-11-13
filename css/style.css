@@ -628,7 +628,7 @@ figcaption.service-caption {
   figcaption.service-caption {
     margin-top: 0.5rem;
   }
-  figcaption.service-caption:nth-of-type(even) {
+  .service-item:nth-of-type(even) figcaption.service-caption {
     text-align: left;
   }
   .service-item:nth-of-type(even) .service-media__bg,
@@ -895,10 +895,6 @@ ul.news-list li {
   align-items: center;
   justify-content: flex-start;
   border-bottom: solid 1px #4D9600;
-}
-
-li.news-item {
-  transition: opacity 0.3s ease;
 }
 
 li.news-item time {

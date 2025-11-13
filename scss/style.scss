@@ -645,8 +645,7 @@ p.about-text {
   figcaption.service-caption {
     margin-top: 0.5rem;
   }
-  
-  figcaption.service-caption:nth-of-type(even) {
+  .service-item:nth-of-type(even) figcaption.service-caption {
     text-align: left;
   }
   
@@ -901,9 +900,6 @@ ul.news-list li {
   align-items: center;
   justify-content: flex-start;
   border-bottom: solid 1px $color-green;
-}
-li.news-item {
-  transition: opacity 0.3s ease;
 }
 li.news-item time {
   display: flex;
