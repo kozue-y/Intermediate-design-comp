@@ -880,7 +880,7 @@ figcaption.service-caption.reverse {
   color: #ffffff;
 }
 
-ul.news-list {
+.news-list-wrapper {
   background: #ffffff;
   padding: 1rem 2rem 2rem;
 }
@@ -925,7 +925,7 @@ time {
   padding-top: 0.7rem;
 }
 
-ul.news-list li.news-more {
+.news-more {
   display: block;
   text-align: right;
   border-bottom: none;
@@ -941,7 +941,7 @@ ul.news-list li.news-more {
   line-height: 1.65;
   font-weight: 600;
   color: #4D9600;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .more-btn:hover {
   transform: translateX(0.7rem);
@@ -1121,7 +1121,7 @@ p.mail a:hover {
 
 .mail a {
   transition: opacity 0.3s ease;
-  padding-left: 1.1rem;
+  margin-left: 1.1rem;
 }
 
 .mail a:hover {
@@ -1197,7 +1197,7 @@ p.mail a:hover {
     margin-top: 1.3rem;
   }
   p.mail a {
-    padding-left: 1rem;
+    margin-left: 1rem;
   }
 }
 @media (max-width: 370px) {
@@ -1484,7 +1484,8 @@ button.submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
+  width: 100%;
+  max-width: 31.5rem;
   height: 5rem;
   background: #4D9600;
   color: #ffffff;
@@ -1493,7 +1494,7 @@ button.submit-btn {
   line-height: 1.65;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 button.submit-btn:hover {
   background: #ffffff;
