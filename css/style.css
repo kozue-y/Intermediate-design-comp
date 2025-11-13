@@ -716,6 +716,7 @@ figcaption.service-caption {
   display: block;
   width: 100%;
   aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 .works-image img {
@@ -726,7 +727,7 @@ figcaption.service-caption {
   transition: transform 0.3s ease;
 }
 
-.works-image:hover img {
+.works-item :hover img {
   transform: scale(1.1);
 }
 
@@ -1362,7 +1363,8 @@ input[type=email] {
 .select-wrapper::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 45%;
+  transform: translateY(-50%);
   right: 2rem;
   width: 1.8rem;
   height: 1.2rem;
@@ -1575,6 +1577,14 @@ button.submit-btn:hover {
   }
   .form-submit .submit-btn {
     width: 100%;
+  }
+}
+@media (max-width: 330px) {
+  .gender-group {
+    gap: 2rem;
+  }
+  .radio-wrap {
+    gap: 2rem;
   }
 }
 .page-top {
