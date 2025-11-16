@@ -6,21 +6,28 @@ $(".fv_slider").slick({
     pauseOnHover: false
 });
 
-// ヘッダー固定＆色変更
-$(function() {
-    const $header = $("#header");
-    const aboutTop = $("#about").offset().top;
+//ヘッダー固定＆色変更
 
-    $(window).on("scroll", function() {
-        const scroll = $(window).scrollTop();
+$(function () {
+  const $header = $("#header");
+  const $fvSection = $(".fv"); 
 
-        if (scroll >= aboutTop) {
-            $header.addClass('scrolled');
-        } else {
-            $header.removeClass('scrolled');
-        }
-    });
+  function checkScroll() {
+    const fvEndPosition = $fvSection.outerHeight(); 
+    
+    const scroll = $(window).scrollTop();
+    
+    $header.toggleClass("scrolled", scroll > fvEndPosition);
+  }
+
+  $(window).on("scroll resize", checkScroll);
+  checkScroll();
 });
+
+
+
+
+
 // ハンバーガーメニュー開け閉じ
 $("#hamburger-block").click(function() {
     $("#js-drawer").toggle(300);
