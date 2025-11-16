@@ -322,7 +322,8 @@ nav {
 .fv .fv_contents {
   position: absolute;
   top: 42.5%;
-  left: 31.4%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   z-index: 30;
 }
@@ -344,6 +345,11 @@ nav {
   z-index: 10;
 }
 
+@media (max-width: 860px) {
+  .fv .fv_contents .fv_catch h2 {
+    font-size: 3.5rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .fv {
     position: relative;
@@ -630,11 +636,6 @@ figcaption.service-caption {
   }
   .service-item:nth-of-type(even) figcaption.service-caption {
     text-align: left;
-  }
-  .service-item:nth-of-type(even) .service-media__bg,
-.service-item:nth-of-type(even) .service-media__text {
-    left: 0;
-    right: auto;
   }
   .service-media__text h3 .pc-only {
     display: none;
@@ -1578,12 +1579,12 @@ button.submit-btn:hover {
     max-width: 31.5rem;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 360px) {
   .gender-group {
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .radio-wrap {
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
 .page-top {
