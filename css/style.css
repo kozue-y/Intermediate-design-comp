@@ -389,6 +389,19 @@ nav {
      object-fit: cover;
 }
 
+.about-body {
+  max-width: 108rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .about-contents {
   writing-mode: vertical-rl;
   height: 100%;
@@ -396,7 +409,6 @@ nav {
   flex-direction: column;
   align-items: center;
   row-gap: 4.5rem;
-  position: absolute;
   padding-left: 13.5rem;
 }
 
@@ -433,8 +445,8 @@ p.about-text {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: absolute;
     padding-left: 0;
+    margin: 0 auto;
     padding-top: 1rem;
     gap: 2.4rem;
   }
