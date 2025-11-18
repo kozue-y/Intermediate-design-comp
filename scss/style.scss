@@ -470,7 +470,6 @@ p.about-text {
     justify-content: center;
     padding-left: 0;
     margin: 0 auto;
-    padding-top: 1rem;
     gap: 2.4rem;
   }
   h2.about-title {
@@ -1533,12 +1532,12 @@ button.submit-btn {
   }
   .checkbox-grid {
     grid-template-columns: repeat(auto-fit, minmax(14.2rem, 1fr));
-    gap: 0.6rem 0.9rem;
+    gap: 0.6rem 0.6rem;
   }
   .checkbox-label {
     font-size: 1.6rem;
     line-height: calc(25 / 16);
-    gap: 0.7rem;
+    gap: 0.8rem;
   }
   .privacy-scroll-area {
     height: 32.3rem;
