@@ -1210,6 +1210,7 @@ p.mail a:hover {
   }
   p.tel a:hover {
     opacity: 0.7;
+    transform: translateZ(0);
   }
   p.mail {
     font-size: 1.6rem;

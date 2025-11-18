@@ -1204,6 +1204,7 @@ p.mail {
       transition: opacity 0.3s ease;
       &:hover {
       opacity: 0.7;
+      transform: translateZ(0);
      }
     }
   }
