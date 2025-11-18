@@ -1207,6 +1207,9 @@ p.mail a:hover {
   p.tel a {
     cursor: pointer;
     transition: opacity 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
   }
   p.tel a:hover {
     opacity: 0.7;
