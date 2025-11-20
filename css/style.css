@@ -427,7 +427,7 @@ p.about-text {
 
 @media (max-width: 860px) {
   .about-contents {
-    padding-left: 8rem;
+    padding-left: 5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -806,8 +806,8 @@ figcaption.service-caption {
 
 .modal-close {
   position: absolute;
-  top: 1.2%;
-  right: 1%;
+  top: 1.8%;
+  right: 1.2%;
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
@@ -819,7 +819,7 @@ figcaption.service-caption {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2.13rem;
+  width: 1.5rem;
   height: 0.1rem;
   background: #000000;
   transform-origin: center;
