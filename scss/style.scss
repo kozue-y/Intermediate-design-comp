@@ -345,7 +345,7 @@ html {
   .fv_contents {
     position: absolute;
     top: 42.5%;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
     display: flex;
     z-index: 30;
@@ -955,7 +955,7 @@ time {
 .more-btn {
   display: inline-block;
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: 1.7rem;
   padding-right: 3.2rem;
   font-size: 2rem;
   line-height: calc(33 / 20);
@@ -1150,13 +1150,13 @@ p.mail {
 
 @media (max-width: 767px) {
   .company-section {
-    padding-top: 5.5rem;
+    padding-top: 5.3rem;
     padding-bottom: 5rem;
   }
   .company-block {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.1rem;
     margin-top: 3.8rem;
     margin-bottom: 0;
   }
@@ -1195,7 +1195,7 @@ p.mail {
   }
   p.tel {
     font-size: 1.6rem;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     span {
       font-size: 2.5rem;
     }
@@ -1288,6 +1288,10 @@ input[type="text"] {
 span.required {
   margin-left: 1rem;
 }
+span.required.full-space {
+  margin-left: 2rem;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #A0A0A0;
@@ -1492,7 +1496,7 @@ button.submit-btn {
 }
 @media (max-width: 767px) {
   .contact-section {
-    padding-top: 5rem;
+    padding-top: 5.2rem;
     padding-bottom: 5rem;
   }
   .form-contents {
@@ -1632,13 +1636,17 @@ a.footer-logo-link {
   }
 }
 .footer-nav ul {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 1px solid #000;
   padding-top: 2.8rem;
   gap: 5rem;
+}
+nav.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-nav li {
   font-size: 1.8rem;
@@ -1701,7 +1709,7 @@ span.pc-only {
     padding-top: 5rem;
   }
   a.footer-logo-link {
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
   }
   .footer-nav ul {
     padding-top: 2rem;
