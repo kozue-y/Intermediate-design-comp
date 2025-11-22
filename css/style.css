@@ -1668,9 +1668,20 @@ a.footer-logo-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #000;
+  position: relative;
   padding-top: 2.8rem;
   gap: 5rem;
+}
+.footer-nav ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72.2rem;
+  max-width: 102.65%;
+  height: 0.1rem;
+  background-color: #000;
 }
 
 nav.footer-nav {
@@ -1682,6 +1693,9 @@ nav.footer-nav {
 .footer-nav li {
   font-size: 1.8rem;
   line-height: 1.8333333333;
+}
+.footer-nav li a {
+  display: block;
 }
 
 @media (max-width: 790px) {
@@ -1707,6 +1721,7 @@ nav.footer-nav {
 }
 
 .footer-sns li a {
+  display: block;
   width: 2.8rem;
   height: 2.8rem;
   cursor: pointer;
@@ -1759,6 +1774,9 @@ span.pc-only {
     justify-content: center;
     align-items: center;
     gap: 0.5rem 3rem;
+  }
+  .footer-nav ul::before {
+    width: 100%;
   }
   .footer-nav li {
     font-size: 1.8rem;
