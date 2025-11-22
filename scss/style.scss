@@ -1637,9 +1637,22 @@ a.footer-logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #000;
+  position: relative;
+  // border-top: 1px solid #000;
   padding-top: 2.8rem;
   gap: 5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 72.2rem;
+    max-width: 102.65%;
+    height: 0.1rem;
+    background-color: #000;
+  }
 }
 nav.footer-nav {
   display: flex;
@@ -1649,6 +1662,10 @@ nav.footer-nav {
 .footer-nav li {
   font-size: 1.8rem;
   line-height: calc(33 /18);
+
+  & a {
+    display: block;
+  }
 }
 @media (max-width: 790px) {
   .footer-nav li {
@@ -1671,6 +1688,7 @@ nav.footer-nav {
   margin-top: 2.8rem;  
 }
 .footer-sns li a {
+  display: block;
   width: 2.8rem;
   height: 2.8rem;
   cursor: pointer;
@@ -1718,6 +1736,10 @@ span.pc-only {
     justify-content: center;
     align-items: center;
     gap: 0.5rem 3rem;
+
+    &::before {
+      width: 100%;
+    }
   }
   .footer-nav li {
     font-size: 1.8rem;
