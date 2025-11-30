@@ -64,18 +64,28 @@ $(function () {
 
 
 // topへ戻るボタン動作
-$(window).on("scroll", function () {
-  if ($(this).scrollTop() > 100) {
-    $("#page-top").addClass("is-show");
-  } else {
-    $("#page-top").removeClass("is-show");
+$(function () {
+  const $pageTopLink = $(".page-top-link");
+  const $fvSection = $(".fv"); 
+
+  function checkScroll() {
+    const fvEndPosition = $fvSection.outerHeight(); 
+    
+    const scroll = $(window).scrollTop();
+    
+    $pageTopLink.toggleClass("is-show", scroll > fvEndPosition);
   }
+
+  $(window).on("scroll resize", checkScroll);
+  checkScroll();
 });
 
-$('#page-top a').on('click', function() {
+$('.page-top-link').on('click', function() {
   $('html, body').animate({ scrollTop: 0 }, 500);
   return false;
 });
+
+
   // AOSふわっと
   AOS.init({
     duration: 1000,

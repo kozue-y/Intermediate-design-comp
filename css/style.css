@@ -1501,7 +1501,7 @@ input[type=checkbox]:checked + .custom-checkbox::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8.5rem;
+  margin-top: 8rem;
 }
 
 button.submit-btn {
@@ -1607,7 +1607,7 @@ button.submit-btn:hover {
     gap: 1.5rem;
   }
 }
-.page-top {
+.page-top-link {
   position: fixed;
   bottom: 6rem;
   right: 6rem;
@@ -1624,25 +1624,29 @@ button.submit-btn:hover {
   justify-content: center;
   align-items: center;
 }
-.page-top.is-show {
+.page-top-link.is-show {
   opacity: 1;
   visibility: visible;
 }
-.page-top:hover {
-  opacity: 0.6;
+.page-top-link:hover {
+  opacity: 0.8;
 }
-.page-top img {
+
+.page-top {
   width: 2.315rem;
-  height: auto;
-  display: block;
+  height: 1.57rem;
 }
 
 @media (max-width: 767px) {
-  .page-top {
+  .page-top-link {
     width: 5rem;
     height: 5rem;
     position: fixed;
     right: 2rem;
+  }
+  .page-top {
+    width: 1.7rem;
+    height: 1.15rem;
   }
 }
 .footer {
@@ -1657,7 +1661,7 @@ button.submit-btn:hover {
 
 a.footer-logo-link {
   display: inline-block;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.8rem;
   transition: opacity 0.3s ease;
 }
 a.footer-logo-link:hover {
@@ -1669,7 +1673,7 @@ a.footer-logo-link:hover {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 2.8rem;
+  padding-top: 3rem;
   gap: 5rem;
 }
 .footer-nav ul::before {
