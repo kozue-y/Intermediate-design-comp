@@ -1469,7 +1469,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8.5rem;
+  margin-top: 8rem;
 }
 button.submit-btn {
   display: flex;
@@ -1578,7 +1578,7 @@ button.submit-btn {
 }
 
 //topへ戻るボタン
-.page-top {
+.page-top-link {
   position: fixed;
   bottom: 6rem;
   right: 6rem;
@@ -1595,28 +1595,33 @@ button.submit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   &.is-show {
     opacity: 1;
     visibility: visible;
   }
   &:hover {
-    opacity: 0.6;
-  }
-  img {
-    width: 2.315rem;
-    height: auto;
-    display: block;
+    opacity: 0.8;
   }
 }
+.page-top {
+  width: 2.315rem;
+  height: 1.57rem;
+
+}
 @media (max-width: 767px) {
-  .page-top {
+  .page-top-link {
     width: 5rem;
     height: 5rem;
     position: fixed;
     right: 2rem;
   }
+  .page-top {
+    width: 1.7rem;
+    height: 1.15rem;
+  }
 }
+
 .footer {
   padding-top: 8rem;
   text-align: center;
@@ -1627,7 +1632,7 @@ button.submit-btn {
 }
 a.footer-logo-link {
   display: inline-block;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.8rem;
   transition: opacity 0.3s ease;
   &:hover {
     opacity: 0.6;
@@ -1638,7 +1643,7 @@ a.footer-logo-link {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 2.8rem;
+  padding-top: 3rem;
   gap: 5rem;
 
   &::before {
