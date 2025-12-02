@@ -2,11 +2,11 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: 8rem;
   word-break: break-all;
   font-size: 10px;
+  scroll-padding-top: 8rem;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 768px) {
   html {
     scroll-padding-top: 5rem;
   }
@@ -15,10 +15,6 @@ html {
 body {
   font-family: "YuMincho", "游明朝", "Hiragino Mincho ProN", serif;
   font-weight: 500;
-}
-
-body.modal-open {
-  overflow: hidden;
 }
 
 img {
@@ -433,6 +429,15 @@ p.about-text {
 @media (max-width: 860px) {
   .about-contents {
     padding-left: 5rem;
+    row-gap: 4rem;
+  }
+  h2.about-title {
+    font-size: 2.7rem;
+    line-height: 1;
+  }
+  p.about-text {
+    font-size: 1.6rem;
+    line-height: 2.4;
   }
 }
 @media screen and (max-width: 767px) {
@@ -730,10 +735,12 @@ figcaption.service-caption {
   transition: transform 0.3s ease;
 }
 
+.works-caption {
+  margin-top: 1.9rem;
+}
 .works-caption p {
   font-size: 1.6rem;
   line-height: 1.5625;
-  margin-top: 1.9rem;
 }
 
 .works-image {
@@ -769,10 +776,19 @@ figcaption.service-caption {
   .works-image {
     aspect-ratio: 315/250;
   }
-  .works-caption p {
+  .works-caption {
     margin-top: 0.9rem;
   }
 }
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -793,7 +809,6 @@ figcaption.service-caption {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #707070;
   box-sizing: border-box;
 }
 
@@ -1635,6 +1650,11 @@ button.submit-btn:hover {
 }
 .page-top-link:hover {
   opacity: 0.8;
+}
+
+body.modal-open .page-top-link {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .page-top {
