@@ -24,30 +24,23 @@ $(function () {
   checkScroll();
 });
 
-// // ハンバーガーメニュー開け閉じ
-// $("#hamburger-block").click(function() {
-//     $("#js-drawer").toggleClass("is-open");
-//     $(".hamburger").toggleClass("active");
-// });
-// // ドロワークリックした時の処理
-// $("#js-drawer a").click(function(){
-//   $("#js-drawer").removeClass("is-open");
-//   $(".hamburger").removeClass("active");
-// });
-
 // ハンバーガーメニュー開け閉じ
 $("#hamburger-block").click(function() {
     $("#js-drawer").toggleClass("is-open");
     $(".hamburger").toggleClass("active");
 });
-// ドロワークリックした時の処理
-$("#js-drawer a[href^='#']").click(function(e){
+// 全アンカーリンク（ヘッダー・ドロワー・フッター）
+$("a[href^='#']").click(function(e){
+  const href = $(this).attr('href');
+// スクロルセクション指定
+  if(href === '#' || href === '') return;
   e.preventDefault();
-  const target = $($(this).attr('href'));
-  // header高さ取得
-  const headerHeight = $("#header").outerHeight();
-  // 位置（-header高さ）取得
-  const position = target.offset().top - headerHeight;
+  const target = $(href);
+  if(!target.length) return false;
+
+  // // header高さ取得（CSS指定）
+  const position = target.offset().top;
+
 
   // メニューを閉じる
     $("#js-drawer").removeClass("is-open");
@@ -63,26 +56,57 @@ $("#js-drawer a[href^='#']").click(function(e){
 
 
 // モーダル
+// $(function () {
+//   $(".modal-open").on("click", function (e) {
+//     e.preventDefault();
+
+// // bodyスクロール禁止
+//     const target = $(this).data("modal");
+//     $("body").addClass("modal-open");
+
+//     const $modal = $("#" + target);
+//     $modal.css("display", "flex").hide().fadeIn(200);
+//   });
+
+// // 閉じる処理
+//   $(".modal-close, .modal-bg").on("click", function (e) {
+//     if ($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
+//       $("body").removeClass("modal-open");
+//       $(this).closest(".modal").fadeOut(200);
+//     }
+//   });
+// });
 $(function () {
+  let scrollPosition = 0; // スクロール位置を記憶する変数
+
   $(".modal-open").on("click", function (e) {
     e.preventDefault();
 
-// bodyスクロール禁止
     const target = $(this).data("modal");
-    $("body").addClass("modal-open");
+    scrollPosition = $(window).scrollTop(); //現在のスクロール位置を記憶
+    // bodyスクロール禁止
+    $("body").addClass("modal-open").css({
+      top: -scrollPosition + 'px'
+    });
 
     const $modal = $("#" + target);
     $modal.css("display", "flex").hide().fadeIn(200);
   });
-
-// 閉じる処理
-  $(".modal-close, .modal-bg").on("click", function (e) {
-    if ($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
-      $("body").removeClass("modal-open");
+  // 閉じる処理
+  $(".modal-close, .modal-bg").on("click", function(e) {
+    if($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
+      // body固定解除
+      $("body").removeClass("modal-open").css({
+        top: ''
+      });
+      // 元のスクロール位置に戻す
+      $(window).scrollTop(scrollPosition);
       $(this).closest(".modal").fadeOut(200);
     }
   });
 });
+
+
 
 
 // topへ戻るボタン動作
@@ -102,10 +126,10 @@ $(function () {
   checkScroll();
 });
 
-$('.page-top-link').on('click', function() {
-  $('html, body').animate({ scrollTop: 0 }, 500);
-  return false;
-});
+// $('.page-top-link').on('click', function() {
+//   $('html, body').animate({ scrollTop: 0 }, 500);
+//   return false;
+// });
 
 
   // AOSふわっと
