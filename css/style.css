@@ -2,7 +2,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: 9rem;
+  scroll-padding-top: 8rem;
   word-break: break-all;
   font-size: 10px;
 }
@@ -72,7 +72,7 @@ a img {
 }
 .header {
   width: 100%;
-  height: 9rem;
+  height: 8rem;
   display: flex;
   align-items: stretch;
   position: fixed;
@@ -81,7 +81,7 @@ a img {
   right: 0;
   z-index: 1000;
   background-color: transparent;
-  transition: background-color 0.1s ease;
+  transition: background-color 0.3s ease;
 }
 .header.scrolled {
   background-color: #4D9600;
@@ -116,6 +116,7 @@ h1.site-title a {
   display: flex;
   align-items: center;
   height: 100%;
+  padding-top: 0.45rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -143,8 +144,8 @@ nav {
 .nav_list {
   height: 100%;
   display: flex;
-  -moz-column-gap: 3.2rem;
-       column-gap: 3.2rem;
+  -moz-column-gap: 3.1rem;
+       column-gap: 3.1rem;
 }
 
 .nav_list li {
@@ -162,6 +163,7 @@ nav {
   color: #ffffff;
   position: relative;
   cursor: pointer;
+  padding-top: 0.25rem;
 }
 .nav_list a::after {
   content: "";
@@ -172,6 +174,11 @@ nav {
   height: 1px;
   background: #ffffff;
   transition: width 0.3s ease;
+}
+@media (max-width: 768px) {
+  .nav_list a::after {
+    content: none;
+  }
 }
 .nav_list a:hover::after, .nav_list a:focus-visible::after {
   width: 100%;
@@ -222,10 +229,6 @@ nav {
     background: #ffffff;
     cursor: pointer;
   }
-  .hamburger:hover {
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-  }
   .hamburger .hamburger-inner {
     display: block;
     width: 3.2rem;
@@ -263,6 +266,7 @@ nav {
     top: 1.2rem;
   }
   .drawer-menu {
+    display: block;
     position: fixed;
     top: 0;
     right: 0;
@@ -271,7 +275,11 @@ nav {
     background-color: #4D9600;
     margin-top: 5rem;
     z-index: 999;
+    transform: translateX(100%);
     transition: transform 0.3s ease;
+  }
+  .drawer-menu.is-open {
+    transform: translateX(0);
   }
   .drawer-menu .nav_list li {
     width: 100%;
@@ -299,9 +307,6 @@ nav {
   .drawer-menu .nav_list a:hover,
 .drawer-menu .nav_list a:focus {
     background-color: #000000;
-  }
-  .nav_list a::after {
-    bottom: 0;
   }
 }
 .fv {

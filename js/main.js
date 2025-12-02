@@ -24,20 +24,42 @@ $(function () {
   checkScroll();
 });
 
-
-
-
+// // ハンバーガーメニュー開け閉じ
+// $("#hamburger-block").click(function() {
+//     $("#js-drawer").toggleClass("is-open");
+//     $(".hamburger").toggleClass("active");
+// });
+// // ドロワークリックした時の処理
+// $("#js-drawer a").click(function(){
+//   $("#js-drawer").removeClass("is-open");
+//   $(".hamburger").removeClass("active");
+// });
 
 // ハンバーガーメニュー開け閉じ
 $("#hamburger-block").click(function() {
-    $("#js-drawer").toggle(300);
+    $("#js-drawer").toggleClass("is-open");
     $(".hamburger").toggleClass("active");
 });
 // ドロワークリックした時の処理
-$("#js-drawer a").click(function(){
-  $("#js-drawer").hide(300);
-  $(".hamburger").removeClass("active");
+$("#js-drawer a[href^='#']").click(function(e){
+  e.preventDefault();
+  const target = $($(this).attr('href'));
+  // header高さ取得
+  const headerHeight = $("#header").outerHeight();
+  // 位置（-header高さ）取得
+  const position = target.offset().top - headerHeight;
+
+  // メニューを閉じる
+    $("#js-drawer").removeClass("is-open");
+    $(".hamburger").removeClass("active");
+
+  //スムーススクロール
+  $('html, body').animate({ scrollTop: position}, 500);
+  
+  return false;
 });
+
+
 
 
 // モーダル
