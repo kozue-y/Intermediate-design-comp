@@ -975,12 +975,12 @@ time {
   display: block;
   text-align: right;
   border-bottom: none;
+  margin-top: 1.7rem;
   padding: 0;
 }
 .more-btn {
   display: inline-block;
   position: relative;
-  margin-top: 1.7rem;
   padding-right: 3.2rem;
   font-size: 2rem;
   line-height: calc(33 / 20);
@@ -1084,7 +1084,7 @@ time {
   display: block;
   width: 100%;
   position: relative;
-  margin-bottom: 6.2rem;
+  padding-bottom: 6.2rem;
 }
 .company-map {
   width: 65.2%;
@@ -1099,12 +1099,12 @@ time {
   height: auto;
   aspect-ratio: 3 / 2;
 }
-.company-access {
-  flex: 1;
-}
+// .company-access {
+//   flex: 1;
+// }
 .company-info {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   right: 0;
   box-sizing: border-box;
   max-width: 50rem;
@@ -1172,7 +1172,7 @@ p.mail {
 
 @media (max-width: 930px) {
   .company-inner {
-    padding-left: 41%;
+    padding-left: 39%;
   }
 }  
 
@@ -1210,9 +1210,10 @@ p.mail {
     width: 100%;
   }
   .company-inner {
-    padding-left: 6.35%;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 1.9rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1.2rem;
   }
   p.name {
     font-size: 2rem;
@@ -1245,9 +1246,6 @@ p.mail {
 
 
 @media (max-width: 370px) {
-  .company-inner {
-    padding-top: 0.5rem;
-  }
    p.address {
     margin-top: 0.5rem;
   }p.tel {
