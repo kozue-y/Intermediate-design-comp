@@ -1264,8 +1264,8 @@ p.mail {
 }
 .form-contents {
   margin-top: 3.5rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  max-width: 80rem;
+  margin-inline: auto;
 }
 p.attention {
   font-size: 2rem;
@@ -1276,6 +1276,7 @@ form.form-box {
 }
 .form-group {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-top: 5rem;
   gap: 1.2rem;
@@ -1283,13 +1284,20 @@ form.form-box {
 .form-group:first-of-type {
   margin-top: 0;
 }
+.form-label-wrap {
+  width: 16rem;
+  flex-shrink: 0;
+}
 .form-label {
   font-size: 2rem;
   line-height: calc(33 / 20);
   white-space: nowrap;
-  width: 16rem;
-  flex-shrink: 0;
+  display: inline-block;
 }
+.input-label-wrap {
+  flex-grow: 1;
+}
+
 input[type="text"],
 input[type="email"],
 .select-wrapper,
@@ -1321,6 +1329,7 @@ textarea::placeholder {
   display: flex;
   gap: 7.4rem;
 }
+
 label.choice-label {
   display: flex;
   align-items: center;
@@ -1355,7 +1364,6 @@ input[type="radio"]:checked + .custom-radio::after {
 }
 input[type="email"] {
   width: 100%;
-  max-width: 63rem;
   height: 5rem;
   background: $color-white;
   padding: 1.4rem 2rem 1.2rem;
@@ -1365,7 +1373,6 @@ input[type="email"] {
 .select-wrapper {
   position: relative;
   width: 100%;
-  max-width: 63rem;
   height: 5rem;
   background: $color-white;
   cursor: pointer;
@@ -1374,7 +1381,9 @@ input[type="email"] {
     height: 100%;
     font-size: 1.8rem;
     line-height: calc(25 / 18);
-    padding: 1.5rem 2rem 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
     border: none;
     appearance: none;
     background: transparent;
@@ -1383,7 +1392,7 @@ input[type="email"] {
   &::after {
     content: "";
     position: absolute;
-    top: 57%;
+    top: 50%;
     transform: translateY(-50%);
     right: 2rem;
     width: 1.8rem;
@@ -1425,6 +1434,7 @@ textarea {
   font-size: 1.8rem;
   line-height: calc(25 / 18);
   cursor: pointer;
+  width: fit-content;
 }
 input[type="checkbox"] {
   display: none;
@@ -1454,8 +1464,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   line-height: calc(33 / 20);
 }
 .privacy-scroll-area {
-  height: 30rem;
-  overflow-y: scroll;
   background: #fff;
   width: 100%;
   max-width: 80rem;

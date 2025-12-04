@@ -467,27 +467,39 @@
                 <p class="attention">３営業日以内にメールにてご連絡いたします。*は入力必須項目となります。</p>
                 <form action="#" method="post" class="form-box">
                   <div class="form-group">
-                    <label class="form-label" for="name">お名前<span class="required">*</span></label>
-                    <input type="text" id="name" name="name" placeholder="例：北村太郎" required>
-                  </div>
-  
-                  <div class="form-group gender-group">
-                    <label class="form-label">性別</label>
-                    <div class="radio-wrap">
-                      <label class="choice-label"><input type="radio" name="gender" value="male" checked>
-                        <span class="custom-radio"></span>男性</label>
-                      <label class="choice-label"><input type="radio" name="gender" value="female">
-                        <span class="custom-radio"></span>女性</label>
+                    <div class="form-label-wrap">
+                      <label class="form-label" for="name">お名前<span class="required">*</span></label>
+                    </div>
+                    <div class="input-label-wrap">
+                      <input type="text" id="name" name="name" placeholder="例：北村太郎" required>
                     </div>
                   </div>
   
+                  <div class="form-group gender-group">
+                      <div class="form-label-wrap">
+                        <span class="form-label">性別</span>
+                      </div>
+                      <div class="radio-wrap">
+                        <label class="choice-label"><input type="radio" name="gender" value="male" checked>
+                          <span class="custom-radio"></span>男性</label>
+                          <label class="choice-label"><input type="radio" name="gender" value="female">
+                            <span class="custom-radio"></span>女性</label>
+                          </div>
+                  </div>
+  
                   <div class="form-group">
-                    <label class="form-label" for="email">メールアドレス<span class="required">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="例：aaaaaaaa@gmail.com" required>
+                    <div class="form-label-wrap">
+                      <label class="form-label" for="email">メールアドレス<span class="required">*</span></label>
+                    </div>
+                    <div class="input-label-wrap">
+                      <input type="email" id="email" name="email" placeholder="例：aaaaaaaa@gmail.com" required>
+                    </div>
                   </div>
                   
                   <div class="form-group">
-                    <label class="form-label" for="inquiry">問い合わせ種別</label>
+                    <div class="form-label-wrap">
+                      <label class="form-label" for="inquiry">問い合わせ種別</label>
+                    </div>
                     <div class="select-wrapper">
                       <select name="inquiry" id="inquiry">
                         <option value="house">家づくりについて</option>
@@ -499,7 +511,9 @@
                   </div>
   
                   <div class="form-group vertical">
-                    <label class="form-label" for="message">内容<span class="required">*</span></label>
+                    <div class="form-label-wrap">
+                      <label class="form-label" for="message">内容<span class="required">*</span></label>
+                    </div>
                     <textarea name="message" id="message" required></textarea>
                   </div>
   
