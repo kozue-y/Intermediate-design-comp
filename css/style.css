@@ -117,7 +117,7 @@ h1.site-title a {
   transition: opacity 0.3s ease;
 }
 h1.site-title a:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .header_nav {
@@ -872,6 +872,11 @@ body.modal-open {
     margin-top: 0.7rem;
   }
 }
+@media (max-width: 360px) {
+  .modal-bg {
+    padding-inline: 2rem;
+  }
+}
 .news-section {
   background: rgba(77, 150, 0, 0.102);
   padding-top: 8rem;
@@ -944,7 +949,7 @@ time {
   transition: opacity 0.3s ease;
 }
 .news-link:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .news-link .news-text {
   padding-top: 0.7rem;
@@ -1050,7 +1055,7 @@ time {
     display: flex;
     align-items: flex-start;
     padding: 1.3rem 0 1.3rem;
-    gap: 6.9%;
+    gap: 1.9rem;
     flex: 1;
   }
   .news-link .news-text {
@@ -1159,7 +1164,7 @@ p.mail a {
   transition: opacity 0.3s ease;
 }
 p.mail a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 @media (max-width: 930px) {
@@ -1177,7 +1182,7 @@ p.mail a:hover {
     flex-direction: column;
     gap: 2.1rem;
     margin-top: 3.8rem;
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .company-map {
     display: flex;
@@ -1227,7 +1232,7 @@ p.mail a:hover {
     z-index: 10;
   }
   p.tel a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   p.mail {
     font-size: 1.6rem;
@@ -1304,7 +1309,6 @@ textarea {
 
 input[type=text] {
   width: 100%;
-  max-width: 63rem;
   height: 5rem;
   background: #ffffff;
   padding: 1.4rem 2rem 1.2rem;
@@ -1567,6 +1571,15 @@ button.submit-btn:hover {
     margin-top: 3rem;
     gap: 0;
   }
+  .form-label-wrap {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .input-label-wrap {
+    flex-grow: 0;
+    width: 100%;
+  }
   .gender-group {
     display: flex;
     flex-direction: row;
@@ -1692,7 +1705,7 @@ a.footer-logo-link {
   transition: opacity 0.3s ease;
 }
 a.footer-logo-link:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .footer-nav ul {
@@ -1740,7 +1753,7 @@ nav.footer-nav {
 }
 
 .footer-nav a:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .footer-sns {
@@ -1760,7 +1773,7 @@ nav.footer-nav {
 }
 
 .footer-sns a:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .footer-sns img {
