@@ -1142,7 +1142,7 @@ p.tel {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 1.2rem;
-  gap: 0.8rem;
+  gap: 0.5rem;
   a {
     display: block;
   }
@@ -1154,7 +1154,7 @@ p.tel {
 p.mail {
   display: flex;
   align-items: baseline;
-  gap: 1.1rem;
+  gap: 1.5rem;
   font-size: 1.6rem;
   line-height: calc(25 / 16);
   margin-top: 1.5rem;
@@ -1183,7 +1183,7 @@ p.mail {
   .company-block {
     display: flex;
     flex-direction: column;
-    gap: 2.1rem;
+    gap: 2.3rem;
     margin-top: 3.8rem;
     padding-bottom: 0;
     // margin-bottom: 0;
@@ -1598,7 +1598,7 @@ button.submit-btn {
     line-height: calc(27 / 20);
   }
   .form-submit {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
   }
   button.submit-btn {
     width: 100%;
@@ -1769,7 +1769,7 @@ span.pc-only {
     padding-top: 5rem;
   }
   a.footer-logo-link {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
   }
   .footer-nav ul {
     padding-top: 2rem;
