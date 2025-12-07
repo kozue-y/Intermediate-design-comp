@@ -174,7 +174,7 @@ html {
      content: "";
      position: absolute;
      left: 0;
-     bottom: 3.2rem;
+     bottom: 2.45rem;
      width: 0;
      height: 1px;
      background: $color-white;
@@ -502,8 +502,7 @@ p.about-text {
 // サービス
 .service-section {
   background: $bg-color;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding: 8rem 0;
 }
   .inner {
     max-width: 98rem;
@@ -680,17 +679,11 @@ p.about-text {
   }
   .service-text-inner {
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 1.2rem;
+    padding: 2rem 2rem 1.2rem 2rem;
     aspect-ratio: auto;
   }
   .service-item:nth-of-type(even) .service-text-inner {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 1.2rem;
+    padding: 2rem 2rem 1.2rem 2rem;
   }
   .service-media__text h3 {
     font-size: 2rem;
@@ -762,8 +755,6 @@ p.about-text {
   overflow: hidden;
 }
 .works-image img {
-  width: 100%;
-  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -819,6 +810,7 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  padding-inline: 2rem;
 }
 .modal-content {
   position: relative;
@@ -861,7 +853,6 @@ body.modal-open {
   width: 100%;
   img {
     height: 100%;
-    // object-fit: cover;
   }
 }
 .modal-text {
@@ -879,11 +870,6 @@ body.modal-open {
   .modal-text {
     margin-top: 0.7rem;
   }
-}
-@media (max-width: 360px) {
-  .modal-bg {
-    padding-inline: 2rem;
- }
 }
 
 //news-section
@@ -947,7 +933,7 @@ time {
   align-items: flex-start;
   width: 100%;
   padding: 1.3rem 0 1.3rem;
-  gap: 6.8rem;
+  gap: 18%;
   font-size: 1.8rem;
   line-height: calc(25 / 18);
   transition: opacity 0.3s ease;
@@ -962,11 +948,6 @@ time {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
-@media (max-width: 960px) {
-  .news-link {
-    gap: 4.8rem;
-  }  
 }
 .news-more {
   display: block;
@@ -1098,9 +1079,7 @@ time {
   height: auto;
   aspect-ratio: 3 / 2;
 }
-// .company-access {
-//   flex: 1;
-// }
+
 .company-info {
   position: absolute;
   bottom: 0;
@@ -1109,7 +1088,7 @@ time {
   max-width: 50rem;
   width: 54.3%;
   height: auto;
-  aspect-ratio: 500 / 262;
+  // aspect-ratio: 500 / 262;
   background: $color-green;
   color: $color-white;
   z-index: 0;
@@ -1121,8 +1100,7 @@ time {
   width: 100%;
   height: 100%;
   max-width: 50rem;
-  padding-left: 44%;
-  padding-top: 0.7rem;
+  padding: 4.9rem 0.5rem 4.2rem 44%;
 }
 p.name {
   font-size: 2rem;
@@ -1171,7 +1149,7 @@ p.mail {
 
 @media (max-width: 930px) {
   .company-inner {
-    padding-left: 39%;
+    padding: 4rem 1rem 3.5rem 39%;
   }
 }  
 
@@ -1210,10 +1188,7 @@ p.mail {
     width: 100%;
   }
   .company-inner {
-    padding-top: 1.9rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 1.2rem;
+    padding: 1.9rem 2rem 2rem 1.2rem;
   }
   p.name {
     font-size: 2rem;
