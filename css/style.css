@@ -4,12 +4,6 @@ html {
   scroll-behavior: smooth;
   word-break: break-all;
   font-size: 10px;
-  scroll-padding-top: 8rem;
-}
-@media (max-width: 767px) {
-  html {
-    scroll-padding-top: 5rem;
-  }
 }
 
 body {

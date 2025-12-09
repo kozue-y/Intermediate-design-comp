@@ -32,25 +32,37 @@ $("#hamburger-block").click(function() {
 // 全アンカーリンク（ヘッダー・ドロワー・フッター）
 $("a[href^='#']").click(function(e){
   const href = $(this).attr('href');
-// スクロルセクション指定
+// スクロールセクション指定
   if(href === '#' || href === '') return;
   e.preventDefault();
   const target = $(href);
   if(!target.length) return false;
 
-  // // header高さ取得（CSS指定）
-  const position = target.offset().top;
+  // // header高さ取得（JSで取得）
+  const header = $("#header");
+  const headerHeight = header.outerHeight(true);
+  // スクロール位置計算・ヘッダーの高さ分引く
+  const targetTop = target.offset().top;
+  const scrollPosition = targetTop - headerHeight;
 
 
   // メニューを閉じる
     $("#js-drawer").removeClass("is-open");
     $(".hamburger").removeClass("active");
-
-  //スムーススクロール
-  $('html, body').animate({ scrollTop: position}, 500);
   
+  //スムーススクロール
+  window.scrollTo({
+    top:scrollPosition,
+    behavior:"smooth"
+  }); 
+    // URLへハッシュを手動で追記
+    setTimeout(() => {
+    history.pushState(null, null, href);
+  }, 800);
   return false;
-});
+  });
+  
+
 
 
 
