@@ -8,13 +8,13 @@ $bg-color: rgba(77, 150, 0, 0.102 );
 
 html {
     -webkit-text-size-adjust: 100%;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     word-break: break-all;
     font-size: 10px;
-    scroll-padding-top: 8rem;
-    @media (max-width: 767px) {
-      scroll-padding-top: 5rem;  
-    }
+    // scroll-padding-top: 8rem;
+    // @media (max-width: 767px) {
+    //   scroll-padding-top: 5rem;  
+    // }
   }
   
   body {
