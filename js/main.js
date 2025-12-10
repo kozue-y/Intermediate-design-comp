@@ -63,60 +63,57 @@ $("a[href^='#']").click(function(e){
   });
   
 
-
-
-
-
 // モーダル
-// $(function () {
-//   $(".modal-open").on("click", function (e) {
-//     e.preventDefault();
-
-// // bodyスクロール禁止
-//     const target = $(this).data("modal");
-//     $("body").addClass("modal-open");
-
-//     const $modal = $("#" + target);
-//     $modal.css("display", "flex").hide().fadeIn(200);
-//   });
-
-// // 閉じる処理
-//   $(".modal-close, .modal-bg").on("click", function (e) {
-//     if ($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
-//       $("body").removeClass("modal-open");
-//       $(this).closest(".modal").fadeOut(200);
-//     }
-//   });
-// });
 $(function () {
-  let scrollPosition = 0; // スクロール位置を記憶する変数
-
   $(".modal-open").on("click", function (e) {
     e.preventDefault();
 
+// bodyスクロール禁止
     const target = $(this).data("modal");
-    scrollPosition = $(window).scrollTop(); //現在のスクロール位置を記憶
-    // bodyスクロール禁止
-    $("body").addClass("modal-open").css({
-      top: -scrollPosition + 'px'
-    });
+    $("body").addClass("modal-open");
 
     const $modal = $("#" + target);
     $modal.css("display", "flex").hide().fadeIn(200);
   });
-  // 閉じる処理
-  $(".modal-close, .modal-bg").on("click", function(e) {
-    if($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
-      // body固定解除
-      $("body").removeClass("modal-open").css({
-        top: ''
-      });
-      // 元のスクロール位置に戻す
-      $(window).scrollTop(scrollPosition);
+
+// 閉じる処理
+  $(".modal-close, .modal-bg").on("click", function (e) {
+    if ($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
+      $("body").removeClass("modal-open");
       $(this).closest(".modal").fadeOut(200);
     }
   });
 });
+
+// $(function () {
+//   let scrollPosition = 0; // スクロール位置を記憶する変数
+
+//   $(".modal-open").on("click", function (e) {
+//     e.preventDefault();
+
+//     const target = $(this).data("modal");
+//     scrollPosition = $(window).scrollTop(); //現在のスクロール位置を記憶
+//     // bodyスクロール禁止
+//     $("body").addClass("modal-open").css({
+//       top: -scrollPosition + 'px'
+//     });
+
+//     const $modal = $("#" + target);
+//     $modal.css("display", "flex").hide().fadeIn(200);
+//   });
+//   // 閉じる処理
+//   $(".modal-close, .modal-bg").on("click", function(e) {
+//     if($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
+//       // body固定解除
+//       $("body").removeClass("modal-open").css({
+//         top: ''
+//       });
+//       // 元のスクロール位置に戻す
+//       $(window).scrollTop(scrollPosition);
+//       $(this).closest(".modal").fadeOut(200);
+//     }
+//   });
+// });
 
 
 
