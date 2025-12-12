@@ -1158,7 +1158,7 @@ p.mail {
     width: 100%;
   }
   .company-inner {
-    padding: 1.9rem 2rem 2rem 1.2rem;
+    padding: 1.9rem 2rem 1.2rem 2rem;
   }
   p.name {
     font-size: 2rem;
@@ -1541,6 +1541,7 @@ button.submit-btn {
   }
   .form-group.vertical {
     gap: 0;
+    margin-top: 2.8rem;
   }
   .form-question {
     line-height: calc(27 / 20);
@@ -1621,7 +1622,7 @@ body.modal-open .page-top-link {
 }
 a.footer-logo-link {
   display: inline-block;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.5rem;
   transition: opacity 0.3s ease;
   &:hover {
     opacity: 0.8;
