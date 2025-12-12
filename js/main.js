@@ -24,43 +24,54 @@ $(function () {
   checkScroll();
 });
 
-// ハンバーガーメニュー開け閉じ
+
+// ハンバーガーメニュー開
 $("#hamburger-block").click(function() {
-    $("#js-drawer").toggleClass("is-open");
-    $(".hamburger").toggleClass("active");
+  $("#js-drawer").toggleClass("is-open");
+  $(".hamburger").toggleClass("active");
 });
+
 // 全アンカーリンク（ヘッダー・ドロワー・フッター）
 $("a[href^='#']").click(function(e){
+
+  if ($(this).hasClass('skip-scroll')) {
+    e.preventDefault();
+    return false;
+  }
+  const speed = 800;
   const href = $(this).attr('href');
-// スクロールセクション指定
-  if(href === '#' || href === '') return;
+  
+  // トップへ戻るボタンの場合
+  if(href === '#' || href === '') {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, speed, "swing");
+    return false;
+  }
+  // その他ナビゲーションの場合
   e.preventDefault();
+  
   const target = $(href);
   if(!target.length) return false;
-
-  // // header高さ取得（JSで取得）
-  const header = $("#header");
-  const headerHeight = header.outerHeight(true);
-  // スクロール位置計算・ヘッダーの高さ分引く
-  const targetTop = target.offset().top;
-  const scrollPosition = targetTop - headerHeight;
-
-
-  // メニューを閉じる
-    $("#js-drawer").removeClass("is-open");
-    $(".hamburger").removeClass("active");
   
-  //スムーススクロール
-  window.scrollTo({
-    top:scrollPosition,
-    behavior:"smooth"
-  }); 
-    // URLへハッシュを手動で追記
-    setTimeout(() => {
-    history.pushState(null, null, href);
-  }, 800);
-  return false;
+  // header高さ取得
+  const headerHeight = $("#header").outerHeight();
+  
+  // スクロール位置計算
+  const scrollPosition = target.offset().top - headerHeight;
+  
+  // ハンバーガーメニュー閉
+  $("#js-drawer").removeClass("is-open");
+  $(".hamburger").removeClass("active");
+  
+  // スムーススクロール
+  $("html, body").animate({ 
+    scrollTop: scrollPosition 
+  }, speed, "swing",function() {
+    history.pushState(null,null,href);
   });
+  
+  return false;
+});
   
 
 // モーダル
@@ -85,40 +96,10 @@ $(function () {
   });
 });
 
-// $(function () {
-//   let scrollPosition = 0; // スクロール位置を記憶する変数
-
-//   $(".modal-open").on("click", function (e) {
-//     e.preventDefault();
-
-//     const target = $(this).data("modal");
-//     scrollPosition = $(window).scrollTop(); //現在のスクロール位置を記憶
-//     // bodyスクロール禁止
-//     $("body").addClass("modal-open").css({
-//       top: -scrollPosition + 'px'
-//     });
-
-//     const $modal = $("#" + target);
-//     $modal.css("display", "flex").hide().fadeIn(200);
-//   });
-//   // 閉じる処理
-//   $(".modal-close, .modal-bg").on("click", function(e) {
-//     if($(e.target).is(".modal-bg") || $(this).is(".modal-close")) {
-//       // body固定解除
-//       $("body").removeClass("modal-open").css({
-//         top: ''
-//       });
-//       // 元のスクロール位置に戻す
-//       $(window).scrollTop(scrollPosition);
-//       $(this).closest(".modal").fadeOut(200);
-//     }
-//   });
-// });
 
 
 
-
-// topへ戻るボタン動作
+// topへ戻るボタン表示非表示（モーダル）
 $(function () {
   const $pageTopLink = $(".page-top-link");
   const $fvSection = $(".fv"); 
@@ -135,10 +116,6 @@ $(function () {
   checkScroll();
 });
 
-// $('.page-top-link').on('click', function() {
-//   $('html, body').animate({ scrollTop: 0 }, 500);
-//   return false;
-// });
 
 
   // AOSふわっと
