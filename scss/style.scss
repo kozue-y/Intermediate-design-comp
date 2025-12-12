@@ -8,13 +8,8 @@ $bg-color: rgba(77, 150, 0, 0.102 );
 
 html {
     -webkit-text-size-adjust: 100%;
-    // scroll-behavior: auto;
     word-break: break-all;
     font-size: 10px;
-    // scroll-padding-top: 8rem;
-    // @media (max-width: 767px) {
-    //   scroll-padding-top: 5rem;  
-    // }
   }
   
   body {
@@ -811,7 +806,6 @@ body.modal-open {
 .modal-content {
   position: relative;
   background-color: #ffffff;
-  // aspect-ratio: 450 / 275;
   width: 100%;
   max-width: 45.2rem;
   height: auto;
@@ -1058,7 +1052,6 @@ time {
   max-width: 50rem;
   width: 54.3%;
   height: auto;
-  // aspect-ratio: 500 / 262;
   background: $color-green;
   color: $color-white;
   z-index: 0;
