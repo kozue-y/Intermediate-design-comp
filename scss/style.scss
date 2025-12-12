@@ -1015,6 +1015,9 @@ time {
       width: 100%;
     }
   }
+  .news-more {
+    margin-top: 2rem;
+  }
 }
 
 //company-section
@@ -1118,13 +1121,13 @@ p.mail {
 
 @media (max-width: 767px) {
   .company-section {
-    padding-top: 5.3rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
   }
   .company-block {
     display: flex;
     flex-direction: column;
-    gap: 2.3rem;
+    gap: 2rem;
     margin-top: 3.8rem;
     padding-bottom: 0;
     // margin-bottom: 0;
