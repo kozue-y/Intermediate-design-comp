@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: "YuMincho", "游明朝", "Hiragino Mincho ProN", serif;
+  font-family: "YuMincho", "游明朝", "Hiragino Mincho ProN", "Noto Serif JP", serif;
   font-weight: 500;
 }
 
@@ -109,7 +109,7 @@ a img {
 h1.site-title {
   height: 100%;
   font-size: 2rem;
-  line-height: 1.65;
+  line-height: 1;
   color: #ffffff;
 }
 h1.site-title a {
@@ -120,7 +120,6 @@ h1.site-title a {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding-top: 0.45rem;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -183,11 +182,10 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.8rem;
-  line-height: 1.8333333333;
+  line-height: 1;
   color: #ffffff;
   position: relative;
   cursor: pointer;
-  padding-top: 0.25rem;
 }
 .nav_list a::after {
   content: "";
@@ -443,11 +441,9 @@ nav {
 
 .about-image {
   width: 100%;
-  height: 100%;
 }
 
 .about-image img {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -575,7 +571,7 @@ p.about-text {
   }
 }
 .service-section {
-  background: rgba(77, 150, 0, 0.102);
+  background: rgba(77, 150, 0, 0.1);
   padding: 8rem 0;
 }
 
@@ -991,7 +987,7 @@ body.modal-open {
   }
 }
 .news-section {
-  background: rgba(77, 150, 0, 0.102);
+  background: rgba(77, 150, 0, 0.1);
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -1406,7 +1402,7 @@ p.mail a:hover {
   }
 }
 .contact-section {
-  background: rgba(77, 150, 0, 0.102);
+  background: rgba(77, 150, 0, 0.15);
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -1896,8 +1892,8 @@ button.submit-btn:hover {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   background-color: #4D9600;
   border-radius: 50%;
   display: -webkit-box;
