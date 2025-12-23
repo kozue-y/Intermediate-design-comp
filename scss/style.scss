@@ -725,7 +725,7 @@ p.about-text {
 .works-list {
   margin-top: 6.8rem;
   display: grid;
-  grid-template-columns: repeat((4, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 4.2%;
 }
 .work-item {
@@ -866,16 +866,16 @@ body.modal-open {
 }
 .news-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   margin-top: 6.8rem;
   gap: 60 / 980 * 100%;
   width: 100%;
 }
 .news-col {
-  flex: 1;
+  flex: 0 1 47%;
   width: 100%;
-  max-width: 45rem;
+  max-width: 43rem;
 }
 .news-subtitle {
   display: flex;
@@ -1246,8 +1246,8 @@ input[type="text"] {
   height: 5rem;
   background: $color-white;
   padding: 1.4rem 2rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: calc(25 / 16);
+  font-size: 1.8rem;
+  line-height: calc(25 / 18);
 }
 span.required {
   margin-left: 1rem;
@@ -1302,8 +1302,8 @@ input[type="email"] {
   height: 5rem;
   background: $color-white;
   padding: 1.4rem 2rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: calc(25 / 16);
+  font-size: 1.8rem;
+  line-height: calc(25 / 18);
 }
 .select-wrapper {
   position: relative;
@@ -1353,8 +1353,9 @@ textarea {
   height: 20rem;
   background: $color-white;
   padding: 1.3rem 2rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: calc(25 / 16);
+  font-size: 1.8rem;
+  line-height: calc(25 / 18);
+  resize: none;
 }
 .form-question {
   font-size: 2rem;
