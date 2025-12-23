@@ -1005,7 +1005,7 @@ body.modal-open {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 6.8rem;
-  gap: 6.1224489796%;
+  gap: 6.52%;
   width: 100%;
 }
 
@@ -1150,7 +1150,7 @@ time {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5.5rem;
+    gap: 5rem;
   }
   .news-col {
     max-width: none;
@@ -1197,7 +1197,7 @@ time {
     width: 100%;
   }
   .news-more {
-    margin-top: 2rem;
+    margin-top: 2.3rem;
   }
 }
 .company-section {
@@ -1521,7 +1521,7 @@ textarea::placeholder {
   gap: 7.4rem;
 }
 
-label.choice-label {
+.choice-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1800,6 +1800,14 @@ button.submit-btn:hover {
     margin-top: 3rem;
     gap: 0;
   }
+  input[type=text] {
+    font-size: 1.6rem;
+    line-height: 1.5625;
+  }
+  input[type=email] {
+    font-size: 1.6rem;
+    line-height: 1.5625;
+  }
   .form-label-wrap {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1828,7 +1836,7 @@ button.submit-btn:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 3rem;
+    gap: 3.9rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1840,7 +1848,7 @@ button.submit-btn:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1.9rem;
+    gap: 1rem;
   }
   .gender-group .form-label {
     width: auto;
