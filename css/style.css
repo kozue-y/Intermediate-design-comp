@@ -1253,6 +1253,10 @@ time {
   padding: 4.9rem 0.5rem 4.2rem 44%;
 }
 
+.company-text {
+  font-style: normal;
+}
+
 p.name {
   font-size: 2rem;
   line-height: 1.65;
