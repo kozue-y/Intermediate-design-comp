@@ -996,9 +996,9 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1008,11 +1008,11 @@ body.modal-open {
 }
 
 .news-col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 47%;
+          flex: 0 1 47%;
   width: 100%;
-  max-width: 45rem;
+  max-width: 43rem;
 }
 
 .news-subtitle {
@@ -1479,8 +1479,8 @@ input[type=text] {
   height: 5rem;
   background: #ffffff;
   padding: 1.4rem 2rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: 1.5625;
+  font-size: 1.8rem;
+  line-height: 1.3888888889;
 }
 
 span.required {
@@ -1564,8 +1564,8 @@ input[type=email] {
   height: 5rem;
   background: #ffffff;
   padding: 1.4rem 2rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: 1.5625;
+  font-size: 1.8rem;
+  line-height: 1.3888888889;
 }
 
 .select-wrapper {
@@ -1633,8 +1633,9 @@ textarea {
   height: 20rem;
   background: #ffffff;
   padding: 1.3rem 2rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: 1.5625;
+  font-size: 1.8rem;
+  line-height: 1.3888888889;
+  resize: none;
 }
 
 .form-question {
