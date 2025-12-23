@@ -1,8 +1,8 @@
 // 変数
-$base-font: "YuMincho", "游明朝", "Hiragino Mincho ProN", serif;
+$base-font: "YuMincho", "游明朝", "Hiragino Mincho ProN", "Noto Serif JP", serif;
 $color-white: #ffffff;
 $color-green: #4D9600;
-$bg-color: rgba(77, 150, 0, 0.102 );
+$bg-color: rgba(77, 150, 0, 0.10 );
 
 
 
@@ -109,14 +109,13 @@ html {
    h1.site-title {
      height: 100%;
      font-size: 2rem;
-     line-height: calc(33 / 20);
+     line-height: calc(20 / 20);
      color: $color-white;
   
    a {
      display: flex;
      align-items: center;
      height: 100%;
-     padding-top: 0.45rem;
      cursor: pointer;
      transition: opacity 0.3s ease;
      &:hover {
@@ -158,11 +157,10 @@ html {
     display: flex;
     align-items: center;
     font-size: 1.8rem;
-    line-height: calc(33 / 18);
+    line-height: calc(18 / 18);
     color: $color-white;
     position: relative;
     cursor: pointer;
-    padding-top: 0.25rem;
 
   // 下線アニメ
     &::after {
@@ -403,10 +401,8 @@ html {
 }
 .about-image {
   width: 100%;
-  height: 100%;
 }
 .about-image img {
-  height: 100%;
   object-fit: cover;
 }
 .about-body {
@@ -1195,7 +1191,7 @@ p.mail {
 
 //CONTACT-section
 .contact-section {
-  background: $bg-color;
+  background: rgba(77, 150, 0, 0.15 );
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -1567,7 +1563,7 @@ button.submit-btn {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 
   background-color: $color-green;
   border-radius: 50%;
