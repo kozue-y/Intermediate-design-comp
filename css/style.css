@@ -8,6 +8,8 @@ html {
 body {
   font-family: "YuMincho", "游明朝", "Hiragino Mincho ProN", "Noto Serif JP", serif;
   font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: normal;
 }
 
 img {
