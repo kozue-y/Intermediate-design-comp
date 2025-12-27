@@ -100,7 +100,7 @@ a img {
 h1.site-title {
   height: 100%;
   font-size: 2rem;
-  line-height: 1;
+  line-height: 1.65;
   color: #ffffff;
 }
 h1.site-title a {
@@ -149,7 +149,7 @@ nav {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
-  line-height: 1;
+  line-height: 1.8333333333;
   color: #ffffff;
   position: relative;
   cursor: pointer;
@@ -718,7 +718,7 @@ figcaption.service-caption {
 .works-caption {
   margin-top: 1.9rem;
 }
-.works-caption p {
+.works-caption h3 {
   font-size: 1.6rem;
   line-height: 1.5625;
 }
@@ -867,9 +867,7 @@ body.modal-open {
 }
 
 .news-col {
-  flex: 0 1 47%;
-  width: 100%;
-  max-width: 43rem;
+  flex: 0 1 46.7%;
 }
 
 .news-subtitle {
