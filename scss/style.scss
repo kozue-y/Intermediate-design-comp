@@ -111,7 +111,7 @@ html {
    h1.site-title {
      height: 100%;
      font-size: 2rem;
-     line-height: calc(20 / 20);
+     line-height: calc(33 / 20);
      color: $color-white;
   
    a {
@@ -159,7 +159,7 @@ html {
     display: flex;
     align-items: center;
     font-size: 1.8rem;
-    line-height: calc(18 / 18);
+    line-height: calc(33 / 18);
     color: $color-white;
     position: relative;
     cursor: pointer;
@@ -736,7 +736,7 @@ p.about-text {
 }
 .works-caption {
   margin-top: 1.9rem;
-  p{
+  h3{
     font-size: 1.6rem;
     line-height: calc(25 / 16);
   }
@@ -875,9 +875,7 @@ body.modal-open {
   width: 100%;
 }
 .news-col {
-  flex: 0 1 47%;
-  width: 100%;
-  max-width: 43rem;
+  flex: 0 1 46.7%;
 }
 .news-subtitle {
   display: flex;
