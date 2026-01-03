@@ -1152,7 +1152,6 @@ p.mail {
     position: static !important;
     max-width: none;
     width: 100%;
-    aspect-ratio: auto;
     transform: none;
   }
   .company-text {
@@ -1735,7 +1734,7 @@ span.pc-only {
   a.footer-logo-link {
     margin-bottom: 1.8rem;
   }
-  .footer-nav {
+  nav.footer-nav {
     padding-top: 2rem;
   }
   .footer-nav ul {
