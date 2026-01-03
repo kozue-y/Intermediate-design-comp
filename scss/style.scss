@@ -1653,25 +1653,20 @@ a.footer-logo-link {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 3rem;
   gap: 5rem;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 72.2rem;
-    max-width: 102.65%;
-    height: 0.1rem;
-    background-color: #000;
-  }
 }
 nav.footer-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
+  border-top: 1px solid #000;
+  width: 72.2rem;
+  max-width: 100%;
+  margin-inline: auto;
+
+
 }
 .footer-nav li {
   font-size: 1.8rem;
@@ -1740,7 +1735,7 @@ span.pc-only {
   a.footer-logo-link {
     margin-bottom: 1.8rem;
   }
-  .footer-nav ul {
+  .footer-nav {
     padding-top: 2rem;
   }
   .footer-nav ul {
@@ -1750,9 +1745,6 @@ span.pc-only {
     align-items: center;
     gap: 0.5rem 3rem;
 
-    &::before {
-      width: 100%;
-    }
   }
   .footer-nav li {
     font-size: 1.8rem;
