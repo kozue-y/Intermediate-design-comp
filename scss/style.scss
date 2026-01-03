@@ -397,7 +397,6 @@ html {
 // about-section
 .about-section {
   position: relative; 
-  aspect-ratio: 1080 / 500;
   display: flex;
   align-items: center;
 }
@@ -406,6 +405,7 @@ html {
 }
 .about-image img {
   object-fit: cover;
+  aspect-ratio: 1080 / 500;
 }
 .about-body {
   max-width: 108rem;
@@ -456,12 +456,14 @@ p.about-text {
 
 @media screen and (max-width: 767px) {
   .about-section {
-    aspect-ratio: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+  }
+  .about-image img {
+    aspect-ratio: auto;
   }
   .about-contents {
     writing-mode: vertical-rl;
@@ -536,7 +538,6 @@ p.about-text {
   width: 83.3%;
   height: auto;
   max-width: 54.3%;
-  aspect-ratio: 2 / 1;
   background: $color-green;
   z-index: 1;
 }
@@ -546,9 +547,7 @@ p.about-text {
   align-items: center;
   width: 100%;
   z-index: 3;
-  aspect-ratio: 2 / 1;
-  padding-left: 44%;
-  padding-top: 0.8rem;
+  padding: 5rem 0.5rem 4.2rem 44%;
 }
 .service-media__text h3 {
   font-size: 2.5rem;
@@ -592,7 +591,18 @@ p.about-text {
 .service-caption.pc-only {
   display: block;
 }
-@media (max-width: 980px) {
+@media (max-width: 985px) {
+  .service-media__img {
+    width: 62.3%;
+  }
+  .service-text-inner {
+    padding-left: 40%;
+  }
+  .service-item:nth-of-type(even) .service-text-inner {
+    padding-right: 40%;
+  }
+}
+@media (max-width: 940px) {
   .service-media__img {
     width: 62.3%;
   }
@@ -604,13 +614,14 @@ p.about-text {
   }
   .service-media__text {
     h3 {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
     p {
       font-size: 1.4rem;
     }
   }
 }
+
 
 @media screen and (max-width: 767px) {
   .service-section {
@@ -652,7 +663,6 @@ p.about-text {
     right: initial;
     width: 100%;
     height: auto;
-    aspect-ratio: auto;
     max-width: none;
     z-index: 1;
   }
@@ -673,7 +683,6 @@ p.about-text {
   .service-text-inner {
     align-items: center;
     padding: 2rem 2rem 1.2rem 2rem;
-    aspect-ratio: auto;
   }
   .service-item:nth-of-type(even) .service-text-inner {
     padding: 2rem 2rem 1.2rem 2rem;
@@ -736,6 +745,7 @@ p.about-text {
 }
 .works-caption {
   margin-top: 1.9rem;
+  transition: opacity 0.3s ease;
   h3{
     font-size: 1.6rem;
     line-height: calc(25 / 16);
@@ -748,11 +758,15 @@ p.about-text {
   overflow: hidden;
 }
 .works-image img {
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 .works-item a:hover img {
   transform: scale(1.1);
+}
+.works-item a:hover .works-caption {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 767px) {
@@ -808,8 +822,7 @@ body.modal-open {
   max-width: 45.2rem;
   height: auto;
   border: 1px solid #707070;
-  padding-inline: 1.5rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 1.5rem 0.6rem;
 }
 
 .modal-close {
@@ -851,9 +864,7 @@ body.modal-open {
 @media (max-width: 767px) {
   .modal-content {
     max-width: 31.5rem;
-    padding-inline: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 1.4rem;
+    padding: 2rem 2rem 1.4rem;
   }
   .modal-text {
     margin-top: 0.7rem;
@@ -1029,13 +1040,13 @@ time {
   max-width: 60rem;
   position: relative;
   z-index: 1;
+  aspect-ratio: 3 / 2;
   }
 
 .company-map iframe {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 2;
+  height: 100%;
 }
 
 .company-info {
@@ -1134,6 +1145,7 @@ p.mail {
   }
   .company-map iframe {
     max-width: none;
+    height: 100%;
   }
   .company-info {
     display: flex;
