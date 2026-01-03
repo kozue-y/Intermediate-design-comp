@@ -1367,7 +1367,6 @@ p.mail a:hover {
     position: static !important;
     max-width: none;
     width: 100%;
-    aspect-ratio: auto;
     -webkit-transform: none;
             transform: none;
   }
@@ -2110,7 +2109,7 @@ span.pc-only {
   a.footer-logo-link {
     margin-bottom: 1.8rem;
   }
-  .footer-nav {
+  nav.footer-nav {
     padding-top: 2rem;
   }
   .footer-nav ul {
