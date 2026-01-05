@@ -694,10 +694,10 @@ figcaption.service-caption {
     width: 62.3%;
   }
   .service-text-inner {
-    padding-left: 40%;
+    padding-left: 38%;
   }
   .service-item:nth-of-type(even) .service-text-inner {
-    padding-right: 40%;
+    padding-right: 38%;
   }
 }
 @media (max-width: 940px) {
