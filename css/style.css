@@ -230,6 +230,11 @@ nav {
     font-size: 2rem;
   }
 }
+@media (max-width: 335px) {
+  h1.site-title {
+    font-size: 1.8rem;
+  }
+}
 #hamburger-block {
   display: none;
 }
@@ -604,7 +609,7 @@ p.about-text {
 
 .service-media__img {
   position: relative;
-  width: 65.3%;
+  width: 65.2%;
   height: auto;
   max-width: 60rem;
   z-index: 2;
@@ -802,15 +807,14 @@ figcaption.service-caption {
   }
 }
 @media (max-width: 370px) {
-  .service-item:nth-child(even) .service-media__text {
-    padding-left: 0.5rem !important;
-  }
-  .service-media__text h3 {
-    font-size: 1.6rem;
-  }
   .service-media__text p {
     font-size: 1.2rem;
     margin-top: 1rem;
+  }
+}
+@media (max-width: 335px) {
+  .service-media__text h3 {
+    font-size: 1.6rem;
   }
 }
 #works {
@@ -1224,7 +1228,7 @@ time {
 }
 
 .company-map {
-  width: 65.3%;
+  width: 65.2%;
   max-width: 60rem;
   position: relative;
   z-index: 1;
@@ -1426,6 +1430,23 @@ p.mail a:hover {
   }
   p.mail {
     margin-top: 0.5rem;
+  }
+}
+@media (max-width: 335px) {
+  p.name {
+    font-size: 1.6rem;
+  }
+  p.address {
+    font-size: 1.3rem;
+  }
+  p.tel {
+    font-size: 1.3rem;
+  }
+  p.tel span {
+    font-size: 2rem;
+  }
+  p.mail {
+    font-size: 1.3rem;
   }
 }
 .contact-section {
