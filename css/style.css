@@ -1224,7 +1224,7 @@ time {
 }
 
 .company-map {
-  width: 65.2%;
+  width: 65.3%;
   max-width: 60rem;
   position: relative;
   z-index: 1;
@@ -1262,7 +1262,7 @@ time {
   width: 100%;
   height: 100%;
   max-width: 50rem;
-  padding: 4.9rem 0.5rem 4.2rem 44%;
+  padding: 5rem 0.5rem 4.2rem 44%;
 }
 
 .company-text {
@@ -1325,12 +1325,20 @@ p.mail a:hover {
   opacity: 0.8;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 985px) {
   .company-map {
-    width: 62%;
+    width: 62.3%;
   }
   .company-inner {
-    padding: 4rem 1rem 3.5rem 38%;
+    padding-left: 38%;
+  }
+}
+@media (max-width: 940px) {
+  .company-map {
+    width: 60%;
+  }
+  .company-inner {
+    padding-left: 33%;
   }
 }
 @media (max-width: 767px) {
