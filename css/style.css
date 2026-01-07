@@ -230,6 +230,11 @@ nav {
     font-size: 2rem;
   }
 }
+@media (max-width: 335px) {
+  h1.site-title {
+    font-size: 1.8rem;
+  }
+}
 #hamburger-block {
   display: none;
 }
@@ -604,7 +609,7 @@ p.about-text {
 
 .service-media__img {
   position: relative;
-  width: 65.3%;
+  width: 65.2%;
   height: auto;
   max-width: 60rem;
   z-index: 2;
@@ -802,15 +807,14 @@ figcaption.service-caption {
   }
 }
 @media (max-width: 370px) {
-  .service-item:nth-child(even) .service-media__text {
-    padding-left: 0.5rem !important;
-  }
-  .service-media__text h3 {
-    font-size: 1.6rem;
-  }
   .service-media__text p {
     font-size: 1.2rem;
     margin-top: 1rem;
+  }
+}
+@media (max-width: 335px) {
+  .service-media__text h3 {
+    font-size: 1.6rem;
   }
 }
 #works {
@@ -1262,7 +1266,7 @@ time {
   width: 100%;
   height: 100%;
   max-width: 50rem;
-  padding: 4.9rem 0.5rem 4.2rem 44%;
+  padding: 5rem 0.5rem 4.2rem 44%;
 }
 
 .company-text {
@@ -1325,12 +1329,20 @@ p.mail a:hover {
   opacity: 0.8;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 985px) {
   .company-map {
-    width: 62%;
+    width: 62.3%;
   }
   .company-inner {
-    padding: 4rem 1rem 3.5rem 38%;
+    padding-left: 38%;
+  }
+}
+@media (max-width: 940px) {
+  .company-map {
+    width: 60%;
+  }
+  .company-inner {
+    padding-left: 33%;
   }
 }
 @media (max-width: 767px) {
@@ -1418,6 +1430,23 @@ p.mail a:hover {
   }
   p.mail {
     margin-top: 0.5rem;
+  }
+}
+@media (max-width: 335px) {
+  p.name {
+    font-size: 1.6rem;
+  }
+  p.address {
+    font-size: 1.3rem;
+  }
+  p.tel {
+    font-size: 1.3rem;
+  }
+  p.tel span {
+    font-size: 2rem;
+  }
+  p.mail {
+    font-size: 1.3rem;
   }
 }
 .contact-section {
