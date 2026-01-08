@@ -718,15 +718,13 @@ p.about-text {
 }
   
 @media (max-width: 370px) {
+  .service-media__text h3 {
+    font-size: 1.6rem;
+  }  
   .service-media__text p {
     font-size: 1.2rem;
     margin-top: 1rem;
   }
-}
-@media (max-width: 335px) {
-  .service-media__text h3 {
-    font-size: 1.6rem;
-  }  
 }
 
 
@@ -1208,30 +1206,23 @@ p.mail {
 
 
 @media (max-width: 370px) {
-   p.address {
-    margin-top: 0.5rem;
-  }p.tel {
-    margin-top: 0.5rem;
-  }
-  p.mail {
-    margin-top: 0.5rem;
-  }
-}
-@media (max-width: 335px) {
   p.name {
     font-size: 1.6rem;
   }
   p.address {
     font-size: 1.3rem;
+    margin-top: 0.5rem;
   }
   p.tel {
     font-size: 1.3rem;
+    margin-top: 0.5rem;
     span {
       font-size: 2rem;
     }
   }
   p.mail {
     font-size: 1.3rem;
+    margin-top: 0.5rem;
   }
 }
 
