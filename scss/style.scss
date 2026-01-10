@@ -526,9 +526,7 @@ p.about-text {
 }
 .service-media__img {
   position: relative;
-  width: 65.2%;
-  height: auto;
-  max-width: 60rem;
+  width: calc(600 / 920 * 100%);
   z-index: 2;
   padding-bottom: 5.1rem;
 }
@@ -541,9 +539,7 @@ p.about-text {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 83.3%;
-  height: auto;
-  max-width: 54.3%;
+  width: calc(500 / 920 * 100%);
   background: $color-green;
   z-index: 1;
 }
@@ -651,7 +647,6 @@ p.about-text {
   .service-media__img {
     width: 100%;
     position: relative;
-    max-width: none;
     grid-area: img;
     height: auto;
     padding-bottom: 0.6rem;
@@ -669,7 +664,6 @@ p.about-text {
     right: initial;
     width: 100%;
     height: auto;
-    max-width: none;
     z-index: 1;
   }
 
@@ -1039,8 +1033,7 @@ time {
   padding-bottom: 6.2rem;
 }
 .company-map {
-  width: 65.2%;
-  max-width: 60rem;
+  width: calc(600 / 920 * 100%);
   position: relative;
   z-index: 1;
   aspect-ratio: 3 / 2;
@@ -1057,9 +1050,7 @@ time {
   bottom: 0;
   right: 0;
   box-sizing: border-box;
-  max-width: 50rem;
-  width: 54.3%;
-  height: auto;
+  width: calc(500 / 920 * 100%);
   background: $color-green;
   color: $color-white;
   z-index: 0;
@@ -1154,7 +1145,6 @@ p.mail {
     display: flex;
     position: static;
     width: 100%;
-    max-width: none;
     aspect-ratio: 315 / 300;
   }
   .company-map iframe {
@@ -1164,7 +1154,6 @@ p.mail {
   .company-info {
     display: flex;
     position: static !important;
-    max-width: none;
     width: 100%;
     transform: none;
   }
